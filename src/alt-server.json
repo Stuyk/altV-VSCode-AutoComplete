@@ -1,0 +1,82 @@
+[
+	{
+		"name": "alt.on",
+		"snippet": "alt.on('$1', ($2) => {$3});",
+		"documentation": "Event for when a player connects to the server."
+	},
+	{
+		"name": "alt.onPlayerConnect",
+		"snippet": "alt.on('playerConnect', (player) => {$0});",
+		"documentation": "Event for when a player connects to the server."
+	},
+	{
+		"name": "alt.onPlayerDisconnect",
+		"snippet": "alt.on('playerDisconnect', (player, reason) => {$0});",
+		"documentation": "Event for when a player disconnects from the server."
+	},
+	{
+		"name": "alt.onConsoleCommand",
+		"snippet": "alt.on('consoleCommand', (msg) => {$0});",
+		"documentation": "Event for when a console command is issued."
+	},
+	{
+		"name": "alt.onEntityEnterCheckpoint",
+		"snippet": "alt.on('entityEnterCheckpoint', (checkPoint, entity) => {$0});",
+		"documentation": "Event for when an entity enters a checkpoint."
+	},
+	{
+		"name": "alt.onEntityLeaveCheckpoint",
+		"snippet": "alt.on('entityLeaveCheckpoint', (checkPoint, entity) => {$0});",
+		"documentation": "Event for when an entity leaves a checkpoint."
+	},
+	{
+		"name": "alt.onEntityEnterColshape",
+		"snippet": "alt.on('entityEnterColshape', (colshape, entity) => {$0});",
+		"documentation": "Event for when an entity enters a colshape."
+	},
+	{
+		"name": "alt.onEntityLeaveColshape",
+		"snippet": "alt.on('entityLeaveColshape', (colshape, entity) => {$0});",
+		"documentation": "Event for when an entity leaves a colshape."
+	},
+	{
+		"name": "alt.onMetaChange",
+		"snippet": "alt.on('metaChange', (entity, key, value) => {$0});",
+		"documentation": "Called when an entities meta value changes."
+	},
+	{
+		"name": "alt.onPlayerChangedVehicleSeat",
+		"snippet": "alt.on('playerChangedVehicleSeat', (player, vehicle, oldseat, newseat) => {$0});",
+		"documentation": "Called when a player switches seats."
+	},
+	{
+		"name": "alt.onPlayerDamage",
+		"snippet": "alt.on('playerDamage', (victim, attacker, weapon) => {$0});",
+		"documentation": "Called when a player is damaged."
+	},
+	{
+		"name": "alt.onPlayerDeath",
+		"snippet": "alt.on('playerDeath', (victim, attacker, weapon) => {$0});",
+		"documentation": "Called when a player dies."
+	},
+	{
+		"name": "alt.onPlayerEnteredVehicle",
+		"snippet": "alt.on('playerEnteredVehicle', (player, vehicle, seat) => {$0});",
+		"documentation": "Called when a player enters a vehicle."
+	},
+	{
+		"name": "alt.onPlayerLeftVehicle",
+		"snippet": "alt.on('playerLeftVehicle', (player, vehicle, seat) => {$0});",
+		"documentation": "Called when a player leaves a vehicle."
+	},
+	{
+		"name": "alt.onRemoveEntity",
+		"snippet": "alt.on('removeEntity', (target) => {$0});",
+		"documentation": "Called when an entity is removed / deleted."
+	},
+	{
+		"name": "alt.onSyncedMetaChange",
+		"snippet": "alt.on('syncedMetaChange', (entity, key, value) => {$0});",
+		"documentation": "Called when an entities synced meta value changes."
+	}
+]
