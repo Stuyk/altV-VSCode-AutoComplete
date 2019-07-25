@@ -16,7 +16,7 @@
 	},
 	{
 		"name": "alt.onConsoleCommand",
-		"snippet": "alt.on('consoleCommand', (msg) => {$0});",
+		"snippet": "alt.on('consoleCommand', (msg) => { {$0} });",
 		"documentation": "Event for when a console command is issued."
 	},
 	{
@@ -86,12 +86,12 @@
 	},
 	{
 		"name": "alt.emitClient",
-		"snippet": "alt.emitClient(player, '${1:eventName}', ${2:params,};",
+		"snippet": "alt.emitClient(player, '${1:eventName}', ${2:params,});",
 		"documentation": "Emit an event to a player."
 	},
 	{
 		"name": "alt.emitClientAll",
-		"snippet": "alt.emitClient(null, '${1:eventName}', ${2:params};",
+		"snippet": "alt.emitClient(null, '${1:eventName}', ${2:params,});",
 		"documentation": "Emit an event to all players."
 	},
 	{
@@ -121,7 +121,7 @@
 	},
 	{
 		"name": "alt.newVector3",
-		"snippet": "new alt.Vector3(${1:x}, ${2:y}, ${3:z}); $0",
+		"snippet": "new alt.Vector3(${1:x}, ${2:y}, ${3:z});$0",
 		"documentation": "Create a new Vector3"
 
 	},
