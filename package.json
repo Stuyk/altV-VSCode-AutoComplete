@@ -1,7 +1,7 @@
 {
 	"name": "atlv-complete",
 	"displayName": "alt:V Auto Complete",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"publisher": "stuyk",
 	"repository": {
 		"type": "git",
