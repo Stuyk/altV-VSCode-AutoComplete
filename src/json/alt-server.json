@@ -1,7 +1,7 @@
 [
 	{
 		"name": "alt.on",
-		"snippet": "alt.on('$1', ($2) => {$3});",
+		"snippet": "alt.on('${1:eventName}', (${2:params,}) => {$0});",
 		"documentation": "Event for when a player connects to the server."
 	},
 	{
@@ -78,5 +78,56 @@
 		"name": "alt.onSyncedMetaChange",
 		"snippet": "alt.on('syncedMetaChange', (entity, key, value) => {$0});",
 		"documentation": "Called when an entities synced meta value changes."
+	},
+	{
+		"name": "alt.onClient",
+		"snippet": "alt.onClient('${1:eventName}', (player, ${2:params,}) => {$3});${0}",
+		"documentation": "Events triggered from a player's client."
+	},
+	{
+		"name": "alt.emitClient",
+		"snippet": "alt.emitClient(player, '${1:eventName}', ${2:params,};",
+		"documentation": "Emit an event to a player."
+	},
+	{
+		"name": "alt.emitClientAll",
+		"snippet": "alt.emitClient(null, '${1:eventName}', ${2:params};",
+		"documentation": "Emit an event to all players."
+	},
+	{
+		"name": "alt.import",
+		"snippet": "import * as alt from 'alt';",
+		"documentation": "Import alt for usage."
+	},
+	{
+		"name": "alt.newVehicle",
+		"snippet": "new alt.Vehicle(${1:modelAsString}, ${2:posX}, ${3:posY}, ${4:posZ}, ${5:rotX}, ${6:rotY}, ${7:rotZ});${0}",
+		"documentation": "Create a vehicle. params: modelAsString, posX, posY, posZ, rotX, rotY, rotZ"
+	},
+	{
+		"name": "alt.getPlayersByName",
+		"snippet": "alt.getPlayersByName(${1:name});${0}",
+		"documentation": "Returns an array of players by name."
+	},
+	{
+		"name": "alt.log",
+		"snippet": "alt.log(${1:message});${0}",
+		"documentation": "Log a message to the alt:V console."
+	},
+	{
+		"name": "alt.logError",
+		"snippet": "alt.logError(${1:message});${0}",
+		"documentation": "Log an error to the console."
+	},
+	{
+		"name": "alt.newVector3",
+		"snippet": "new alt.Vector3(${1:x}, ${2:y}, ${3:z}); $0",
+		"documentation": "Create a new Vector3"
+
+	},
+	{
+		"name": "alt.newPointBlip",
+		"snippet": "new alt.PointBlip(${1:type}, ${2:x}, ${3:y}, ${4:z})",
+		"documentation": "Create a new PointBlip"
 	}
 ]

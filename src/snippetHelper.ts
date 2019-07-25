@@ -12,9 +12,9 @@ export const snippets: Map<string, Array<vscode.CompletionItem>> = new Map();
 export function createSnippet(snippetCollection: string, snippetPrefix: string, snippetData: string, snippetDescription: string) {
 	const data = new vscode.CompletionItem(snippetPrefix);
 	data.insertText = new vscode.SnippetString(snippetData);
-	data.documentation = `${snippetDescription}  - @1 does x`;
-	data.detail = `${snippetDescription} - @1 does x`;
-
+	data.detail = `${snippetPrefix}`;
+	data.documentation = `${snippetDescription}`;
+	
 	if (snippets.get(snippetCollection) === undefined) {
 		snippets.set(snippetCollection, new Array());
 	}
