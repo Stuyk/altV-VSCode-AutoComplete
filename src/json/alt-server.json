@@ -127,7 +127,7 @@
 	},
 	{
 		"name": "alt.newPointBlip",
-		"snippet": "new alt.PointBlip(${1:type}, ${2:x}, ${3:y}, ${4:z})",
+		"snippet": "new alt.PointBlip(${1:type}, ${2:x}, ${3:y}, ${4:z});${0}",
 		"documentation": "Create a new PointBlip"
 	}
 ]

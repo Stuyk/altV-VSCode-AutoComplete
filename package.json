@@ -1,8 +1,9 @@
 {
 	"name": "atlv-complete",
 	"displayName": "alt:V Auto Complete",
-	"version": "0.0.2",
+	"version": "0.0.3",
 	"publisher": "stuyk",
+	"icon": "images/altv.png",
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/team-stuyk-alt-v/altV-VSCode-AutoComplete"
