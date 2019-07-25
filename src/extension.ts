@@ -5,7 +5,7 @@
 
 import * as vscode from 'vscode';
 import * as snippetHelper from './snippetHelper';
-import altServerJSON from './alt-server.json';
+import altServerJSON from '../json/alt-server.json';
 
 interface SnippetTemplate {
 	name: string;
