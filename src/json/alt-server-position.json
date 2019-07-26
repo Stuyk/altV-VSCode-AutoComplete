@@ -1,0 +1,32 @@
+[
+	{
+		"name": "position.x",
+		"snippet": "position.x",
+		"documentation": "x coordinate"
+	},
+	{
+		"name": "position.y",
+		"snippet": "position.y",
+		"documentation": "y coordinate"
+	},
+	{
+		"name": "position.z",
+		"snippet": "position.z",
+		"documentation": "z coordinate"
+	},
+	{
+		"name": "pos.x",
+		"snippet": "pos.x",
+		"documentation": "x coordinate"
+	},
+	{
+		"name": "pos.y",
+		"snippet": "pos.y",
+		"documentation": "y coordinate"
+	},
+	{
+		"name": "pos.z",
+		"snippet": "pos.z",
+		"documentation": "z coordinate"
+	}
+]

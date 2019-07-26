@@ -1,0 +1,67 @@
+[
+	{
+		"name": "weatherID - Extra Sunny",
+		"snippet": "0",
+		"documentation": ""
+	},
+	{
+		"name": "weatherID - Clear",
+		"snippet": "1",
+		"documentation": ""
+	},
+	{
+		"name": "weatherID - Clouds",
+		"snippet": "2",
+		"documentation": ""
+	},
+	{
+		"name": "weatherID - Smog",
+		"snippet": "3",
+		"documentation": ""
+	},
+	{
+		"name": "weatherID - Foggy",
+		"snippet": "4",
+		"documentation": ""
+	},
+	{
+		"name": "weatherID - Overcast",
+		"snippet": "5",
+		"documentation": ""
+	},
+	{
+		"name": "weatherID - Rain",
+		"snippet": "6",
+		"documentation": ""
+	},
+	{
+		"name": "weatherID - Thunder",
+		"snippet": "7",
+		"documentation": ""
+	},
+	{
+		"name": "weatherID - Light Rain",
+		"snippet": "8",
+		"documentation": ""
+	},
+	{
+		"name": "weatherID - Smoggy Light Rain",
+		"snippet": "9",
+		"documentation": ""
+	},
+	{
+		"name": "weatherID - Very Light Snow",
+		"snippet": "10",
+		"documentation": ""
+	},
+	{
+		"name": "weatherID - Windy Light Snow",
+		"snippet": "11",
+		"documentation": ""
+	},
+	{
+		"name": "weatherID - Light Snow",
+		"snippet": "12",
+		"documentation": ""
+	}
+]

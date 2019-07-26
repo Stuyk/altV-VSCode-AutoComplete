@@ -1,6 +1,6 @@
 import * as vscode from 'vscode';
 
-export const snippets: Map<string, Array<vscode.CompletionItem>> = new Map();
+const snippets: Map<string, Array<vscode.CompletionItem>> = new Map();
 
 /**
  * Create Snippet
@@ -9,7 +9,7 @@ export const snippets: Map<string, Array<vscode.CompletionItem>> = new Map();
  * @param snippetData Name of the data to insert into vscode.
  * @param snippetDescription Description of what this does.
  */
-export function createSnippet(snippetCollection: string, snippetPrefix: string, snippetData: string, snippetDescription: string) {
+function createSnippet(snippetCollection: string, snippetPrefix: string, snippetData: string, snippetDescription: string) {
 	const data = new vscode.CompletionItem(snippetPrefix);
 	data.insertText = new vscode.SnippetString(snippetData);
 	data.detail = `${snippetPrefix}`;
@@ -25,4 +25,31 @@ export function createSnippet(snippetCollection: string, snippetPrefix: string, 
 			value.push(data);
 		}
 	});
+}
+
+/**
+ * Create a snippet collection for definitions.
+ * @param snippetCollection 
+ * @param data 
+ */
+function createCollection(snippetCollectionName: string, dataArray: Array<any>) {
+	dataArray.forEach((data) => {
+		createSnippet(snippetCollectionName, data.name, data.snippet, data.documentation);
+	});
+}
+
+export function loadSnippets(snippetCollectionName: string, dataArray: Array<any>, prefixToToggle: any): vscode.Disposable {
+	dataArray.forEach((data) => {
+		createSnippet(snippetCollectionName, data.name, data.snippet, data.documentation);
+	});
+
+	return vscode.languages.registerCompletionItemProvider(
+		'javascript', 
+		{
+			provideCompletionItems(document: vscode.TextDocument, position: vscode.Position, token: vscode.CancellationToken, context: vscode.CompletionContext) {
+				return snippets.get(snippetCollectionName);
+			}
+		},
+		prefixToToggle
+	);
 }

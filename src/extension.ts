@@ -5,35 +5,33 @@
 
 import * as vscode from 'vscode';
 import * as snippetHelper from './snippetHelper';
-import altServerJSON from './json/alt-server.json';
 
-interface SnippetTemplate {
-	name: string;
-	snippet: string;
-	documentation: string;
-}
+// JSON Files
+import altServerJSON from './json/alt-server.json';
+import altServerPositionJSON from './json/alt-server-position.json';
+import altServerPlayerJSON from './json/alt-server-player.json';
+import altWeatherIdsJSON from './json/alt-weather-ids.json';
 
 export function activate(context: vscode.ExtensionContext) {
 	vscode.window.showInformationMessage('alt:V auto complete has loaded.');
 
-	// Load Snippets
-	altServerJSON.forEach((data: SnippetTemplate) => {
-		snippetHelper.createSnippet('altserver', data.name, data.snippet, data.documentation);
-	});
-
-	// Load Snippets Into Completion Provider
-	const altServerDefs = vscode.languages.registerCompletionItemProvider('javascript', {
-			provideCompletionItems(document: vscode.TextDocument, position: vscode.Position, token: vscode.CancellationToken, context: vscode.CompletionContext) {
-				const serverResults = [];
-				return snippetHelper.snippets.get('altserver');
-			}
-		},
-	'alt.'
+	// alt-server.json
+	context.subscriptions.push(
+		snippetHelper.loadSnippets('altserver', altServerJSON, ['alt'])
+	);
+	
+	// alt-server-position.json
+	context.subscriptions.push(
+		snippetHelper.loadSnippets('altserverposition', altServerPositionJSON, ['pos'])
 	);
 
-	let disposable = vscode.commands.registerCommand('extension.helloWorld', () => {
-		vscode.window.showInformationMessage('alt:V Extension has loaded.');
-	});
+	// alt-server-player.json
+	context.subscriptions.push(
+		snippetHelper.loadSnippets('altserverplayer', altServerPlayerJSON, ['player'])
+	);
 
-	context.subscriptions.push(altServerDefs, disposable);
+	// alt-weather-ids.json
+	context.subscriptions.push(
+		snippetHelper.loadSnippets('altweatherids', altWeatherIdsJSON, ['weather'])
+	);
 }
