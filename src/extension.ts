@@ -11,6 +11,7 @@ import altServerJSON from './json/alt-server.json';
 import altServerPositionJSON from './json/alt-server-position.json';
 import altServerPlayerJSON from './json/alt-server-player.json';
 import altWeatherIdsJSON from './json/alt-weather-ids.json';
+import altServerVehicleJSON from './json/alt-server-vehicle.json';
 
 export function activate(context: vscode.ExtensionContext) {
 	vscode.window.showInformationMessage('alt:V auto complete has loaded.');
@@ -33,5 +34,10 @@ export function activate(context: vscode.ExtensionContext) {
 	// alt-weather-ids.json
 	context.subscriptions.push(
 		snippetHelper.loadSnippets('altweatherids', altWeatherIdsJSON, ['weather'])
+	);
+
+	// alt-server-vehicle.json
+	context.subscriptions.push(
+		snippetHelper.loadSnippets('altservervehicle', altServerVehicleJSON, ['veh'])
 	);
 }

@@ -103,5 +103,30 @@
 		"name": "player.setWeather",
 		"snippet": "player.setWeather(${0});",
 		"documentation": "Set the weather. Type 'weather' in the parenthesis to list weather types."
+	},
+	{
+		"name": "player.removeWeapon",
+		"snippet": "player.removeWeapon(${1:weaponHash});${0}",
+		"documentation": "Remove a weapon by hash from the player."
+	},
+	{
+		"name": "player.getSyncedMeta",
+		"snippet": "player.getSyncedMeta('${1:keyString}');${0}",
+		"documentation": "Get the data that is synced to a keyword."
+	},
+	{
+		"name": "player.setSyncedMeta",
+		"snippet": "player.setSyncedMeta('${1:keyString}', ${2:dataOfAny});${0}",
+		"documentation": "Set the data that will be synced to this player."
+	},
+	{
+		"name": "player.getMeta",
+		"snippet": "player.getMeta('${1:keyString}');${0}",
+		"documentation": "Get the data that will be on this player."
+	},
+	{
+		"name": "player.setMeta",
+		"snippet": "player.setMeta('${1:keyString}', ${2:dataOfAny});${0}",
+		"documentation": "Get the data that will be on this player."
 	}
 ]
