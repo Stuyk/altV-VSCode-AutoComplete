@@ -129,5 +129,40 @@
 		"name": "alt.newPointBlip",
 		"snippet": "new alt.PointBlip(${1:type}, ${2:x}, ${3:y}, ${4:z});${0}",
 		"documentation": "Create a new PointBlip"
+	},
+	{
+		"name": "alt.newCheckpoint",
+		"snippet": "new alt.Checkpoint(${1:type}, ${2:x}, ${3:y}, ${4:z}, ${5:radius}, ${6:height}, ${7:r}, ${8:g}, ${9:b}, ${10:alpha});${0}",
+		"documentation": "Create a new Checkpoint"
+	},
+	{
+		"name": "alt.newVoiceChannel",
+		"snippet": "new alt.VoiceChannel(${1:isSpatial}, ${2:maxDistance});${0}",
+		"documentation": "Create a new Voice Channel"
+	},
+	{
+		"name": "alt.newColshapeCylinder",
+		"snippet": "new alt.ColshapeCylinder(${1:x}, ${2:y}, ${3:z}, ${4:radius}, ${5:height});${0}",
+		"documentation": "Create a new ColshapeCylinder"
+	},
+	{
+		"name": "alt.newColshapeSphere",
+		"snippet": "new alt.ColshapeSphere(${1:x}, ${2:y}, ${3:z}, ${4:radius});${0}",
+		"documentation": "Create a new ColshapeSphere"
+	},
+	{
+		"name": "alt.newColshapeCircle",
+		"snippet": "new alt.ColshapeCircle(${1:x}, ${2:y}, ${3:radius});${0}",
+		"documentation": "Create a new ColshapeCircle"
+	},
+	{
+		"name": "alt.newColshapeCuboid",
+		"snippet": "new alt.ColshapeCuboid(${1:x1}, ${2:y1}, ${3:z1}, ${4:x2}, ${5:y2}, ${6:z2});${0}",
+		"documentation": "Create a new ColshapeCuboid"
+	},
+	{
+		"name": "alt.newColshapeRectangle",
+		"snippet": "new alt.ColshapeRectangle(${1:x1}, ${2:y2}, ${3:x2}, ${4:y2});${0}",
+		"documentation": "Create a new ColshapeRectangle"
 	}
 ]

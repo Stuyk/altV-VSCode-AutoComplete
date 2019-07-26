@@ -12,3 +12,7 @@ Its quite simply really; just type some of the following in a javascript file an
 
 * alt.
 * native.
+
+### Extra
+
+I stream alt:V development from time to time; you can check me out on twitch [twitch.tv/stuykgaming](https://www.twitch.tv/stuykgaming).
