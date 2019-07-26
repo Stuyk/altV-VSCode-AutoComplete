@@ -19,7 +19,7 @@ export function activate(context: vscode.ExtensionContext) {
 
 	// alt-server.json
 	context.subscriptions.push(
-		snippetHelper.loadSnippets('altserver', altServerJSON, ['alt'])
+		snippetHelper.loadSnippets('altserver', altServerJSON, ['alts'])
 	);
 	
 	// alt-server-position.json
