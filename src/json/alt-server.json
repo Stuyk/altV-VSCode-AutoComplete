@@ -169,5 +169,25 @@
 		"name": "server_Player.all",
 		"snippet": "alt.Player.all;",
 		"documentation": "Return all players. @returns array"
+	},
+	{
+		"name": "server_hash",
+		"snippet": "alt.hash(${1:string}){$0}",
+		"documentation": "hashes a string"
+	},
+	{
+		"name": "server_off",
+		"snippet": "alt.off(${1:eventName}){$0}",
+		"documentation": "Turns listening to an event off."
+	},
+	{
+		"name": "server_off",
+		"snippet": "alt.offClient(${1:eventName}){$0}",
+		"documentation": "Turns listening to an event off for clientEvent"
+	},
+	{
+		"name": "server_rootDir",
+		"snippet": "alt.offClient(${1:eventName}){$0}",
+		"documentation": "Turns listening to an event off for clientEvent"
 	}
 ]
