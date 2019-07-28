@@ -1,6 +1,6 @@
 [
 	{
-		"name": "altc.onServer",
+		"name": "client_onServer",
 		"snippet": "alt.onServer('$1', ($2) => {$0});",
 		"documentation": "Event for when a player connects to the server."
 	}

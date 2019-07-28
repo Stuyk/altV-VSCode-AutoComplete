@@ -25,13 +25,14 @@ After press enter on the selection of your auto-fill; it will automatically defa
 
 Its quite simply really; just type some of the following in a javascript file and the rest should pop up.
 
-* alts
-* natives
-* player
-* vehicle
+* server_
+* client_
+* native_
+* player_
+* vehicle_
 * weather
-* pos
-* chat
+* pos_
+* chat_
 
 After press enter on the selection of your auto-fill; it will automatically default to `alt.`, `native.` and `chat.`.
 

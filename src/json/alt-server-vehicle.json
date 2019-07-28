@@ -1,381 +1,381 @@
 [
 	{
-		"name": "vehicle.activeRadioStation",
+		"name": "vehicle_activeRadioStation",
 		"snippet": "vehicle.activeRadioStation",
 		"documentation": "get active radio station. @returns number"
 	},
 	{
-		"name": "vehicle.setActiveRadioStation",
+		"name": "vehicle_setActiveRadioStation",
 		"snippet": "vehicle.activeRadioStation = ${1:number};${0}",
 		"documentation": "set active radio station"
 	},
 	{
-		"name": "vehicle.bodyAdditionalHealth",
+		"name": "vehicle_bodyAdditionalHealth",
 		"snippet": "vehicle.bodyAdditionalHealth;${0}",
 		"documentation": "get additional vehicle body health. @returns number"
 	},
 	{
-		"name": "vehicle.setBodyAdditionalHealth",
+		"name": "vehicle_setBodyAdditionalHealth",
 		"snippet": "vehicle.bodyAdditionalHealth = ${1:number};${0}",
 		"documentation": "set additional vehicle body health"
 	},
 	{
-		"name": "vehicle.bodyHealth",
+		"name": "vehicle_bodyHealth",
 		"snippet": "vehicle.bodyHealth;${0}",
 		"documentation": "get vehicle body health. @returns number"
 	},
 	{
-		"name": "vehicle.setBodyHealth",
+		"name": "vehicle_setBodyHealth",
 		"snippet": "vehicle.bodyHealth = ${1:number};${0}",
 		"documentation": "set vehicle body health"
 	},
 	{
-		"name": "vehicle.setCustomPrimaryColor",
+		"name": "vehicle_setCustomPrimaryColor",
 		"snippet": "vehicle.customPrimaryColor = {r: ${1:r}, g: ${2:g}, b: ${3:b}};${0}",
 		"documentation": "set vehicle vehicle primary color: 0-255"
 	},
 	{
-		"name": "vehicle.customPrimaryColor",
+		"name": "vehicle_customPrimaryColor",
 		"snippet": "vehicle.customPrimaryColor;${0}",
 		"documentation": "get vehicle vehicle primary color. @returns rgbObject"
 	},
 	{
-		"name": "vehicle.setCustomSecondaryColor",
+		"name": "vehicle_setCustomSecondaryColor",
 		"snippet": "vehicle.customSecondaryColor = {r: ${1:r}, g: ${2:g}, b: ${3:b}};${0}",
 		"documentation": "get vehicle vehicle secondary color: 0-255"
 	},
 	{
-		"name": "vehicle.customSecondaryColor",
+		"name": "vehicle_customSecondaryColor",
 		"snippet": "vehicle.customSecondaryColor;${0}",
 		"documentation": "get vehicle vehicle secondary color. @returns rgbObject"
 	},
 	{
-		"name": "vehicle.customTires",
+		"name": "vehicle_customTires",
 		"snippet": "vehicle.customTires;${0}",
 		"documentation": "Get vehicle custom tires. @returns boolean"
 	},
 	{
-		"name": "vehicle.setCustomTires",
+		"name": "vehicle_setCustomTires",
 		"snippet": "vehicle.customTires = ${1:true|false};${0}",
 		"documentation": "Set vehicle custom tires: boolean"
 	},
 	{
-		"name": "vehicle.setDarkness",
+		"name": "vehicle_setDarkness",
 		"snippet": "vehicle.darkness = ${1:number};${0}",
 		"documentation": "Set vehicle darkness"
 	},
 	{
-		"name": "vehicle.darkness",
+		"name": "vehicle_darkness",
 		"snippet": "vehicle.darkness;${0}",
 		"documentation": "Get vehicle darkness. @returns number"
 	},
 	{
-		"name": "vehicle.dashboardColor",
+		"name": "vehicle_dashboardColor",
 		"snippet": "vehicle.dashboardColor;${0}",
 		"documentation": "Get vehicle dashboard color. @returns number"
 	},
 	{
-		"name": "vehicle.setDashboardColor",
+		"name": "vehicle_setDashboardColor",
 		"snippet": "vehicle.dashboardColor = ${1:number};${0}",
 		"documentation": "Get vehicle dashboard color."
 	},
 	{
-		"name": "vehicle.daylightOn",
+		"name": "vehicle_daylightOn",
 		"snippet": "vehicle.dashboardColor;${0}",
 		"documentation": "get daylights. @returns boolean"
 	},
 	{
-		"name": "vehicle.dirtLevel",
+		"name": "vehicle_dirtLevel",
 		"snippet": "vehicle.dirtLevel;${0}",
 		"documentation": "get dirt level. @returns number"
 	},
 	{
-		"name": "vehicle.dirtLevel",
+		"name": "vehicle_dirtLevel",
 		"snippet": "vehicle.dirtLevel = ${1:number};${0}",
 		"documentation": "set dirt level."
 	},
 	{
-		"name": "vehicle.driver",
+		"name": "vehicle_driver",
 		"snippet": "vehicle.drive;${0}",
 		"documentation": "get the current driver. @returns alt.Player"
 	},
 	{
-		"name": "vehicle.engineHealth",
+		"name": "vehicle_engineHealth",
 		"snippet": "vehicle.engineHealth;${0}",
 		"documentation": "get the engine health. @returns number"
 	},
 	{
-		"name": "vehicle.setEngineHealth",
+		"name": "vehicle_setEngineHealth",
 		"snippet": "vehicle.engineHealth = ${1:number};${0}",
 		"documentation": "set the engine health."
 	},
 	{
-		"name": "vehicle.setEngineOn",
+		"name": "vehicle_setEngineOn",
 		"snippet": "vehicle.engineOn = ${1:boolean};${0}",
 		"documentation": "set the engine state"
 	},
 	{
-		"name": "vehicle.engineOn",
+		"name": "vehicle_engineOn",
 		"snippet": "vehicle.engineOn;${0}",
 		"documentation": "get the engine state. @returns boolean"
 	},
 	{
-		"name": "vehicle.flamethrowerActive",
+		"name": "vehicle_flamethrowerActive",
 		"snippet": "vehicle.flamethrowerActive;${0}",
 		"documentation": "is flamethrower active? @returns boolean"
 	},
 	{
-		"name": "vehicle.handbrakeActive",
+		"name": "vehicle_handbrakeActive",
 		"snippet": "vehicle.handbrakeActive;${0}",
 		"documentation": "is handbrake active? @returns boolean"
 	},
 	{
-		"name": "vehicle.hasArmoredWindows",
+		"name": "vehicle_hasArmoredWindows",
 		"snippet": "vehicle.hasArmoredWindows;${0}",
 		"documentation": "has armored windows? @returns number"
 	},
 	{
-		"name": "vehicle.headlightColor",
+		"name": "vehicle_headlightColor",
 		"snippet": "vehicle.headlightColor;${0}",
 		"documentation": "get headlight color @returns number"
 	},
 	{
-		"name": "vehicle.setHeadlightColor",
+		"name": "vehicle_setHeadlightColor",
 		"snippet": "vehicle.headlightColor = ${1:number};${0}",
 		"documentation": "set headlight color"
 	},
 	{
-		"name": "vehicle.setInteriorColor",
+		"name": "vehicle_setInteriorColor",
 		"snippet": "vehicle.interiorColor = ${1:number};${0}",
 		"documentation": "set interior color color"
 	},
 	{
-		"name": "vehicle.interiorColor",
+		"name": "vehicle_interiorColor",
 		"snippet": "vehicle.interiorColor;${0}",
 		"documentation": "get interior color @returns number"
 	},
 	{
-		"name": "vehicle.setLockState",
+		"name": "vehicle_setLockState",
 		"snippet": "vehicle.lockState = ${1:number};${0}",
 		"documentation": "set lock state"
 	},
 	{
-		"name": "vehicle.lockState",
+		"name": "vehicle_lockState",
 		"snippet": "vehicle.lockState;${0}",
 		"documentation": "get lock state @returns number"
 	},
 	{
-		"name": "vehicle.setManualEngineControl",
+		"name": "vehicle_setManualEngineControl",
 		"snippet": "vehicle.manualEngineControl = ${1:boolean};${0}",
 		"documentation": "set manual engine control"
 	},
 	{
-		"name": "vehicle.manualEngineControl",
+		"name": "vehicle_manualEngineControl",
 		"snippet": "vehicle.manualEngineControl;${0}",
 		"documentation": "get manual engine control @returns boolean"
 	},
 	{
-		"name": "vehicle.setModKit",
+		"name": "vehicle_setModKit",
 		"snippet": "vehicle.modKit = ${1:number};${0}",
 		"documentation": "set mod kit"
 	},
 	{
-		"name": "vehicle.modKit",
+		"name": "vehicle_modKit",
 		"snippet": "vehicle.modKit;${0}",
 		"documentation": "get modkit @returns number"
 	},
 	{
-		"name": "vehicle.modKitsCount",
+		"name": "vehicle_modKitsCount",
 		"snippet": "vehicle.modKitsCount;${0}",
 		"documentation": "get mod kits count. @returns number"
 	},
 	{
-		"name": "vehicle.setNeon",
+		"name": "vehicle_setNeon",
 		"snippet": "vehicle.neon = ${1:object?};${0}",
 		"documentation": "set neon"
 	},
 	{
-		"name": "vehicle.neon",
+		"name": "vehicle_neon",
 		"snippet": "vehicle.neon;${0}",
 		"documentation": "get neon @returns object?"
 	},
 	{
-		"name": "vehicle.setNeonColor",
+		"name": "vehicle_setNeonColor",
 		"snippet": "vehicle.neonColor = {r: ${1:r}, g: ${2:g}, b: ${3:b}};${0}",
 		"documentation": "set neon color"
 	},
 	{
-		"name": "vehicle.neonColor",
+		"name": "vehicle_neonColor",
 		"snippet": "vehicle.neonColor;${0}",
 		"documentation": "get neon color @returns object? or RGB?"
 	},
 	{
-		"name": "vehicle.nightlightOn",
+		"name": "vehicle_nightlightOn",
 		"snippet": "vehicle.nightLightOn;${0}",
 		"documentation": "get nightlight state @returns boolean"
 	},
 	{
-		"name": "vehicle.setNumberPlateIndex",
+		"name": "vehicle_setNumberPlateIndex",
 		"snippet": "vehicle.numberPlateIndex = ${1:number};${0}",
 		"documentation": "set number plate index"
 	},
 	{
-		"name": "vehicle.numberPlateIndex",
+		"name": "vehicle_numberPlateIndex",
 		"snippet": "vehicle.numberPlateIndex;${0}",
 		"documentation": "get number plate index @returns number"
 	},
 	{
-		"name": "vehicle.setNumberPlateText",
+		"name": "vehicle_setNumberPlateText",
 		"snippet": "vehicle.numberPlateText = ${1:string};${0}",
 		"documentation": "set number plate text"
 	},
 	{
-		"name": "vehicle.numberPlateText",
+		"name": "vehicle_numberPlateText",
 		"snippet": "vehicle.numberPlateText;${0}",
 		"documentation": "get number plate text @returns string"
 	},
 	{
-		"name": "vehicle.setPearlColor",
+		"name": "vehicle_setPearlColor",
 		"snippet": "vehicle.pearlColor = ${1:number};${0}",
 		"documentation": "set pearl color"
 	},
 	{
-		"name": "vehicle.pearlColor",
+		"name": "vehicle_pearlColor",
 		"snippet": "vehicle.pearlColor;${0}",
 		"documentation": "get pearl color @returns number"
 	},
 	{
-		"name": "vehicle.setPetrolTankHealth",
+		"name": "vehicle_setPetrolTankHealth",
 		"snippet": "vehicle.petrolTankHealth = ${1:number};${0}",
 		"documentation": "set petrol tank health"
 	},
 	{
-		"name": "vehicle.petrolTankHealth",
+		"name": "vehicle_petrolTankHealth",
 		"snippet": "vehicle.petrolTankHealth;${0}",
 		"documentation": "get petrol tank health @returns number"
 	},
 	{
-		"name": "vehicle.setPrimaryColor",
+		"name": "vehicle_setPrimaryColor",
 		"snippet": "vehicle.primaryColor = ${1:number};${0}",
 		"documentation": "set primary vehicle color 0-255"
 	},
 	{
-		"name": "vehicle.primaryColor",
+		"name": "vehicle_primaryColor",
 		"snippet": "vehicle.primaryColor;${0}",
 		"documentation": "get primary vehicle color @returns number"
 	},
 	{
-		"name": "vehicle.setSecondaryColor",
+		"name": "vehicle_setSecondaryColor",
 		"snippet": "vehicle.secondaryColor = ${1:number};${0}",
 		"documentation": "set secondary vehicle color 0-255"
 	},
 	{
-		"name": "vehicle.secondaryColor",
+		"name": "vehicle_secondaryColor",
 		"snippet": "vehicle.secondaryColor;${0}",
 		"documentation": "get secondary vehicle color @returns number"
 	},
 	{
-		"name": "vehicle.repairsCount",
+		"name": "vehicle_repairsCount",
 		"snippet": "vehicle.repairsCount;${0}",
 		"documentation": "get total number of repairs @returns number"
 	},
 	{
-		"name": "vehicle.setRoofOpened",
+		"name": "vehicle_setRoofOpened",
 		"snippet": "vehicle.roofOpened = ${1:boolean};${0}",
 		"documentation": "set vehicle roof state"
 	},
 	{
-		"name": "vehicle.roofOpened",
+		"name": "vehicle_roofOpened",
 		"snippet": "vehicle.roofOpened;${0}",
 		"documentation": "get roof state @returns boolean"
 	},
 	{
-		"name": "vehicle.setSirenActive",
+		"name": "vehicle_setSirenActive",
 		"snippet": "vehicle.sirenActive = ${1:boolean};${0}",
 		"documentation": "set vehicle siren state"
 	},
 	{
-		"name": "vehicle.sirenActive",
+		"name": "vehicle_sirenActive",
 		"snippet": "vehicle.sirenActive;${0}",
 		"documentation": "get vehicle siren state @returns boolean"
 	},
 	{
-		"name": "vehicle.setTireSmokeColor",
+		"name": "vehicle_setTireSmokeColor",
 		"snippet": "vehicle.tireSmokeColor = {r: ${1:r}, g: ${2:g}, b: ${3:b}};${0}",
 		"documentation": "set vehicle tire smoke color"
 	},
 	{
-		"name": "vehicle.tireSmokeColor",
+		"name": "vehicle_tireSmokeColor",
 		"snippet": "vehicle.tireSmokeColor;${0}",
 		"documentation": "get vehicle tire smoke color @returns rgbObject"
 	},
 	{
-		"name": "vehicle.setWheelColor",
+		"name": "vehicle_setWheelColor",
 		"snippet": "vehicle.wheelColor = ${1:number};${0}",
 		"documentation": "set wheel color"
 	},
 	{
-		"name": "vehicle.wheelColor",
+		"name": "vehicle_wheelColor",
 		"snippet": "vehicle.wheelColor;${0}",
 		"documentation": "get vehicle wheel color @returns number"
 	},
 	{
-		"name": "vehicle.wheelsCount",
+		"name": "vehicle_wheelsCount",
 		"snippet": "vehicle.wheelsCount;${0}",
 		"documentation": "get vehicle wheel count @returns number"
 	},
 	{
-		"name": "vehicle.setWindowTint",
+		"name": "vehicle_setWindowTint",
 		"snippet": "vehicle.windowTint = ${1:number};${0}",
 		"documentation": "set window tint"
 	},
 	{
-		"name": "vehicle.windowTint",
+		"name": "vehicle_windowTint",
 		"snippet": "vehicle.windowTint;${0}",
 		"documentation": "get window tint @returns number"
 	},
 	{
-		"name": "vehicle.id",
+		"name": "vehicle_id",
 		"snippet": "vehicle.id;${0}",
 		"documentation": "get vehicle id @returns number"
 	},
 	{
-		"name": "vehicle.model",
+		"name": "vehicle_model",
 		"snippet": "vehicle.model;${0}",
 		"documentation": "get vehicle model @returns number"
 	},
 	{
-		"name": "vehicle.setModel",
+		"name": "vehicle_setModel",
 		"snippet": "vehicle.model = ${1:modelName};${0}",
 		"documentation": "set vehicle model"
 	},
 	{
-		"name": "vehicle.rot",
+		"name": "vehicle_rot",
 		"snippet": "vehicle.rot;${0}",
 		"documentation": "get vehicle rotation @returns Vector3"
 	},
 	{
-		"name": "vehicle.setRot",
+		"name": "vehicle_setRot",
 		"snippet": "vehicle.rot = {x: ${1:x}, y: ${2:y}, z: ${3:z}};${0}",
 		"documentation": "set vehicle rotation"
 	},
 	{
-		"name": "vehicle.pos",
+		"name": "vehicle_pos",
 		"snippet": "vehicle.pos;${0}",
 		"documentation": "get vehicle position @returns Vector3"
 	},
 	{
-		"name": "vehicle.setPos",
+		"name": "vehicle_setPos",
 		"snippet": "vehicle.pos = {x: ${1:x}, y: ${2:y}, z: ${3:z}};${0}",
 		"documentation": "set vehicle position"
 	},
 	{
-		"name": "vehicle.dimension",
+		"name": "vehicle_dimension",
 		"snippet": "vehicle.dimension;${0}",
 		"documentation": "get vehicle dimension @returns number"
 	},
 	{
-		"name": "vehicle.setDimension",
+		"name": "vehicle_setDimension",
 		"snippet": "vehicle.dimension = ${1:number};${0}",
 		"documentation": "set vehicle dimension"
 	}
