@@ -1,0 +1,17 @@
+[
+	{
+		"name": "chat.registerCmd",
+		"snippet": "chat.registerCmd('${1:command}',(${2:params,}) => {$0});",
+		"documentation": "Create a command for the chat."
+	},
+	{
+		"name": "chat.send",
+		"snippet": "chat.send(player, '${1:message}');",
+		"documentation": "Send the player a message."
+	},
+	{
+		"name": "chat.broadcast",
+		"snippet": "chat.broadcast('${1:message}');",
+		"documentation": "All players will recieve that message."
+	}
+]

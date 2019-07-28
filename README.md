@@ -12,13 +12,14 @@ alt:V is a Grand Theft Auto: V custom multiplayer client that supports up to 100
 
 ### VERY IMPORTANT
 
-When you're importing 'alt' and 'natives' please use only the following methods:
+When you're importing 'alt', 'natives' and 'chat' please use only the following methods:
 ```
 import * as alt from 'alt';
 import * as native from 'natives';
+import * as chat from 'chat';
 ```
 
-After press enter on the selection of your auto-fill; it will automatically default to `alt.` or `native.`.
+After press enter on the selection of your auto-fill; it will automatically default to `alt.`, `native.` and `chat.`.
 
 ### Usage
 
@@ -30,8 +31,9 @@ Its quite simply really; just type some of the following in a javascript file an
 * vehicle
 * weather
 * pos
+* chat
 
-After press enter on the selection of your auto-fill; it will automatically default to `alt.` or `native.`.
+After press enter on the selection of your auto-fill; it will automatically default to `alt.`, `native.` and `chat.`.
 
 ---
 
