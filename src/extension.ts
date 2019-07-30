@@ -15,6 +15,7 @@ import altServerVehicleJSON from './json/alt-server-vehicle.json';
 import altClientNativesJSON from './json/alt-client-natives.json';
 import altChatJSON from './json/alt-chat.json';
 import altClientJSON from './json/alt-client.json';
+import altWeaponJSON from './json/alt-weapon-ids.json';
 
 export function activate(context: vscode.ExtensionContext) {
 	vscode.window.showInformationMessage('alt:V auto complete has loaded.');
@@ -57,5 +58,10 @@ export function activate(context: vscode.ExtensionContext) {
 	// alt-client.json
 	context.subscriptions.push(
 		snippetHelper.loadSnippets('altclient', altClientJSON, ['client_'])
+	);
+
+	// alt-weapon-ids.json
+	context.subscriptions.push(
+		snippetHelper.loadSnippets('altweaponids', altWeaponJSON, ['weapon_'])
 	);
 }

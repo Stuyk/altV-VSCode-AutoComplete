@@ -1,0 +1,462 @@
+[
+	{
+			"name": "weapon_AntiqueCavalryDagger",
+			"snippet": "24601201",
+			"description": ""
+	},
+	{
+			"name": "weapon_BaseballBat",
+			"snippet": "2508868239",
+			"description": ""
+	},
+	{
+			"name": "weapon_BrokenBottle",
+			"snippet": "4192643659",
+			"description": ""
+	},
+	{
+			"name": "weapon_Crowbar",
+			"snippet": "2227010557",
+			"description": ""
+	},
+	{
+			"name": "weapon_Fist",
+			"snippet": "2725352035",
+			"description": ""
+	},
+	{
+			"name": "weapon_Flashlight",
+			"snippet": "2343591895",
+			"description": ""
+	},
+	{
+			"name": "weapon_GolfClub",
+			"snippet": "1141786504",
+			"description": ""
+	},
+	{
+			"name": "weapon_Hammer",
+			"snippet": "1317494643",
+			"description": ""
+	},
+	{
+			"name": "weapon_Hatchet",
+			"snippet": "4191993645",
+			"description": ""
+	},
+	{
+			"name": "weapon_BrassKnuckles",
+			"snippet": "3638508604",
+			"description": ""
+	},
+	{
+			"name": "weapon_Knife",
+			"snippet": "2578778090",
+			"description": ""
+	},
+	{
+			"name": "weapon_Machete",
+			"snippet": "3713923289",
+			"description": ""
+	},
+	{
+			"name": "weapon_Switchblade",
+			"snippet": "3756226112",
+			"description": ""
+	},
+	{
+			"name": "weapon_Nightstick",
+			"snippet": "1737195953",
+			"description": ""
+	},
+	{
+			"name": "weapon_PipeWrench",
+			"snippet": "419712736",
+			"description": ""
+	},
+	{
+			"name": "weapon_BattleAxe",
+			"snippet": "3441901897",
+			"description": ""
+	},
+	{
+			"name": "weapon_PoolCue",
+			"snippet": "2484171525",
+			"description": ""
+	},
+	{
+			"name": "weapon_StoneHatchet",
+			"snippet": "940833800",
+			"description": ""
+	},
+	{
+			"name": "weapon_Pistol",
+			"snippet": "453432689",
+			"description": ""
+	},
+	{
+			"name": "weapon_PistolMkII",
+			"snippet": "3219281620",
+			"description": ""
+	},
+	{
+			"name": "weapon_CombatPistol",
+			"snippet": "1593441988",
+			"description": ""
+	},
+	{
+			"name": "weapon_APPistol",
+			"snippet": "584646201",
+			"description": ""
+	},
+	{
+			"name": "weapon_StunGun",
+			"snippet": "911657153",
+			"description": ""
+	},
+	{
+			"name": "weapon_Pistol50",
+			"snippet": "2578377531",
+			"description": ""
+	},
+	{
+			"name": "weapon_SNSPistol",
+			"snippet": "3218215474",
+			"description": ""
+	},
+	{
+			"name": "weapon_SNSPistolMkII",
+			"snippet": "2285322324",
+			"description": ""
+	},
+	{
+			"name": "weapon_HeavyPistol",
+			"snippet": "3523564046",
+			"description": ""
+	},
+	{
+			"name": "weapon_VintagePistol",
+			"snippet": "137902532",
+			"description": ""
+	},
+	{
+			"name": "weapon_FlareGun",
+			"snippet": "1198879012",
+			"description": ""
+	},
+	{
+			"name": "weapon_MarksmanPistol",
+			"snippet": "3696079510",
+			"description": ""
+	},
+	{
+			"name": "weapon_HeavyRevolver",
+			"snippet": "3249783761",
+			"description": ""
+	},
+	{
+			"name": "weapon_HeavyRevolverMkII",
+			"snippet": "3415619887",
+			"description": ""
+	},
+	{
+			"name": "weapon_DoubleActionRevolver",
+			"snippet": "25487034",
+			"description": ""
+	},
+	{
+			"name": "weapon_UpnAtomizer",
+			"snippet": "2939590305",
+			"description": ""
+	},
+	{
+			"name": "weapon_MicroSMG",
+			"snippet": "324215364",
+			"description": ""
+	},
+	{
+			"name": "weapon_SMG",
+			"snippet": "736523883",
+			"description": ""
+	},
+	{
+			"name": "weapon_SMGMkII",
+			"snippet": "2024373456",
+			"description": ""
+	},
+	{
+			"name": "weapon_AssaultSMG",
+			"snippet": "4024951519",
+			"description": ""
+	},
+	{
+			"name": "weapon_CombatPDW",
+			"snippet": "171789620",
+			"description": ""
+	},
+	{
+			"name": "weapon_MachinePistol",
+			"snippet": "3675956304",
+			"description": ""
+	},
+	{
+			"name": "weapon_MiniSMG",
+			"snippet": "3173288789",
+			"description": ""
+	},
+	{
+			"name": "weapon_UnholyHellbringer",
+			"snippet": "1198256469",
+			"description": ""
+	},
+	{
+			"name": "weapon_PumpShotgun",
+			"snippet": "487013001",
+			"description": ""
+	},
+	{
+			"name": "weapon_PumpShotgunMkII",
+			"snippet": "1432025498",
+			"description": ""
+	},
+	{
+			"name": "weapon_SawedOffShotgun",
+			"snippet": "2017895192",
+			"description": ""
+	},
+	{
+			"name": "weapon_AssaultShotgun",
+			"snippet": "3800352039",
+			"description": ""
+	},
+	{
+			"name": "weapon_BullpupShotgun",
+			"snippet": "2640438543",
+			"description": ""
+	},
+	{
+			"name": "weapon_Musket",
+			"snippet": "2828843422",
+			"description": ""
+	},
+	{
+			"name": "weapon_HeavyShotgun",
+			"snippet": "984333226",
+			"description": ""
+	},
+	{
+			"name": "weapon_DoubleBarrelShotgun",
+			"snippet": "401952761",
+			"description": ""
+	},
+	{
+			"name": "weapon_SweeperShotgun",
+			"snippet": "317205821",
+			"description": ""
+	},
+	{
+			"name": "weapon_AssaultRifle",
+			"snippet": "3220176749",
+			"description": ""
+	},
+	{
+			"name": "weapon_AussaultRifleMkII",
+			"snippet": "961495388",
+			"description": ""
+	},
+	{
+			"name": "weapon_CarbineRifle",
+			"snippet": "2210333304",
+			"description": ""
+	},
+	{
+			"name": "weapon_CarbineRifleMkII",
+			"snippet": "4208062921",
+			"description": ""
+	},
+	{
+			"name": "weapon_AdvancedRifle",
+			"snippet": "2937143193",
+			"description": ""
+	},
+	{
+			"name": "weapon_SpecialCarbine",
+			"snippet": "3231910285",
+			"description": ""
+	},
+	{
+			"name": "weapon_SpecialCarbineMkII",
+			"snippet": "2526821735",
+			"description": ""
+	},
+	{
+			"name": "weapon_BullpupRifle",
+			"snippet": "2132975508",
+			"description": ""
+	},
+	{
+			"name": "weapon_BullpupRifleMkII",
+			"snippet": "2228681469",
+			"description": ""
+	},
+	{
+			"name": "weapon_CompactRifle",
+			"snippet": "1649403952",
+			"description": ""
+	},
+	{
+			"name": "weapon_MG",
+			"snippet": "2634544996",
+			"description": ""
+	},
+	{
+			"name": "weapon_CombatMG",
+			"snippet": "2144741730",
+			"description": ""
+	},
+	{
+			"name": "weapon_CombatMGMkII",
+			"snippet": "3686625920",
+			"description": ""
+	},
+	{
+			"name": "weapon_GusenbergSweeper",
+			"snippet": "1627465347",
+			"description": ""
+	},
+	{
+			"name": "weapon_SniperRifle",
+			"snippet": "100416529",
+			"description": ""
+	},
+	{
+			"name": "weapon_HeavySniper",
+			"snippet": "205991906",
+			"description": ""
+	},
+	{
+			"name": "weapon_HeavySniperMkII",
+			"snippet": "177293209",
+			"description": ""
+	},
+	{
+			"name": "weapon_MarksmanRifle",
+			"snippet": "3342088282",
+			"description": ""
+	},
+	{
+			"name": "weapon_MarksmanRifleMkII",
+			"snippet": "1785463520",
+			"description": ""
+	},
+	{
+			"name": "weapon_RPG",
+			"snippet": "2982836145",
+			"description": ""
+	},
+	{
+			"name": "weapon_GrenadeLauncher",
+			"snippet": "2726580491",
+			"description": ""
+	},
+	{
+			"name": "weapon_GrenadeLauncherSmoke",
+			"snippet": "13056645",
+			"description": ""
+	},
+	{
+			"name": "weapon_Minigun",
+			"snippet": "1119849093",
+			"description": ""
+	},
+	{
+			"name": "weapon_FireworkLauncher",
+			"snippet": "2138347493",
+			"description": ""
+	},
+	{
+			"name": "weapon_Railgun",
+			"snippet": "1834241177",
+			"description": ""
+	},
+	{
+			"name": "weapon_HomingLauncher",
+			"snippet": "1672152130",
+			"description": ""
+	},
+	{
+			"name": "weapon_CompactGrenadeLauncher",
+			"snippet": "125959",
+			"description": ""
+	},
+	{
+			"name": "weapon_Widowmaker",
+			"snippet": "3056410471",
+			"description": ""
+	},
+	{
+			"name": "weapon_Grenade",
+			"snippet": "2481070269",
+			"description": ""
+	},
+	{
+			"name": "weapon_BZGas",
+			"snippet": "2694266206",
+			"description": ""
+	},
+	{
+			"name": "weapon_MolotovCocktail",
+			"snippet": "4256991824",
+			"description": ""
+	},
+	{
+			"name": "weapon_StickyBomb",
+			"snippet": "1233104067",
+			"description": ""
+	},
+	{
+			"name": "weapon_ProximityMines",
+			"snippet": "615608432",
+			"description": ""
+	},
+	{
+			"name": "weapon_Snowballs",
+			"snippet": "741814745",
+			"description": ""
+	},
+	{
+			"name": "weapon_PipeBombs",
+			"snippet": "2874559379",
+			"description": ""
+	},
+	{
+			"name": "weapon_Baseball",
+			"snippet": "126349499",
+			"description": ""
+	},
+	{
+			"name": "weapon_TearGas",
+			"snippet": "3125143736",
+			"description": ""
+	},
+	{
+			"name": "weapon_Flare",
+			"snippet": "600439132",
+			"description": ""
+	},
+	{
+			"name": "weapon_JerryCan",
+			"snippet": "314298409",
+			"description": ""
+	},
+	{
+			"name": "weapon_Parachute",
+			"snippet": "1940617049",
+			"description": ""
+	},
+	{
+			"name": "weapon_FireExtinguisher",
+			"snippet": "1532858877",
+			"description": ""
+	}
+]
