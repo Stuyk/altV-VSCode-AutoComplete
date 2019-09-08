@@ -20,6 +20,16 @@
 		"documentation": "get or set players health"
 	},
 	{
+		"name": "player_armour",
+		"snippet": "player.armour",
+		"documentation": "get player's armour"
+	},
+	{
+		"name": "player_setArmour",
+		"snippet": "player.armour = ${1:numberUpTo100};${0}",
+		"documentation": "set player's armour"
+	},
+	{
 		"name": "player_ping",
 		"snippet": "player.ping",
 		"documentation": "get the player's ping"
@@ -40,9 +50,29 @@
 		"documentation": "get the player's server id"
 	},
 	{
+		"name": "player_ip",
+		"snippet": "player.ip",
+		"documentation": "get the player's ip"
+	},
+	{
+		"name": "player_hwidExHash",
+		"snippet": "player.hwidExHash",
+		"documentation": "get the player's hwid ex hash"
+	},
+	{
+		"name": "player_hwidHash",
+		"snippet": "player.hwidHash",
+		"documentation": "get the player's hwid hash"
+	},
+	{
 		"name": "player_scriptID",
 		"snippet": "player.scriptID",
 		"documentation": "get the player's scriptID; used for client-side natives"
+	},
+	{
+		"name": "player_socialId",
+		"snippet": "player.socialId",
+		"documentation": "get the player's social id"
 	},
 	{
 		"name": "player_model",
@@ -56,7 +86,7 @@
 	},
 	{
 		"name": "player_rot",
-		"snippet": "player.model = ${1:modelAsString};${0}",
+		"snippet": "player.rot = { x: ${1:x}, y: ${2:y}, z: ${3:z} };${0}",
 		"documentation": "set the player's model"
 	},
 	{
@@ -81,7 +111,7 @@
 	},
 	{
 		"name": "player_giveWeapon",
-		"snippet": "player.giveWeapon(${1:weaponHashNumber}, ${2:ammo}, ${equipNow?});${0}",
+		"snippet": "player.giveWeapon(${1:weaponHashNumber}, ${2:ammo}, ${3:equipNow});${0}",
 		"documentation": "give the player a weapon"
 	},
 	{

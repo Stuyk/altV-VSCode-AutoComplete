@@ -378,6 +378,215 @@
 		"name": "vehicle_setDimension",
 		"snippet": "vehicle.dimension = ${1:number};${0}",
 		"documentation": "set vehicle dimension"
+	},
+	{
+		"name": "vehicle_doesWheelHasTire",
+		"snippet": "vehicle.doesWheelHasTire(${1:wheelId_number});${0}",
+		"documentation": ""
+	},
+	{
+		"name": "vehicle_getAppearanceDataBase64",
+		"snippet": "vehicle.getAppearanceDataBase64();${0}",
+		"documentation": ""
+	},
+	{
+		"name": "vehicle_getArmoredWindowHealth",
+		"snippet": "vehicle.getArmoredWindowHealth(${1:windowId_number});${0}",
+		"documentation": ""
+	},
+	{
+		"name": "vehicle_getArmoredWindowShootCount",
+		"snippet": "vehicle.getArmoredWindowShootCount(${1:windowId_number});${0}",
+		"documentation": ""
+	},
+	{
+		"name": "vehicle_getBumperDamageLevel",
+		"snippet": "vehicle.getBumperDamageLevel(${1:part_number});${0}",
+		"documentation": ""
+	},
+	{
+		"name": "vehicle_getDamageStatusBase64",
+		"snippet": "vehicle.getDamageStatusBase64();${0}",
+		"documentation": ""
+	},
+	{
+		"name": "vehicle_getDoorState",
+		"snippet": "vehicle.getDoorState(${1:doorId_number});${0}",
+		"documentation": ""
+	},
+	{
+		"name": "vehicle_getExtra",
+		"snippet": "vehicle.getExtra(${1:category_number});${0}",
+		"documentation": ""
+	},
+	{
+		"name": "vehicle_getGamestateDataBase64",
+		"snippet": "vehicle.getGamestateDataBase64();${0}",
+		"documentation": ""
+	},
+	{
+		"name": "vehicle_getHealthDataBase64",
+		"snippet": "vehicle.getHealthDataBase64();${0}",
+		"documentation": ""
+	},
+	{
+		"name": "vehicle_getMod",
+		"snippet": "vehicle.getMod(${1:category_number});${0}",
+		"documentation": ""
+	},
+	{
+		"name": "vehicle_getModsCount",
+		"snippet": "vehicle.getModsCount(${1:category_number});${0}",
+		"documentation": ""
+	},
+	{
+		"name": "vehicle_getPartBulletHoles",
+		"snippet": "vehicle.getPartBulletHoles(${1:part_number});${0}",
+		"documentation": ""
+	},
+	{
+		"name": "vehicle_getPartDamageLevel",
+		"snippet": "vehicle.getPartDamageLevel(${1:part_number});${0}",
+		"documentation": ""
+	},
+	{
+		"name": "vehicle_getScriptDataBase64",
+		"snippet": "vehicle.getScriptDataBase64();${0}",
+		"documentation": ""
+	},
+	{
+		"name": "vehicle_getWheelHealth",
+		"snippet": "vehicle.getWheelHealth(${1:wheelId_number});${0}",
+		"documentation": ""
+	},
+	{
+		"name": "vehicle_isLightDamaged",
+		"snippet": "vehicle.isLightDamaged(${1:lightId_number});${0}",
+		"documentation": ""
+	},
+	{
+		"name": "vehicle_isSpecialLightDamaged",
+		"snippet": "vehicle.isSpecialLightDamaged(${1:specialLightId_number});${0}",
+		"documentation": ""
+	},
+	{
+		"name": "vehicle_isWheelBurst",
+		"snippet": "vehicle.isWheelBurst(${1:wheelId_number});${0}",
+		"documentation": ""
+	},
+	{
+		"name": "vehicle_isWindowDamaged",
+		"snippet": "vehicle.isWindowDamaged(${1:windowId_number});${0}",
+		"documentation": ""
+	},
+	{
+		"name": "vehicle_isWindowOpened",
+		"snippet": "vehicle.isWindowOpened(${1:windowId_number});${0}",
+		"documentation": ""
+	},
+	{
+		"name": "vehicle_setAppearanceDataBase64",
+		"snippet": "vehicle.setAppearanceDataBase64(${1:appearanceData_string});${0}",
+		"documentation": ""
+	},
+	{
+		"name": "vehicle_setArmoredWindowHealth",
+		"snippet": "vehicle.setArmoredWindowHealth(${1:p0_number}, ${2:p1_number});${0}",
+		"documentation": ""
+	},
+	{
+		"name": "vehicle_setArmoredWindowShootCount",
+		"snippet": "vehicle.setArmoredWindowShootCount(${1:p0_number}, ${2:p1_number});${0}",
+		"documentation": ""
+	},
+	{
+		"name": "vehicle_setBumperDamageLevel",
+		"snippet": "vehicle.setBumperDamageLevel(${1:p0_number}, ${2:p1_number});${0}",
+		"documentation": ""
+	},
+	{
+		"name": "vehicle_setDamageStatusBase64",
+		"snippet": "vehicle.setDamageStatusBase64(${1:damageStatus_string});${0}",
+		"documentation": ""
+	},
+	{
+		"name": "vehicle_setDoorState",
+		"snippet": "vehicle.setDoorState(${1:doorID_number}, ${2:angle0to7or255_number});${0}",
+		"documentation": ""
+	},
+	{
+		"name": "vehicle_setExtra",
+		"snippet": "vehicle.setExtra(${1:category_number}, ${2:state_boolean});${0}",
+		"documentation": ""
+	},
+	{
+		"name": "vehicle_setGamestateDataBase64",
+		"snippet": "vehicle.setGamestateDataBase64(${1:gamestateData_string});${0}",
+		"documentation": ""
+	},
+	{
+		"name": "vehicle_setHealthDataBase64",
+		"snippet": "vehicle.setHealthDataBase64(${1:healthData_string});${0}",
+		"documentation": ""
+	},
+	{
+		"name": "vehicle_setLightDamaged",
+		"snippet": "vehicle.setLightDamaged(${1:p0_number}, ${2:p1_boolean});${0}",
+		"documentation": ""
+	},
+	{
+		"name": "vehicle_setMod",
+		"snippet": "vehicle.setMod(${1:category_number}, ${2:id_number});${0}",
+		"documentation": ""
+	},
+	{
+		"name": "vehicle_setPartBulletHoles",
+		"snippet": "vehicle.setPartBulletHoles(${1:p0_number}, ${2:p1_number});${0}",
+		"documentation": ""
+	},
+	{
+		"name": "vehicle_setPartDamageLevel",
+		"snippet": "vehicle.setPartDamageLevel(${1:p0_number}, ${2:p1_number});${0}",
+		"documentation": ""
+	},
+	{
+		"name": "vehicle_setScriptDataBase64",
+		"snippet": "vehicle.setScriptDataBase64(${1:scriptData_string});${0}",
+		"documentation": ""
+	},
+	{
+		"name": "vehicle_setSpecialLightDamaged",
+		"snippet": "vehicle.setSpecialLightDamaged(${1:p0_number}, ${2:p1_boolean});${0}",
+		"documentation": ""
+	},
+	{
+		"name": "vehicle_setWheelBurst",
+		"snippet": "vehicle.setWheelBurst(${1:p0_number}, ${2:p1_boolean});${0}",
+		"documentation": ""
+	},
+	{
+		"name": "vehicle_setWheelHasTire",
+		"snippet": "vehicle.setWheelHasTire(${1:p0_number}, ${2:p1_boolean});${0}",
+		"documentation": ""
+	},
+	{
+		"name": "vehicle_setWheelHealth",
+		"snippet": "vehicle.setWheelHealth(${1:wheelId_number}, ${2:health_number});${0}",
+		"documentation": ""
+	},
+	{
+		"name": "vehicle_setWheels",
+		"snippet": "vehicle.setWheels(${1:p0_number}, ${2:p1_number});${0}",
+		"documentation": ""
+	},
+	{
+		"name": "vehicle_setWindowDamaged",
+		"snippet": "vehicle.setWindowDamaged(${1:p0_number}, ${2:p1_boolean});${0}",
+		"documentation": ""
+	},
+	{
+		"name": "vehicle_setWindowOpened",
+		"snippet": "vehicle.setWindowOpened(${1:p0_number}, ${2:p1_boolean});${0}",
+		"documentation": ""
 	}
-
 ]
