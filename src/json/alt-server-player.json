@@ -30,6 +30,11 @@
 		"documentation": "set player's armour"
 	},
 	{
+		"name": "player_name",
+		"snippet": "player.name",
+		"documentation": "get the player's name"
+	},
+	{
 		"name": "player_ping",
 		"snippet": "player.ping",
 		"documentation": "get the player's ping"
