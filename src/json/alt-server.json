@@ -1,5 +1,10 @@
 [
 	{
+		"name": "a_",
+		"snippet": "alt",
+		"documentation": "Default alt import"
+	},
+	{
 		"name": "server_on",
 		"snippet": "alt.on('${1:eventName}', (${2:params,}) => {$0});",
 		"documentation": "Event for when a player connects to the server."
