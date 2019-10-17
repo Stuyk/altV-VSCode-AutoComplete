@@ -1,7 +1,7 @@
 {
 	"name": "atlv-complete",
 	"displayName": "alt:V Auto Complete",
-	"version": "0.1.1",
+	"version": "0.1.2",
 	"publisher": "stuyk",
 	"icon": "images/altv.png",
 	"repository": {
