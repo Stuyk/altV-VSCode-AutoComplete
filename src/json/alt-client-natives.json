@@ -1,7 +1,132 @@
 [
 	{
-		"name": "native_constructor",
-		"snippet": "native.constructor();${0}",
+		"name": "native_wait",
+		"snippet": "native.wait(${1:ms_number});${0}",
+		"documentation": ""
+	},
+	{
+		"name": "native_startNewScript",
+		"snippet": "native.startNewScript(${1:scriptName_string}, ${2:stackSize_number});${0}",
+		"documentation": ""
+	},
+	{
+		"name": "native_startNewScriptWithArgs",
+		"snippet": "native.startNewScriptWithArgs(${1:scriptName_string}, ${2:args_number}, ${3:argCount_number}, ${4:stackSize_number});${0}",
+		"documentation": ""
+	},
+	{
+		"name": "native_startNewScriptWithNameHash",
+		"snippet": "native.startNewScriptWithNameHash(${1:scriptHash_number}, ${2:stackSize_number});${0}",
+		"documentation": ""
+	},
+	{
+		"name": "native_startNewScriptWithNameHashAndArgs",
+		"snippet": "native.startNewScriptWithNameHashAndArgs(${1:scriptHash_number}, ${2:args_number}, ${3:argCount_number}, ${4:stackSize_number});${0}",
+		"documentation": ""
+	},
+	{
+		"name": "native_timera",
+		"snippet": "native.timera();${0}",
+		"documentation": ""
+	},
+	{
+		"name": "native_timerb",
+		"snippet": "native.timerb();${0}",
+		"documentation": ""
+	},
+	{
+		"name": "native_settimera",
+		"snippet": "native.settimera(${1:value_number});${0}",
+		"documentation": ""
+	},
+	{
+		"name": "native_settimerb",
+		"snippet": "native.settimerb(${1:value_number});${0}",
+		"documentation": ""
+	},
+	{
+		"name": "native_timestep",
+		"snippet": "native.timestep();${0}",
+		"documentation": ""
+	},
+	{
+		"name": "native_sin",
+		"snippet": "native.sin(${1:value_number});${0}",
+		"documentation": ""
+	},
+	{
+		"name": "native_cos",
+		"snippet": "native.cos(${1:value_number});${0}",
+		"documentation": ""
+	},
+	{
+		"name": "native_sqrt",
+		"snippet": "native.sqrt(${1:value_number});${0}",
+		"documentation": ""
+	},
+	{
+		"name": "native_pow",
+		"snippet": "native.pow(${1:base_number}, ${2:exponent_number});${0}",
+		"documentation": ""
+	},
+	{
+		"name": "native_log10",
+		"snippet": "native.log10(${1:value_number});${0}",
+		"documentation": ""
+	},
+	{
+		"name": "native_vmag",
+		"snippet": "native.vmag(${1:x_number}, ${2:y_number}, ${3:z_number});${0}",
+		"documentation": ""
+	},
+	{
+		"name": "native_vmag2",
+		"snippet": "native.vmag2(${1:x_number}, ${2:y_number}, ${3:z_number});${0}",
+		"documentation": ""
+	},
+	{
+		"name": "native_vdist",
+		"snippet": "native.vdist(${1:x1_number}, ${2:y1_number}, ${3:z1_number}, ${4:x2_number}, ${5:y2_number}, ${6:z2_number});${0}",
+		"documentation": ""
+	},
+	{
+		"name": "native_vdist2",
+		"snippet": "native.vdist2(${1:x1_number}, ${2:y1_number}, ${3:z1_number}, ${4:x2_number}, ${5:y2_number}, ${6:z2_number});${0}",
+		"documentation": ""
+	},
+	{
+		"name": "native_shiftLeft",
+		"snippet": "native.shiftLeft(${1:value_number}, ${2:bitShift_number});${0}",
+		"documentation": ""
+	},
+	{
+		"name": "native_shiftRight",
+		"snippet": "native.shiftRight(${1:value_number}, ${2:bitShift_number});${0}",
+		"documentation": ""
+	},
+	{
+		"name": "native_floor",
+		"snippet": "native.floor(${1:value_number});${0}",
+		"documentation": ""
+	},
+	{
+		"name": "native_ceil",
+		"snippet": "native.ceil(${1:value_number});${0}",
+		"documentation": ""
+	},
+	{
+		"name": "native_round",
+		"snippet": "native.round(${1:value_number});${0}",
+		"documentation": ""
+	},
+	{
+		"name": "native_toFloat",
+		"snippet": "native.toFloat(${1:value_number});${0}",
+		"documentation": ""
+	},
+	{
+		"name": "native_setThreadPriority",
+		"snippet": "native.setThreadPriority(${1:priority_number});${0}",
 		"documentation": ""
 	},
 	{
@@ -160,8 +285,8 @@
 		"documentation": ""
 	},
 	{
-		"name": "native__0x8A694D7A68F8DC38",
-		"snippet": "native._0x8A694D7A68F8DC38(${1:p0_number}, ${2:p1_string}, ${3:p2_string});${0}",
+		"name": "native_interruptConversationAndPause",
+		"snippet": "native.interruptConversationAndPause(${1:p0_number}, ${2:p1_string}, ${3:p2_string});${0}",
 		"documentation": ""
 	},
 	{
@@ -276,7 +401,7 @@
 	},
 	{
 		"name": "native_playSoundFromEntity",
-		"snippet": "native.playSoundFromEntity(${1:soundId_number}, ${2:audioName_string}, ${3:entity_number}, ${4:audioRef_string}, ${5:p4_boolean}, ${6:p5_number});${0}",
+		"snippet": "native.playSoundFromEntity(${1:soundId_number}, ${2:audioName_string}, ${3:entity_number}, ${4:audioRef_string}, ${5:isNetwork_boolean}, ${6:p5_number});${0}",
 		"documentation": ""
 	},
 	{
@@ -286,7 +411,7 @@
 	},
 	{
 		"name": "native_playSoundFromCoord",
-		"snippet": "native.playSoundFromCoord(${1:soundId_number}, ${2:audioName_string}, ${3:x_number}, ${4:y_number}, ${5:z_number}, ${6:audioRef_string}, ${7:p6_boolean}, ${8:range_number}, ${9:p8_boolean});${0}",
+		"snippet": "native.playSoundFromCoord(${1:soundId_number}, ${2:audioName_string}, ${3:x_number}, ${4:y_number}, ${5:z_number}, ${6:audioRef_string}, ${7:isNetwork_boolean}, ${8:range_number}, ${9:p8_boolean});${0}",
 		"documentation": ""
 	},
 	{
@@ -380,13 +505,13 @@
 		"documentation": ""
 	},
 	{
-		"name": "native__0xD01005D2BA2EB778",
-		"snippet": "native._0xD01005D2BA2EB778(${1:p0_string});${0}",
+		"name": "native_activateAudioSlowmoMode",
+		"snippet": "native.activateAudioSlowmoMode(${1:p0_string});${0}",
 		"documentation": ""
 	},
 	{
-		"name": "native__0xDDC635D5B3262C56",
-		"snippet": "native._0xDDC635D5B3262C56(${1:p0_string});${0}",
+		"name": "native_deactivateAudioSlowmoMode",
+		"snippet": "native.deactivateAudioSlowmoMode(${1:p0_string});${0}",
 		"documentation": ""
 	},
 	{
@@ -465,13 +590,13 @@
 		"documentation": ""
 	},
 	{
-		"name": "native__0xEE066C7006C49C0A",
-		"snippet": "native._0xEE066C7006C49C0A(${1:p0_number}, ${2:p1_number}, ${3:p2_number});${0}",
+		"name": "native_playAnimalVocalization",
+		"snippet": "native.playAnimalVocalization(${1:pedHandle_number}, ${2:p1_number}, ${3:p2_number});${0}",
 		"documentation": ""
 	},
 	{
-		"name": "native__0xC265DF9FB44A9FBD",
-		"snippet": "native._0xC265DF9FB44A9FBD(${1:p0_number});${0}",
+		"name": "native_isAnimalVocalizationPlaying",
+		"snippet": "native.isAnimalVocalizationPlaying(${1:pedHandle_number});${0}",
 		"documentation": ""
 	},
 	{
@@ -650,13 +775,13 @@
 		"documentation": ""
 	},
 	{
-		"name": "native__0x109697E2FFBAC8A1",
-		"snippet": "native._0x109697E2FFBAC8A1();${0}",
+		"name": "native_doesPlayerVehHaveRadio",
+		"snippet": "native.doesPlayerVehHaveRadio();${0}",
 		"documentation": ""
 	},
 	{
-		"name": "native_isPlayerVehicleRadioEnabled",
-		"snippet": "native.isPlayerVehicleRadioEnabled();${0}",
+		"name": "native_isPlayerVehRadioEnable",
+		"snippet": "native.isPlayerVehRadioEnable();${0}",
 		"documentation": ""
 	},
 	{
@@ -670,13 +795,13 @@
 		"documentation": ""
 	},
 	{
-		"name": "native__0x4E404A9361F75BB2",
-		"snippet": "native._0x4E404A9361F75BB2(${1:radioStation_string}, ${2:p1_string}, ${3:p2_boolean});${0}",
+		"name": "native_setCustomRadioTrackList",
+		"snippet": "native.setCustomRadioTrackList(${1:radioStation_string}, ${2:trackListName_string}, ${3:p2_boolean});${0}",
 		"documentation": ""
 	},
 	{
-		"name": "native__0x1654F24A88A8E3FE",
-		"snippet": "native._0x1654F24A88A8E3FE(${1:radioStation_string});${0}",
+		"name": "native_clearCustomRadioTrackList",
+		"snippet": "native.clearCustomRadioTrackList(${1:radioStation_string});${0}",
 		"documentation": ""
 	},
 	{
@@ -690,13 +815,13 @@
 		"documentation": ""
 	},
 	{
-		"name": "native__0x774BD811F656A122",
-		"snippet": "native._0x774BD811F656A122(${1:radioStation_string}, ${2:p1_boolean});${0}",
+		"name": "native_setRadioStationMusicOnly",
+		"snippet": "native.setRadioStationMusicOnly(${1:radioStation_string}, ${2:toggle_boolean});${0}",
 		"documentation": ""
 	},
 	{
-		"name": "native__0x2C96CDB04FCA358E",
-		"snippet": "native._0x2C96CDB04FCA358E(${1:p0_number});${0}",
+		"name": "native_setRadioFrontendFadeTime",
+		"snippet": "native.setRadioFrontendFadeTime(${1:p0_number});${0}",
 		"documentation": ""
 	},
 	{
@@ -885,6 +1010,11 @@
 		"documentation": ""
 	},
 	{
+		"name": "native__0xF8AD2EED7C47E8FE",
+		"snippet": "native._0xF8AD2EED7C47E8FE(${1:ped_number}, ${2:p1_boolean}, ${3:p2_boolean});${0}",
+		"documentation": ""
+	},
+	{
 		"name": "native_disablePedPainAudio",
 		"snippet": "native.disablePedPainAudio(${1:ped_number}, ${2:toggle_boolean});${0}",
 		"documentation": ""
@@ -1010,8 +1140,8 @@
 		"documentation": ""
 	},
 	{
-		"name": "native__0xC15907D667F7CFB2",
-		"snippet": "native._0xC15907D667F7CFB2(${1:vehicle_number}, ${2:toggle_boolean});${0}",
+		"name": "native_enableStallWarningSounds",
+		"snippet": "native.enableStallWarningSounds(${1:vehicle_number}, ${2:toggle_boolean});${0}",
 		"documentation": ""
 	},
 	{
@@ -1040,8 +1170,8 @@
 		"documentation": ""
 	},
 	{
-		"name": "native__0xF154B8D1775B2DEC",
-		"snippet": "native._0xF154B8D1775B2DEC(${1:toggle_boolean});${0}",
+		"name": "native_blockDeathJingle",
+		"snippet": "native.blockDeathJingle(${1:toggle_boolean});${0}",
 		"documentation": ""
 	},
 	{
@@ -1080,8 +1210,8 @@
 		"documentation": ""
 	},
 	{
-		"name": "native__0x18EB48CFC41F2EA0",
-		"snippet": "native._0x18EB48CFC41F2EA0(${1:p0_number}, ${2:p1_number});${0}",
+		"name": "native_removeEntityFromAudioMixGroup",
+		"snippet": "native.removeEntityFromAudioMixGroup(${1:entity_number}, ${2:p1_number});${0}",
 		"documentation": ""
 	},
 	{
@@ -1185,8 +1315,8 @@
 		"documentation": ""
 	},
 	{
-		"name": "native_getVehicleHornHash",
-		"snippet": "native.getVehicleHornHash(${1:vehicle_number});${0}",
+		"name": "native_getVehicleDefaultHornIgnoreMods",
+		"snippet": "native.getVehicleDefaultHornIgnoreMods(${1:vehicle_number});${0}",
 		"documentation": ""
 	},
 	{
@@ -1225,8 +1355,8 @@
 		"documentation": ""
 	},
 	{
-		"name": "native_forceAmbientSiren",
-		"snippet": "native.forceAmbientSiren(${1:value_boolean});${0}",
+		"name": "native_distantCopCarSirens",
+		"snippet": "native.distantCopCarSirens(${1:value_boolean});${0}",
 		"documentation": ""
 	},
 	{
@@ -1330,13 +1460,13 @@
 		"documentation": ""
 	},
 	{
-		"name": "native__0xD53F3A29BCE2580E",
-		"snippet": "native._0xD53F3A29BCE2580E(${1:vehicle_number});${0}",
+		"name": "native_getVehicleDefaultHornVariation",
+		"snippet": "native.getVehicleDefaultHornVariation(${1:vehicle_number});${0}",
 		"documentation": ""
 	},
 	{
-		"name": "native__0x0350E7E17BA767D0",
-		"snippet": "native._0x0350E7E17BA767D0(${1:vehicle_number}, ${2:value_number});${0}",
+		"name": "native_setVehicleHornVariation",
+		"snippet": "native.setVehicleHornVariation(${1:vehicle_number}, ${2:value_number});${0}",
 		"documentation": ""
 	},
 	{
@@ -1570,8 +1700,8 @@
 		"documentation": ""
 	},
 	{
-		"name": "native__0x47B595D60664CFFA",
-		"snippet": "native._0x47B595D60664CFFA(${1:p0_number}, ${2:p1_number});${0}",
+		"name": "native_setCamDofFocalLengthMultiplier",
+		"snippet": "native.setCamDofFocalLengthMultiplier(${1:p0_number}, ${2:p1_number});${0}",
 		"documentation": ""
 	},
 	{
@@ -1830,8 +1960,8 @@
 		"documentation": ""
 	},
 	{
-		"name": "native__0xE827B9382CFB41BA",
-		"snippet": "native._0xE827B9382CFB41BA(${1:cam_number}, ${2:p1_number}, ${3:p2_number}, ${4:p3_number});${0}",
+		"name": "native_setFlyCamVerticalSpeedMultiplier",
+		"snippet": "native.setFlyCamVerticalSpeedMultiplier(${1:cam_number}, ${2:p1_number}, ${3:p2_number}, ${4:p3_number});${0}",
 		"documentation": ""
 	},
 	{
@@ -1940,8 +2070,13 @@
 		"documentation": ""
 	},
 	{
-		"name": "native__0x48608C3464F58AB4",
-		"snippet": "native._0x48608C3464F58AB4(${1:p0_number}, ${2:p1_number}, ${3:p2_number});${0}",
+		"name": "native_setGameplayCamRelativeRotation",
+		"snippet": "native.setGameplayCamRelativeRotation(${1:p0_number}, ${2:p1_number}, ${3:p2_number});${0}",
+		"documentation": ""
+	},
+	{
+		"name": "native__0x28B022A17B068A3A",
+		"snippet": "native._0x28B022A17B068A3A(${1:p0_number}, ${2:p1_number});${0}",
 		"documentation": ""
 	},
 	{
@@ -2095,6 +2230,11 @@
 		"documentation": ""
 	},
 	{
+		"name": "native__0x9F97DA93681F87EA",
+		"snippet": "native._0x9F97DA93681F87EA();${0}",
+		"documentation": ""
+	},
+	{
 		"name": "native_getFollowPedCamZoomLevel",
 		"snippet": "native.getFollowPedCamZoomLevel();${0}",
 		"documentation": ""
@@ -2122,6 +2262,11 @@
 	{
 		"name": "native__0x9DFE13ECDC1EC196",
 		"snippet": "native._0x9DFE13ECDC1EC196(${1:p0_boolean}, ${2:p1_boolean});${0}",
+		"documentation": ""
+	},
+	{
+		"name": "native__0x79C0E43EB9B944E2",
+		"snippet": "native._0x79C0E43EB9B944E2(${1:hash_number});${0}",
 		"documentation": ""
 	},
 	{
@@ -2160,8 +2305,8 @@
 		"documentation": ""
 	},
 	{
-		"name": "native__0x6493CF69859B116A",
-		"snippet": "native._0x6493CF69859B116A();${0}",
+		"name": "native_useStuntCameraThisFrame",
+		"snippet": "native.useStuntCameraThisFrame();${0}",
 		"documentation": ""
 	},
 	{
@@ -2200,13 +2345,13 @@
 		"documentation": ""
 	},
 	{
-		"name": "native_getGameplayCamZoom",
-		"snippet": "native.getGameplayCamZoom();${0}",
+		"name": "native_getFirstPersonAimCamZoomFactor",
+		"snippet": "native.getFirstPersonAimCamZoomFactor();${0}",
 		"documentation": ""
 	},
 	{
-		"name": "native__0x70894BD0915C5BCA",
-		"snippet": "native._0x70894BD0915C5BCA(${1:p0_number});${0}",
+		"name": "native_setFirstPersonAimCamZoomFactor",
+		"snippet": "native.setFirstPersonAimCamZoomFactor(${1:p0_number});${0}",
 		"documentation": ""
 	},
 	{
@@ -2245,48 +2390,53 @@
 		"documentation": ""
 	},
 	{
-		"name": "native_getGameplayCamCoords",
-		"snippet": "native.getGameplayCamCoords();${0}",
+		"name": "native_getFinalRenderedCamCoord",
+		"snippet": "native.getFinalRenderedCamCoord();${0}",
 		"documentation": ""
 	},
 	{
-		"name": "native__0x26903D9CD1175F2C",
-		"snippet": "native._0x26903D9CD1175F2C(${1:p0_number}, ${2:p1_number});${0}",
+		"name": "native_getFinalRenderedCamRot",
+		"snippet": "native.getFinalRenderedCamRot(${1:rotationOrder_number});${0}",
 		"documentation": ""
 	},
 	{
-		"name": "native__0x80EC114669DAEFF4",
-		"snippet": "native._0x80EC114669DAEFF4();${0}",
+		"name": "native_getFinalRenderedInWhenFriendlyRot",
+		"snippet": "native.getFinalRenderedInWhenFriendlyRot(${1:p0_number}, ${2:p1_number});${0}",
 		"documentation": ""
 	},
 	{
-		"name": "native__0x5F35F6732C3FBBA0",
-		"snippet": "native._0x5F35F6732C3FBBA0(${1:p0_number});${0}",
+		"name": "native_getFinalRenderedCamFov",
+		"snippet": "native.getFinalRenderedCamFov();${0}",
 		"documentation": ""
 	},
 	{
-		"name": "native_getGameplayCamNearClip",
-		"snippet": "native.getGameplayCamNearClip();${0}",
+		"name": "native_getFinalRenderedInWhenFriendlyFov",
+		"snippet": "native.getFinalRenderedInWhenFriendlyFov(${1:p0_number});${0}",
 		"documentation": ""
 	},
 	{
-		"name": "native_getGameplayCamFarClip",
-		"snippet": "native.getGameplayCamFarClip();${0}",
+		"name": "native_getFinalRenderedCamNearClip",
+		"snippet": "native.getFinalRenderedCamNearClip();${0}",
 		"documentation": ""
 	},
 	{
-		"name": "native_getGameplayCamNearDof",
-		"snippet": "native.getGameplayCamNearDof();${0}",
+		"name": "native_getFinalRenderedCamFarClip",
+		"snippet": "native.getFinalRenderedCamFarClip();${0}",
 		"documentation": ""
 	},
 	{
-		"name": "native_getGameplayCamFarDof",
-		"snippet": "native.getGameplayCamFarDof();${0}",
+		"name": "native_getFinalRenderedCamNearDof",
+		"snippet": "native.getFinalRenderedCamNearDof();${0}",
 		"documentation": ""
 	},
 	{
-		"name": "native_getGameplayCamFarClip2",
-		"snippet": "native.getGameplayCamFarClip2();${0}",
+		"name": "native_getFinalRenderedCamFarDof",
+		"snippet": "native.getFinalRenderedCamFarDof();${0}",
+		"documentation": ""
+	},
+	{
+		"name": "native_getFinalRenderedCamMotionBlurStrength",
+		"snippet": "native.getFinalRenderedCamMotionBlurStrength();${0}",
 		"documentation": ""
 	},
 	{
@@ -2345,28 +2495,28 @@
 		"documentation": ""
 	},
 	{
-		"name": "native__0xF8BDBF3D573049A1",
-		"snippet": "native._0xF8BDBF3D573049A1(${1:p0_number});${0}",
+		"name": "native_setGameplayHintAnimOffsetz",
+		"snippet": "native.setGameplayHintAnimOffsetz(${1:p0_number});${0}",
 		"documentation": ""
 	},
 	{
-		"name": "native__0xD1F8363DFAD03848",
-		"snippet": "native._0xD1F8363DFAD03848(${1:p0_number});${0}",
+		"name": "native_setGameplayHintAngle",
+		"snippet": "native.setGameplayHintAngle(${1:p0_number});${0}",
 		"documentation": ""
 	},
 	{
-		"name": "native__0x5D7B620DAE436138",
-		"snippet": "native._0x5D7B620DAE436138(${1:p0_number});${0}",
+		"name": "native_setGameplayHintAnimOffsetx",
+		"snippet": "native.setGameplayHintAnimOffsetx(${1:p0_number});${0}",
 		"documentation": ""
 	},
 	{
-		"name": "native__0xC92717EF615B6704",
-		"snippet": "native._0xC92717EF615B6704(${1:p0_number});${0}",
+		"name": "native_setGameplayHintAnimOffsety",
+		"snippet": "native.setGameplayHintAnimOffsety(${1:p0_number});${0}",
 		"documentation": ""
 	},
 	{
-		"name": "native__0xE3433EADAAF7EE40",
-		"snippet": "native._0xE3433EADAAF7EE40(${1:p0_boolean});${0}",
+		"name": "native_setGameplayHintAnimCloseup",
+		"snippet": "native.setGameplayHintAnimCloseup(${1:p0_boolean});${0}",
 		"documentation": ""
 	},
 	{
@@ -2520,13 +2670,13 @@
 		"documentation": ""
 	},
 	{
-		"name": "native__0x21E253A7F8DA5DFB",
-		"snippet": "native._0x21E253A7F8DA5DFB(${1:vehicleName_string});${0}",
+		"name": "native_setGameplayCamVehicleCamera",
+		"snippet": "native.setGameplayCamVehicleCamera(${1:vehicleName_string});${0}",
 		"documentation": ""
 	},
 	{
-		"name": "native__0x11FA5D3479C7DD47",
-		"snippet": "native._0x11FA5D3479C7DD47(${1:p0_number});${0}",
+		"name": "native_setGameplayCamVehicleCameraName",
+		"snippet": "native.setGameplayCamVehicleCameraName(${1:p0_number});${0}",
 		"documentation": ""
 	},
 	{
@@ -2730,6 +2880,11 @@
 		"documentation": ""
 	},
 	{
+		"name": "native__0x971D7B15BCDBEF99",
+		"snippet": "native._0x971D7B15BCDBEF99();${0}",
+		"documentation": ""
+	},
+	{
 		"name": "native_wasCutsceneSkipped",
 		"snippet": "native.wasCutsceneSkipped();${0}",
 		"documentation": ""
@@ -2895,28 +3050,28 @@
 		"documentation": ""
 	},
 	{
-		"name": "native__0xFCCAE5B92A830878",
-		"snippet": "native._0xFCCAE5B92A830878(${1:index_number});${0}",
+		"name": "native_datafileIsValidRequestId",
+		"snippet": "native.datafileIsValidRequestId(${1:index_number});${0}",
 		"documentation": ""
 	},
 	{
-		"name": "native__0x15FF52B809DB2353",
-		"snippet": "native._0x15FF52B809DB2353(${1:p0_number});${0}",
+		"name": "native_datafileHasLoadedFileData",
+		"snippet": "native.datafileHasLoadedFileData(${1:p0_number});${0}",
 		"documentation": ""
 	},
 	{
-		"name": "native__0xF8CC1EBE0B62E29F",
-		"snippet": "native._0xF8CC1EBE0B62E29F(${1:p0_number});${0}",
+		"name": "native_datafileHasValidFileData",
+		"snippet": "native.datafileHasValidFileData(${1:p0_number});${0}",
 		"documentation": ""
 	},
 	{
-		"name": "native__0x22DA66936E0FFF37",
-		"snippet": "native._0x22DA66936E0FFF37(${1:p0_number});${0}",
+		"name": "native_datafileSelectActiveFile",
+		"snippet": "native.datafileSelectActiveFile(${1:p0_number});${0}",
 		"documentation": ""
 	},
 	{
-		"name": "native__0x8F5EA1C01D65A100",
-		"snippet": "native._0x8F5EA1C01D65A100(${1:p0_number});${0}",
+		"name": "native_datafileDeleteRequestedFile",
+		"snippet": "native.datafileDeleteRequestedFile(${1:p0_number});${0}",
 		"documentation": ""
 	},
 	{
@@ -2945,28 +3100,28 @@
 		"documentation": ""
 	},
 	{
-		"name": "native__0xA69AC4ADE82B57A4",
-		"snippet": "native._0xA69AC4ADE82B57A4(${1:p0_number});${0}",
+		"name": "native_datafileSelectUgcData",
+		"snippet": "native.datafileSelectUgcData(${1:p0_number});${0}",
 		"documentation": ""
 	},
 	{
-		"name": "native__0x9CB0BFA7A9342C3D",
-		"snippet": "native._0x9CB0BFA7A9342C3D(${1:p0_number}, ${2:p1_boolean});${0}",
+		"name": "native_datafileSelectUgcStats",
+		"snippet": "native.datafileSelectUgcStats(${1:p0_number}, ${2:p1_boolean});${0}",
 		"documentation": ""
 	},
 	{
-		"name": "native__0x52818819057F2B40",
-		"snippet": "native._0x52818819057F2B40(${1:p0_number});${0}",
+		"name": "native_datafileSelectUgcPlayerData",
+		"snippet": "native.datafileSelectUgcPlayerData(${1:p0_number});${0}",
 		"documentation": ""
 	},
 	{
-		"name": "native__0x01095C95CD46B624",
-		"snippet": "native._0x01095C95CD46B624(${1:p0_number});${0}",
+		"name": "native_datafileSelectCreatorStats",
+		"snippet": "native.datafileSelectCreatorStats(${1:p0_number});${0}",
 		"documentation": ""
 	},
 	{
-		"name": "native_loadUgcFile",
-		"snippet": "native.loadUgcFile(${1:filename_string});${0}",
+		"name": "native_datafileLoadOfflineUgc",
+		"snippet": "native.datafileLoadOfflineUgc(${1:filename_string});${0}",
 		"documentation": ""
 	},
 	{
@@ -2980,13 +3135,13 @@
 		"documentation": ""
 	},
 	{
-		"name": "native__0x2ED61456317B8178",
-		"snippet": "native._0x2ED61456317B8178();${0}",
+		"name": "native_datafileStoreMissionHeader",
+		"snippet": "native.datafileStoreMissionHeader();${0}",
 		"documentation": ""
 	},
 	{
-		"name": "native__0xC55854C7D7274882",
-		"snippet": "native._0xC55854C7D7274882();${0}",
+		"name": "native_datafileFlushMissionHeader",
+		"snippet": "native.datafileFlushMissionHeader();${0}",
 		"documentation": ""
 	},
 	{
@@ -3000,8 +3155,8 @@
 		"documentation": ""
 	},
 	{
-		"name": "native__0x4DFDD9EB705F8140",
-		"snippet": "native._0x4DFDD9EB705F8140(${1:p0_boolean});${0}",
+		"name": "native_datafileUpdateSaveToCloud",
+		"snippet": "native.datafileUpdateSaveToCloud(${1:p0_boolean});${0}",
 		"documentation": ""
 	},
 	{
@@ -3250,18 +3405,23 @@
 		"documentation": ""
 	},
 	{
+		"name": "native__0xC4637A6D03C24CC3",
+		"snippet": "native._0xC4637A6D03C24CC3();${0}",
+		"documentation": ""
+	},
+	{
 		"name": "native_hasCloudRequestsFinished",
 		"snippet": "native.hasCloudRequestsFinished(${1:p0_boolean}, ${2:unused_number});${0}",
 		"documentation": ""
 	},
 	{
-		"name": "native_loadSpDlcMaps",
-		"snippet": "native.loadSpDlcMaps();${0}",
+		"name": "native_onEnterSp",
+		"snippet": "native.onEnterSp();${0}",
 		"documentation": ""
 	},
 	{
-		"name": "native_loadMpDlcMaps",
-		"snippet": "native.loadMpDlcMaps();${0}",
+		"name": "native_onEnterMp",
+		"snippet": "native.onEnterMp();${0}",
 		"documentation": ""
 	},
 	{
@@ -3416,7 +3576,7 @@
 	},
 	{
 		"name": "native_getEntityMatrix",
-		"snippet": "native.getEntityMatrix(${1:entity_number}, ${2:rightVector_setAsUndefined}, ${3:forwardVector_setAsUndefined}, ${4:upVector_setAsUndefined}, ${5:position_setAsUndefined});${0}",
+		"snippet": "native.getEntityMatrix(${1:entity_number}, ${2:rightVector_vector3Ptr}, ${3:forwardVector_vector3Ptr}, ${4:upVector_vector3Ptr}, ${5:position_vector3Ptr});${0}",
 		"documentation": ""
 	},
 	{
@@ -3700,13 +3860,13 @@
 		"documentation": ""
 	},
 	{
-		"name": "native__0x5C48B75732C8456C",
-		"snippet": "native._0x5C48B75732C8456C(${1:p0_number}, ${2:p1_number}, ${3:p2_number}, ${4:p3_number}, ${5:p4_number}, ${6:p5_number});${0}",
+		"name": "native_attachEntityBoneToEntityBone",
+		"snippet": "native.attachEntityBoneToEntityBone(${1:p0_number}, ${2:p1_number}, ${3:p2_number}, ${4:p3_number}, ${5:p4_number}, ${6:p5_number});${0}",
 		"documentation": ""
 	},
 	{
-		"name": "native__0xFD1695C5D3B05439",
-		"snippet": "native._0xFD1695C5D3B05439(${1:p0_number}, ${2:p1_number}, ${3:p2_number}, ${4:p3_number}, ${5:p4_number}, ${6:p5_number});${0}",
+		"name": "native_attachEntityBoneToEntityBonePhysically",
+		"snippet": "native.attachEntityBoneToEntityBonePhysically(${1:p0_number}, ${2:p1_number}, ${3:p2_number}, ${4:p3_number}, ${5:p4_number}, ${6:p5_number});${0}",
 		"documentation": ""
 	},
 	{
@@ -3970,6 +4130,11 @@
 		"documentation": ""
 	},
 	{
+		"name": "native__0xE66377CDDADA4810",
+		"snippet": "native._0xE66377CDDADA4810(${1:entity_number}, ${2:p1_boolean});${0}",
+		"documentation": ""
+	},
+	{
 		"name": "native_setEntityVelocity",
 		"snippet": "native.setEntityVelocity(${1:entity_number}, ${2:x_number}, ${3:y_number}, ${4:z_number});${0}",
 		"documentation": ""
@@ -4085,13 +4250,13 @@
 		"documentation": ""
 	},
 	{
-		"name": "native__0xE12ABE5E3A389A6C",
-		"snippet": "native._0xE12ABE5E3A389A6C(${1:entity_number}, ${2:p1_boolean});${0}",
+		"name": "native_setCanAutoVaultOnEntity",
+		"snippet": "native.setCanAutoVaultOnEntity(${1:entity_number}, ${2:toggle_boolean});${0}",
 		"documentation": ""
 	},
 	{
-		"name": "native__0xA80AE305E0A3044F",
-		"snippet": "native._0xA80AE305E0A3044F(${1:entity_number}, ${2:p1_boolean});${0}",
+		"name": "native_setCanClimbOnEntity",
+		"snippet": "native.setCanClimbOnEntity(${1:entity_number}, ${2:toggle_boolean});${0}",
 		"documentation": ""
 	},
 	{
@@ -4117,6 +4282,11 @@
 	{
 		"name": "native__0x46F8696933A63C9B",
 		"snippet": "native._0x46F8696933A63C9B(${1:p0_number}, ${2:p1_number});${0}",
+		"documentation": ""
+	},
+	{
+		"name": "native__0xBD8D32550E5CEBFE",
+		"snippet": "native._0xBD8D32550E5CEBFE(${1:entity_number}, ${2:boneIndex_number});${0}",
 		"documentation": ""
 	},
 	{
@@ -4226,17 +4396,17 @@
 	},
 	{
 		"name": "native_getTattooCollectionData",
-		"snippet": "native.getTattooCollectionData(${1:character_number}, ${2:index_number}, ${3:outComponent_number});${0}",
+		"snippet": "native.getTattooCollectionData(${1:character_number}, ${2:index_number}, ${3:outComponent_memoryBuffer});${0}",
 		"documentation": ""
 	},
 	{
 		"name": "native_initShopPedComponent",
-		"snippet": "native.initShopPedComponent(${1:outComponent_number});${0}",
+		"snippet": "native.initShopPedComponent(${1:outComponent_memoryBuffer});${0}",
 		"documentation": ""
 	},
 	{
 		"name": "native_initShopPedProp",
-		"snippet": "native.initShopPedProp(${1:outProp_number});${0}",
+		"snippet": "native.initShopPedProp(${1:outProp_memoryBuffer});${0}",
 		"documentation": ""
 	},
 	{
@@ -4251,22 +4421,22 @@
 	},
 	{
 		"name": "native_getShopPedQueryComponent",
-		"snippet": "native.getShopPedQueryComponent(${1:componentId_number}, ${2:outComponent_number});${0}",
+		"snippet": "native.getShopPedQueryComponent(${1:componentId_number}, ${2:outComponent_memoryBuffer});${0}",
 		"documentation": ""
 	},
 	{
 		"name": "native_getShopPedComponent",
-		"snippet": "native.getShopPedComponent(${1:componentHash_number}, ${2:outComponent_number});${0}",
+		"snippet": "native.getShopPedComponent(${1:componentHash_number}, ${2:outComponent_memoryBuffer});${0}",
 		"documentation": ""
 	},
 	{
 		"name": "native_getShopPedQueryProp",
-		"snippet": "native.getShopPedQueryProp(${1:p0_number}, ${2:p1_number});${0}",
+		"snippet": "native.getShopPedQueryProp(${1:p0_number}, ${2:p1_memoryBuffer});${0}",
 		"documentation": ""
 	},
 	{
 		"name": "native_getShopPedProp",
-		"snippet": "native.getShopPedProp(${1:componentHash_number}, ${2:outProp_number});${0}",
+		"snippet": "native.getShopPedProp(${1:componentHash_number}, ${2:outProp_memoryBuffer});${0}",
 		"documentation": ""
 	},
 	{
@@ -4285,8 +4455,8 @@
 		"documentation": ""
 	},
 	{
-		"name": "native_getNumDlcPedPropsUnk",
-		"snippet": "native.getNumDlcPedPropsUnk(${1:propHash_number});${0}",
+		"name": "native_getShopPedApparelVariantPropCount",
+		"snippet": "native.getShopPedApparelVariantPropCount(${1:propHash_number});${0}",
 		"documentation": ""
 	},
 	{
@@ -4295,18 +4465,18 @@
 		"documentation": ""
 	},
 	{
-		"name": "native__0xD81B7F27BC773E66",
-		"snippet": "native._0xD81B7F27BC773E66(${1:p0_number}, ${2:p1_number}, ${3:p2_number}, ${4:p3_number}, ${5:p4_number});${0}",
+		"name": "native_getVariantProp",
+		"snippet": "native.getVariantProp(${1:p0_number}, ${2:p1_number}, ${3:p2_number}, ${4:p3_number}, ${5:p4_number});${0}",
 		"documentation": ""
 	},
 	{
-		"name": "native_getNumForcedComponents",
-		"snippet": "native.getNumForcedComponents(${1:componentHash_number});${0}",
+		"name": "native_getShopPedApparelForcedComponentCount",
+		"snippet": "native.getShopPedApparelForcedComponentCount(${1:componentHash_number});${0}",
 		"documentation": ""
 	},
 	{
-		"name": "native__0x017568A8182D98A6",
-		"snippet": "native._0x017568A8182D98A6(${1:p0_number});${0}",
+		"name": "native_getShopPedApparelForcedPropCount",
+		"snippet": "native.getShopPedApparelForcedPropCount(${1:p0_number});${0}",
 		"documentation": ""
 	},
 	{
@@ -4315,8 +4485,8 @@
 		"documentation": ""
 	},
 	{
-		"name": "native__0xE1CA84EBF72E691D",
-		"snippet": "native._0xE1CA84EBF72E691D(${1:p0_number}, ${2:p1_number}, ${3:p2_number}, ${4:p3_number}, ${5:p4_number});${0}",
+		"name": "native_getForcedProp",
+		"snippet": "native.getForcedProp(${1:p0_number}, ${2:p1_number}, ${3:p2_number}, ${4:p3_number}, ${5:p4_number});${0}",
 		"documentation": ""
 	},
 	{
@@ -4331,12 +4501,12 @@
 	},
 	{
 		"name": "native_getShopPedQueryOutfit",
-		"snippet": "native.getShopPedQueryOutfit(${1:p0_number}, ${2:outfit_number});${0}",
+		"snippet": "native.getShopPedQueryOutfit(${1:p0_number}, ${2:outfit_memoryBuffer});${0}",
 		"documentation": ""
 	},
 	{
 		"name": "native_getShopPedOutfit",
-		"snippet": "native.getShopPedOutfit(${1:p0_number}, ${2:p1_number});${0}",
+		"snippet": "native.getShopPedOutfit(${1:p0_number}, ${2:p1_memoryBuffer});${0}",
 		"documentation": ""
 	},
 	{
@@ -4366,7 +4536,7 @@
 	},
 	{
 		"name": "native_getDlcVehicleData",
-		"snippet": "native.getDlcVehicleData(${1:dlcVehicleIndex_number}, ${2:outData_number});${0}",
+		"snippet": "native.getDlcVehicleData(${1:dlcVehicleIndex_number}, ${2:outData_memoryBuffer});${0}",
 		"documentation": ""
 	},
 	{
@@ -4381,7 +4551,7 @@
 	},
 	{
 		"name": "native_getDlcWeaponData",
-		"snippet": "native.getDlcWeaponData(${1:dlcWeaponIndex_number}, ${2:outData_number});${0}",
+		"snippet": "native.getDlcWeaponData(${1:dlcWeaponIndex_number}, ${2:outData_memoryBuffer});${0}",
 		"documentation": ""
 	},
 	{
@@ -4450,13 +4620,18 @@
 		"documentation": ""
 	},
 	{
+		"name": "native_setFireSpreadRate",
+		"snippet": "native.setFireSpreadRate(${1:p0_number});${0}",
+		"documentation": ""
+	},
+	{
 		"name": "native_stopFireInRange",
 		"snippet": "native.stopFireInRange(${1:x_number}, ${2:y_number}, ${3:z_number}, ${4:radius_number});${0}",
 		"documentation": ""
 	},
 	{
 		"name": "native_getClosestFirePos",
-		"snippet": "native.getClosestFirePos(${1:outPosition_setAsUndefined}, ${2:x_number}, ${3:y_number}, ${4:z_number});${0}",
+		"snippet": "native.getClosestFirePos(${1:outPosition_vector3Ptr}, ${2:x_number}, ${3:y_number}, ${4:z_number});${0}",
 		"documentation": ""
 	},
 	{
@@ -4480,8 +4655,8 @@
 		"documentation": ""
 	},
 	{
-		"name": "native__0x6070104B699B2EF4",
-		"snippet": "native._0x6070104B699B2EF4(${1:explosionType_number}, ${2:x1_number}, ${3:y1_number}, ${4:z1_number}, ${5:x2_number}, ${6:y2_number}, ${7:z2_number});${0}",
+		"name": "native_isExplosionActiveInArea",
+		"snippet": "native.isExplosionActiveInArea(${1:explosionType_number}, ${2:x1_number}, ${3:y1_number}, ${4:z1_number}, ${5:x2_number}, ${6:y2_number}, ${7:z2_number});${0}",
 		"documentation": ""
 	},
 	{
@@ -4570,8 +4745,8 @@
 		"documentation": ""
 	},
 	{
-		"name": "native__0x23BA6B0C2AD7B0D3",
-		"snippet": "native._0x23BA6B0C2AD7B0D3(${1:p0_boolean});${0}",
+		"name": "native_setBackfaceculling",
+		"snippet": "native.setBackfaceculling(${1:toggle_boolean});${0}",
 		"documentation": ""
 	},
 	{
@@ -4620,13 +4795,13 @@
 		"documentation": ""
 	},
 	{
-		"name": "native__0xA67C35C56EB1BD9D",
-		"snippet": "native._0xA67C35C56EB1BD9D();${0}",
+		"name": "native_beginTakeHighQualityPhoto",
+		"snippet": "native.beginTakeHighQualityPhoto();${0}",
 		"documentation": ""
 	},
 	{
-		"name": "native__0x0D6CA79EEEBD8CA3",
-		"snippet": "native._0x0D6CA79EEEBD8CA3();${0}",
+		"name": "native_getStatusOfTakeHighQualityPhoto",
+		"snippet": "native.getStatusOfTakeHighQualityPhoto();${0}",
 		"documentation": ""
 	},
 	{
@@ -4645,13 +4820,13 @@
 		"documentation": ""
 	},
 	{
-		"name": "native__0x3DEC726C25A11BAC",
-		"snippet": "native._0x3DEC726C25A11BAC(${1:p0_number});${0}",
+		"name": "native_saveHighQualityPhoto",
+		"snippet": "native.saveHighQualityPhoto(${1:unused_number});${0}",
 		"documentation": ""
 	},
 	{
-		"name": "native__0x0C0C4E81E1AC60A0",
-		"snippet": "native._0x0C0C4E81E1AC60A0();${0}",
+		"name": "native_getStatusOfSaveHighQualityPhoto",
+		"snippet": "native.getStatusOfSaveHighQualityPhoto();${0}",
 		"documentation": ""
 	},
 	{
@@ -4740,13 +4915,13 @@
 		"documentation": ""
 	},
 	{
-		"name": "native__0xC9B18B4619F48F7B",
-		"snippet": "native._0xC9B18B4619F48F7B(${1:p0_number});${0}",
+		"name": "native_fadeUpPedLight",
+		"snippet": "native.fadeUpPedLight(${1:p0_number});${0}",
 		"documentation": ""
 	},
 	{
-		"name": "native_updateEntityShitOrSomething",
-		"snippet": "native.updateEntityShitOrSomething(${1:object_number});${0}",
+		"name": "native_updateLightsOnEntity",
+		"snippet": "native.updateLightsOnEntity(${1:entity_number});${0}",
 		"documentation": ""
 	},
 	{
@@ -4765,8 +4940,8 @@
 		"documentation": ""
 	},
 	{
-		"name": "native__0xE82728F0DE75D13A",
-		"snippet": "native._0xE82728F0DE75D13A(${1:p0_number}, ${2:p1_number}, ${3:p2_number}, ${4:p3_number}, ${5:p4_number}, ${6:p5_number}, ${7:p6_number}, ${8:p7_number}, ${9:p8_number}, ${10:p9_number}, ${11:p10_number}, ${12:p11_number}, ${13:p12_number}, ${14:p13_number}, ${15:p14_number}, ${16:p15_number}, ${17:p16_number}, ${18:p17_number}, ${19:p18_number}, ${20:p19_number}, ${21:p20_number}, ${22:p21_number}, ${23:p22_number}, ${24:p23_number}, ${25:p24_number}, ${26:p25_number});${0}",
+		"name": "native_drawMarker2",
+		"snippet": "native.drawMarker2(${1:p0_number}, ${2:p1_number}, ${3:p2_number}, ${4:p3_number}, ${5:p4_number}, ${6:p5_number}, ${7:p6_number}, ${8:p7_number}, ${9:p8_number}, ${10:p9_number}, ${11:p10_number}, ${12:p11_number}, ${13:p12_number}, ${14:p13_number}, ${15:p14_number}, ${16:p15_number}, ${17:p16_number}, ${18:p17_number}, ${19:p18_number}, ${20:p19_number}, ${21:p20_number}, ${22:p21_number}, ${23:p22_number}, ${24:p23_number}, ${25:p24_number}, ${26:p25_number});${0}",
 		"documentation": ""
 	},
 	{
@@ -4807,6 +4982,11 @@
 	{
 		"name": "native__0xF51D36185993515D",
 		"snippet": "native._0xF51D36185993515D(${1:checkpoint_number}, ${2:posX_number}, ${3:posY_number}, ${4:posZ_number}, ${5:unkX_number}, ${6:unkY_number}, ${7:unkZ_number});${0}",
+		"documentation": ""
+	},
+	{
+		"name": "native__0xFCF6788FC4860CD4",
+		"snippet": "native._0xFCF6788FC4860CD4(${1:checkpoint_number});${0}",
 		"documentation": ""
 	},
 	{
@@ -4962,6 +5142,11 @@
 	{
 		"name": "native_setBinkMovieProgress",
 		"snippet": "native.setBinkMovieProgress(${1:binkMovie_number}, ${2:progress_number});${0}",
+		"documentation": ""
+	},
+	{
+		"name": "native_getBinkMovieProgress",
+		"snippet": "native.getBinkMovieProgress(${1:binkMovie_number});${0}",
 		"documentation": ""
 	},
 	{
@@ -5185,13 +5370,13 @@
 		"documentation": ""
 	},
 	{
-		"name": "native__0x6D955F6A9E0295B1",
-		"snippet": "native._0x6D955F6A9E0295B1(${1:p0_number}, ${2:p1_number}, ${3:p2_number}, ${4:p3_number}, ${5:p4_number}, ${6:p5_number}, ${7:p6_number});${0}",
+		"name": "native_grassLodShrinkScriptAreas",
+		"snippet": "native.grassLodShrinkScriptAreas(${1:p0_number}, ${2:p1_number}, ${3:p2_number}, ${4:p3_number}, ${5:p4_number}, ${6:p5_number}, ${7:p6_number});${0}",
 		"documentation": ""
 	},
 	{
-		"name": "native__0x302C91AB2D477F7E",
-		"snippet": "native._0x302C91AB2D477F7E();${0}",
+		"name": "native_grassLodResetScriptAreas",
+		"snippet": "native.grassLodResetScriptAreas();${0}",
 		"documentation": ""
 	},
 	{
@@ -5300,8 +5485,8 @@
 		"documentation": ""
 	},
 	{
-		"name": "native__0xB1BB03742917A5D6",
-		"snippet": "native._0xB1BB03742917A5D6(${1:type_number}, ${2:xPos_number}, ${3:yPos_number}, ${4:zPos_number}, ${5:p4_number}, ${6:red_number}, ${7:green_number}, ${8:blue_number}, ${9:alpha_number});${0}",
+		"name": "native_golfTrailSetFixedControlPoint",
+		"snippet": "native.golfTrailSetFixedControlPoint(${1:type_number}, ${2:xPos_number}, ${3:yPos_number}, ${4:zPos_number}, ${5:p4_number}, ${6:red_number}, ${7:green_number}, ${8:blue_number}, ${9:alpha_number});${0}",
 		"documentation": ""
 	},
 	{
@@ -5415,13 +5600,13 @@
 		"documentation": ""
 	},
 	{
-		"name": "native_transitionToBlurred",
-		"snippet": "native.transitionToBlurred(${1:transitionTime_number});${0}",
+		"name": "native_triggerScreenblurFadeIn",
+		"snippet": "native.triggerScreenblurFadeIn(${1:transitionTime_number});${0}",
 		"documentation": ""
 	},
 	{
-		"name": "native_transitionFromBlurred",
-		"snippet": "native.transitionFromBlurred(${1:transitionTime_number});${0}",
+		"name": "native_triggerScreenblurFadeOut",
+		"snippet": "native.triggerScreenblurFadeOut(${1:transitionTime_number});${0}",
 		"documentation": ""
 	},
 	{
@@ -5430,13 +5615,13 @@
 		"documentation": ""
 	},
 	{
-		"name": "native__0x5CCABFFCA31DDE33",
-		"snippet": "native._0x5CCABFFCA31DDE33();${0}",
+		"name": "native_getScreenblurFadeCurrentTime",
+		"snippet": "native.getScreenblurFadeCurrentTime();${0}",
 		"documentation": ""
 	},
 	{
-		"name": "native__0x7B226C785A52A0A9",
-		"snippet": "native._0x7B226C785A52A0A9();${0}",
+		"name": "native_isScreenblurFadeRunning",
+		"snippet": "native.isScreenblurFadeRunning();${0}",
 		"documentation": ""
 	},
 	{
@@ -5450,8 +5635,8 @@
 		"documentation": ""
 	},
 	{
-		"name": "native__0xE1C8709406F2C41C",
-		"snippet": "native._0xE1C8709406F2C41C();${0}",
+		"name": "native_resetPausedRenderphases",
+		"snippet": "native.resetPausedRenderphases();${0}",
 		"documentation": ""
 	},
 	{
@@ -5460,8 +5645,8 @@
 		"documentation": ""
 	},
 	{
-		"name": "native__0xBA3D65906822BED5",
-		"snippet": "native._0xBA3D65906822BED5(${1:p0_boolean}, ${2:p1_boolean}, ${3:p2_number}, ${4:p3_number}, ${5:p4_number}, ${6:p5_number});${0}",
+		"name": "native_setHidofEnvBlurParams",
+		"snippet": "native.setHidofEnvBlurParams(${1:p0_boolean}, ${2:p1_boolean}, ${3:p2_number}, ${4:p3_number}, ${5:p4_number}, ${6:p5_number});${0}",
 		"documentation": ""
 	},
 	{
@@ -5775,18 +5960,18 @@
 		"documentation": ""
 	},
 	{
-		"name": "native__0x99AC7F0D8B9C893D",
-		"snippet": "native._0x99AC7F0D8B9C893D(${1:p0_number});${0}",
+		"name": "native_startPetrolTrailDecals",
+		"snippet": "native.startPetrolTrailDecals(${1:p0_number});${0}",
 		"documentation": ""
 	},
 	{
-		"name": "native__0x967278682CB6967A",
-		"snippet": "native._0x967278682CB6967A(${1:x_number}, ${2:y_number}, ${3:z_number}, ${4:p3_number});${0}",
+		"name": "native_addPetrolTrailDecalInfo",
+		"snippet": "native.addPetrolTrailDecalInfo(${1:x_number}, ${2:y_number}, ${3:z_number}, ${4:p3_number});${0}",
 		"documentation": ""
 	},
 	{
-		"name": "native__0x0A123435A26C36CD",
-		"snippet": "native._0x0A123435A26C36CD();${0}",
+		"name": "native_endPetrolTrailDecals",
+		"snippet": "native.endPetrolTrailDecals();${0}",
 		"documentation": ""
 	},
 	{
@@ -5925,8 +6110,8 @@
 		"documentation": ""
 	},
 	{
-		"name": "native__0xEFD97FF47B745B8D",
-		"snippet": "native._0xEFD97FF47B745B8D(${1:p0_number});${0}",
+		"name": "native_disableScriptAmbientEffects",
+		"snippet": "native.disableScriptAmbientEffects(${1:p0_number});${0}",
 		"documentation": ""
 	},
 	{
@@ -6240,8 +6425,8 @@
 		"documentation": ""
 	},
 	{
-		"name": "native_scaleformMovieMethodAddParamIntString",
-		"snippet": "native.scaleformMovieMethodAddParamIntString(${1:value_number});${0}",
+		"name": "native_scaleformMovieMethodAddParamLatestBriefString",
+		"snippet": "native.scaleformMovieMethodAddParamLatestBriefString(${1:value_number});${0}",
 		"documentation": ""
 	},
 	{
@@ -6465,23 +6650,23 @@
 		"documentation": ""
 	},
 	{
-		"name": "native__0x6F1554B0CC2089FA",
-		"snippet": "native._0x6F1554B0CC2089FA(${1:p0_boolean});${0}",
+		"name": "native_thefeedOnlyShowTooltips",
+		"snippet": "native.thefeedOnlyShowTooltips(${1:toggle_boolean});${0}",
 		"documentation": ""
 	},
 	{
-		"name": "native_clearNotificationsPos",
-		"snippet": "native.clearNotificationsPos(${1:pos_number});${0}",
+		"name": "native_thefeedSetScriptedMenuHeight",
+		"snippet": "native.thefeedSetScriptedMenuHeight(${1:pos_number});${0}",
 		"documentation": ""
 	},
 	{
-		"name": "native__0x32888337579A5970",
-		"snippet": "native._0x32888337579A5970();${0}",
+		"name": "native_thefeedDisable",
+		"snippet": "native.thefeedDisable();${0}",
 		"documentation": ""
 	},
 	{
-		"name": "native_hideHudNotificationsThisFrame",
-		"snippet": "native.hideHudNotificationsThisFrame();${0}",
+		"name": "native_thefeedHideThisFrame",
+		"snippet": "native.thefeedHideThisFrame();${0}",
 		"documentation": ""
 	},
 	{
@@ -6490,213 +6675,213 @@
 		"documentation": ""
 	},
 	{
-		"name": "native__0xA8FDB297A8D25FBA",
-		"snippet": "native._0xA8FDB297A8D25FBA();${0}",
+		"name": "native_thefeedFlushQueue",
+		"snippet": "native.thefeedFlushQueue();${0}",
 		"documentation": ""
 	},
 	{
-		"name": "native_removeNotification",
-		"snippet": "native.removeNotification(${1:notificationId_number});${0}",
+		"name": "native_thefeedRemoveItem",
+		"snippet": "native.thefeedRemoveItem(${1:notificationId_number});${0}",
 		"documentation": ""
 	},
 	{
-		"name": "native__0xA13C11E1B5C06BFC",
-		"snippet": "native._0xA13C11E1B5C06BFC();${0}",
+		"name": "native_thefeedForceRenderOn",
+		"snippet": "native.thefeedForceRenderOn();${0}",
 		"documentation": ""
 	},
 	{
-		"name": "native__0x583049884A2EEE3C",
-		"snippet": "native._0x583049884A2EEE3C();${0}",
+		"name": "native_thefeedForceRenderOff",
+		"snippet": "native.thefeedForceRenderOff();${0}",
 		"documentation": ""
 	},
 	{
-		"name": "native__0xFDB423997FA30340",
-		"snippet": "native._0xFDB423997FA30340();${0}",
+		"name": "native_thefeedPause",
+		"snippet": "native.thefeedPause();${0}",
 		"documentation": ""
 	},
 	{
-		"name": "native__0xE1CD1E48E025E661",
-		"snippet": "native._0xE1CD1E48E025E661();${0}",
+		"name": "native_thefeedResume",
+		"snippet": "native.thefeedResume();${0}",
 		"documentation": ""
 	},
 	{
-		"name": "native__0xA9CBFD40B3FA3010",
-		"snippet": "native._0xA9CBFD40B3FA3010();${0}",
+		"name": "native_thefeedIsPaused",
+		"snippet": "native.thefeedIsPaused();${0}",
 		"documentation": ""
 	},
 	{
-		"name": "native__0xD4438C0564490E63",
-		"snippet": "native._0xD4438C0564490E63();${0}",
+		"name": "native_thefeedSpsExtendWidescreenOn",
+		"snippet": "native.thefeedSpsExtendWidescreenOn();${0}",
 		"documentation": ""
 	},
 	{
-		"name": "native__0xB695E2CD0A2DA9EE",
-		"snippet": "native._0xB695E2CD0A2DA9EE();${0}",
+		"name": "native_thefeedSpsExtendWidescreenOff",
+		"snippet": "native.thefeedSpsExtendWidescreenOff();${0}",
 		"documentation": ""
 	},
 	{
-		"name": "native_getCurrentNotification",
-		"snippet": "native.getCurrentNotification();${0}",
+		"name": "native_thefeedGetFirstVisibleDeleteRemaining",
+		"snippet": "native.thefeedGetFirstVisibleDeleteRemaining();${0}",
 		"documentation": ""
 	},
 	{
-		"name": "native__0x56C8B608CFD49854",
-		"snippet": "native._0x56C8B608CFD49854();${0}",
+		"name": "native_thefeedCommentTeleportPoolOn",
+		"snippet": "native.thefeedCommentTeleportPoolOn();${0}",
 		"documentation": ""
 	},
 	{
-		"name": "native__0xADED7F5748ACAFE6",
-		"snippet": "native._0xADED7F5748ACAFE6();${0}",
+		"name": "native_thefeedCommentTeleportPoolOff",
+		"snippet": "native.thefeedCommentTeleportPoolOff();${0}",
 		"documentation": ""
 	},
 	{
-		"name": "native_setNotificationBackgroundColor",
-		"snippet": "native.setNotificationBackgroundColor(${1:hudColorIndex_number});${0}",
+		"name": "native_thefeedSetNextPostBackgroundColor",
+		"snippet": "native.thefeedSetNextPostBackgroundColor(${1:hudColorIndex_number});${0}",
 		"documentation": ""
 	},
 	{
-		"name": "native_setNotificationFlashColor",
-		"snippet": "native.setNotificationFlashColor(${1:red_number}, ${2:green_number}, ${3:blue_number}, ${4:alpha_number});${0}",
+		"name": "native_thefeedSetAnimpostfxColor",
+		"snippet": "native.thefeedSetAnimpostfxColor(${1:red_number}, ${2:green_number}, ${3:blue_number}, ${4:alpha_number});${0}",
 		"documentation": ""
 	},
 	{
-		"name": "native__0x17AD8C9706BDD88A",
-		"snippet": "native._0x17AD8C9706BDD88A(${1:p0_number});${0}",
+		"name": "native_thefeedSetAnimpostfxCount",
+		"snippet": "native.thefeedSetAnimpostfxCount(${1:count_number});${0}",
 		"documentation": ""
 	},
 	{
-		"name": "native__0x4A0C7C9BB10ABB36",
-		"snippet": "native._0x4A0C7C9BB10ABB36(${1:p0_boolean});${0}",
+		"name": "native_thefeedSetAnimpostfxSound",
+		"snippet": "native.thefeedSetAnimpostfxSound(${1:toggle_boolean});${0}",
 		"documentation": ""
 	},
 	{
-		"name": "native__0xFDD85225B2DEA55E",
-		"snippet": "native._0xFDD85225B2DEA55E();${0}",
+		"name": "native_thefeedResetAllParameters",
+		"snippet": "native.thefeedResetAllParameters();${0}",
 		"documentation": ""
 	},
 	{
-		"name": "native__0xFDEC055AB549E328",
-		"snippet": "native._0xFDEC055AB549E328();${0}",
+		"name": "native_thefeedFreezeNextPost",
+		"snippet": "native.thefeedFreezeNextPost();${0}",
 		"documentation": ""
 	},
 	{
-		"name": "native__0x80FE4F3AB4E1B62A",
-		"snippet": "native._0x80FE4F3AB4E1B62A();${0}",
+		"name": "native_thefeedClearFrozenPost",
+		"snippet": "native.thefeedClearFrozenPost();${0}",
 		"documentation": ""
 	},
 	{
-		"name": "native__0xBAE4F9B97CD43B30",
-		"snippet": "native._0xBAE4F9B97CD43B30(${1:p0_boolean});${0}",
+		"name": "native_thefeedSetFlushAnimpostfx",
+		"snippet": "native.thefeedSetFlushAnimpostfx(${1:p0_boolean});${0}",
 		"documentation": ""
 	},
 	{
-		"name": "native__0x317EBA71D7543F52",
-		"snippet": "native._0x317EBA71D7543F52(${1:p0_number}, ${2:p1_number}, ${3:p2_number}, ${4:p3_number});${0}",
+		"name": "native_thefeedAddTxdRef",
+		"snippet": "native.thefeedAddTxdRef(${1:p0_number}, ${2:p1_number}, ${3:p2_number}, ${4:p3_number});${0}",
 		"documentation": ""
 	},
 	{
-		"name": "native_setNotificationTextEntry",
-		"snippet": "native.setNotificationTextEntry(${1:text_string});${0}",
+		"name": "native_beginTextCommandThefeedPost",
+		"snippet": "native.beginTextCommandThefeedPost(${1:text_string});${0}",
 		"documentation": ""
 	},
 	{
-		"name": "native_setNotificationMessage",
-		"snippet": "native.setNotificationMessage(${1:picName1_string}, ${2:picName2_string}, ${3:flash_boolean}, ${4:iconType_number}, ${5:sender_string}, ${6:subject_string}, ${7:p6_string});${0}",
+		"name": "native_endTextCommandThefeedPostStats",
+		"snippet": "native.endTextCommandThefeedPostStats(${1:txdName_string}, ${2:textureName_string}, ${3:flash_boolean}, ${4:iconType_number}, ${5:p4_boolean}, ${6:sender_string}, ${7:subject_string});${0}",
 		"documentation": ""
 	},
 	{
-		"name": "native_setNotificationMessage2",
-		"snippet": "native.setNotificationMessage2(${1:picName1_string}, ${2:picName2_string}, ${3:flash_boolean}, ${4:iconType_number}, ${5:sender_string}, ${6:subject_string});${0}",
+		"name": "native_endTextCommandThefeedPostMessagetext",
+		"snippet": "native.endTextCommandThefeedPostMessagetext(${1:picName1_string}, ${2:picName2_string}, ${3:flash_boolean}, ${4:iconType_number}, ${5:sender_string}, ${6:subject_string});${0}",
 		"documentation": ""
 	},
 	{
-		"name": "native_setNotificationMessage3",
-		"snippet": "native.setNotificationMessage3(${1:picName1_string}, ${2:picName2_string}, ${3:flash_boolean}, ${4:iconType_number}, ${5:sender_string}, ${6:subject_string});${0}",
+		"name": "native_endTextCommandThefeedPostMessagetextGxtEntry",
+		"snippet": "native.endTextCommandThefeedPostMessagetextGxtEntry(${1:picName1_string}, ${2:picName2_string}, ${3:flash_boolean}, ${4:iconType_number}, ${5:sender_string}, ${6:subject_string});${0}",
 		"documentation": ""
 	},
 	{
-		"name": "native_setNotificationMessage4",
-		"snippet": "native.setNotificationMessage4(${1:picName1_string}, ${2:picName2_string}, ${3:flash_boolean}, ${4:iconType_number}, ${5:sender_string}, ${6:subject_string}, ${7:duration_number});${0}",
+		"name": "native_endTextCommandThefeedPostMessagetextTu",
+		"snippet": "native.endTextCommandThefeedPostMessagetextTu(${1:picName1_string}, ${2:picName2_string}, ${3:flash_boolean}, ${4:iconType_number}, ${5:sender_string}, ${6:subject_string}, ${7:duration_number});${0}",
 		"documentation": ""
 	},
 	{
-		"name": "native_setNotificationMessageClanTag",
-		"snippet": "native.setNotificationMessageClanTag(${1:picName1_string}, ${2:picName2_string}, ${3:flash_boolean}, ${4:iconType_number}, ${5:sender_string}, ${6:subject_string}, ${7:duration_number}, ${8:clanTag_string});${0}",
+		"name": "native_endTextCommandThefeedPostMessagetextWithCrewTag",
+		"snippet": "native.endTextCommandThefeedPostMessagetextWithCrewTag(${1:picName1_string}, ${2:picName2_string}, ${3:flash_boolean}, ${4:iconType_number}, ${5:sender_string}, ${6:subject_string}, ${7:duration_number}, ${8:clanTag_string});${0}",
 		"documentation": ""
 	},
 	{
-		"name": "native_setNotificationMessageClanTag2",
-		"snippet": "native.setNotificationMessageClanTag2(${1:picName1_string}, ${2:picName2_string}, ${3:flash_boolean}, ${4:iconType1_number}, ${5:sender_string}, ${6:subject_string}, ${7:duration_number}, ${8:clanTag_string}, ${9:iconType2_number}, ${10:p9_number});${0}",
+		"name": "native_endTextCommandThefeedPostMessagetextWithCrewTagAndAdditionalIcon",
+		"snippet": "native.endTextCommandThefeedPostMessagetextWithCrewTagAndAdditionalIcon(${1:picName1_string}, ${2:picName2_string}, ${3:flash_boolean}, ${4:iconType1_number}, ${5:sender_string}, ${6:subject_string}, ${7:duration_number}, ${8:clanTag_string}, ${9:iconType2_number}, ${10:p9_number});${0}",
 		"documentation": ""
 	},
 	{
-		"name": "native_drawNotification",
-		"snippet": "native.drawNotification(${1:blink_boolean}, ${2:p1_boolean});${0}",
+		"name": "native_endTextCommandThefeedPostTicker",
+		"snippet": "native.endTextCommandThefeedPostTicker(${1:blink_boolean}, ${2:p1_boolean});${0}",
 		"documentation": ""
 	},
 	{
-		"name": "native_drawNotification2",
-		"snippet": "native.drawNotification2(${1:blink_boolean}, ${2:p1_boolean});${0}",
+		"name": "native_endTextCommandThefeedPostTickerForced",
+		"snippet": "native.endTextCommandThefeedPostTickerForced(${1:blink_boolean}, ${2:p1_boolean});${0}",
 		"documentation": ""
 	},
 	{
-		"name": "native_drawNotification3",
-		"snippet": "native.drawNotification3(${1:blink_boolean}, ${2:p1_boolean});${0}",
+		"name": "native_endTextCommandThefeedPostTickerWithTokens",
+		"snippet": "native.endTextCommandThefeedPostTickerWithTokens(${1:blink_boolean}, ${2:p1_boolean});${0}",
 		"documentation": ""
 	},
 	{
-		"name": "native_drawNotificationAward",
-		"snippet": "native.drawNotificationAward(${1:p0_string}, ${2:p1_string}, ${3:p2_number}, ${4:p3_number}, ${5:p4_string});${0}",
+		"name": "native_endTextCommandThefeedPostAward",
+		"snippet": "native.endTextCommandThefeedPostAward(${1:p0_string}, ${2:p1_string}, ${3:p2_number}, ${4:p3_number}, ${5:p4_string});${0}",
 		"documentation": ""
 	},
 	{
-		"name": "native_drawNotificationApartmentInvite",
-		"snippet": "native.drawNotificationApartmentInvite(${1:p0_boolean}, ${2:p1_boolean}, ${3:p2_number}, ${4:p3_number}, ${5:isLeader_boolean}, ${6:unk0_boolean}, ${7:clanDesc_number}, ${8:R_number}, ${9:G_number}, ${10:B_number});${0}",
+		"name": "native_endTextCommandThefeedPostCrewtag",
+		"snippet": "native.endTextCommandThefeedPostCrewtag(${1:p0_boolean}, ${2:p1_boolean}, ${3:p2_number}, ${4:p3_number}, ${5:isLeader_boolean}, ${6:unk0_boolean}, ${7:clanDesc_number}, ${8:R_number}, ${9:G_number}, ${10:B_number});${0}",
 		"documentation": ""
 	},
 	{
-		"name": "native_drawNotificationClanInvite",
-		"snippet": "native.drawNotificationClanInvite(${1:p0_boolean}, ${2:p1_boolean}, ${3:p2_number}, ${4:p3_number}, ${5:isLeader_boolean}, ${6:unk0_boolean}, ${7:clanDesc_number}, ${8:playerName_string}, ${9:R_number}, ${10:G_number}, ${11:B_number});${0}",
+		"name": "native_endTextCommandThefeedPostCrewtagWithGameName",
+		"snippet": "native.endTextCommandThefeedPostCrewtagWithGameName(${1:p0_boolean}, ${2:p1_boolean}, ${3:p2_number}, ${4:p3_number}, ${5:isLeader_boolean}, ${6:unk0_boolean}, ${7:clanDesc_number}, ${8:playerName_string}, ${9:R_number}, ${10:G_number}, ${11:B_number});${0}",
 		"documentation": ""
 	},
 	{
-		"name": "native__0x33EE12743CCD6343",
-		"snippet": "native._0x33EE12743CCD6343(${1:p0_number}, ${2:p1_number}, ${3:p2_number});${0}",
+		"name": "native_endTextCommandThefeedPostUnlock",
+		"snippet": "native.endTextCommandThefeedPostUnlock(${1:p0_number}, ${2:p1_number}, ${3:p2_number});${0}",
 		"documentation": ""
 	},
 	{
-		"name": "native__0xC8F3AAF93D0600BF",
-		"snippet": "native._0xC8F3AAF93D0600BF(${1:p0_number}, ${2:p1_number}, ${3:p2_number}, ${4:p3_number});${0}",
+		"name": "native_endTextCommandThefeedPostUnlockTu",
+		"snippet": "native.endTextCommandThefeedPostUnlockTu(${1:p0_number}, ${2:p1_number}, ${3:p2_number}, ${4:p3_number});${0}",
 		"documentation": ""
 	},
 	{
-		"name": "native__0x7AE0589093A2E088",
-		"snippet": "native._0x7AE0589093A2E088(${1:p0_number}, ${2:p1_number}, ${3:p2_number}, ${4:p3_number}, ${5:p4_number}, ${6:p5_number});${0}",
+		"name": "native_endTextCommandThefeedPostUnlockTuWithColor",
+		"snippet": "native.endTextCommandThefeedPostUnlockTuWithColor(${1:p0_number}, ${2:p1_number}, ${3:p2_number}, ${4:p3_number}, ${5:p4_number}, ${6:p5_number});${0}",
 		"documentation": ""
 	},
 	{
-		"name": "native_drawNotification4",
-		"snippet": "native.drawNotification4(${1:blink_boolean}, ${2:p1_boolean});${0}",
+		"name": "native_endTextCommandThefeedPostMpticker",
+		"snippet": "native.endTextCommandThefeedPostMpticker(${1:blink_boolean}, ${2:p1_boolean});${0}",
 		"documentation": ""
 	},
 	{
-		"name": "native__0x8EFCCF6EC66D85E4",
-		"snippet": "native._0x8EFCCF6EC66D85E4(${1:p0_number}, ${2:p1_number}, ${3:p2_number}, ${4:p3_boolean}, ${5:p4_boolean});${0}",
+		"name": "native_endTextCommandThefeedPostCrewRankup",
+		"snippet": "native.endTextCommandThefeedPostCrewRankup(${1:p0_string}, ${2:p1_string}, ${3:p2_string}, ${4:p3_boolean}, ${5:p4_boolean});${0}",
 		"documentation": ""
 	},
 	{
-		"name": "native__0xB6871B0555B02996",
-		"snippet": "native._0xB6871B0555B02996(${1:p0_number}, ${2:p1_number}, ${3:p2_number}, ${4:p3_number}, ${5:p4_number}, ${6:p5_number}, ${7:p6_number}, ${8:p7_number});${0}",
+		"name": "native_endTextCommandThefeedPostVersusTu",
+		"snippet": "native.endTextCommandThefeedPostVersusTu(${1:p0_number}, ${2:p1_number}, ${3:p2_number}, ${4:p3_number}, ${5:p4_number}, ${6:p5_number}, ${7:p6_number}, ${8:p7_number});${0}",
 		"documentation": ""
 	},
 	{
-		"name": "native_drawNotificationWithIcon",
-		"snippet": "native.drawNotificationWithIcon(${1:type_number}, ${2:image_number}, ${3:text_string});${0}",
+		"name": "native_endTextCommandThefeedPostReplayIcon",
+		"snippet": "native.endTextCommandThefeedPostReplayIcon(${1:type_number}, ${2:image_number}, ${3:text_string});${0}",
 		"documentation": ""
 	},
 	{
-		"name": "native_drawNotificationWithButton",
-		"snippet": "native.drawNotificationWithButton(${1:type_number}, ${2:button_string}, ${3:text_string});${0}",
+		"name": "native_endTextCommandThefeedPostReplayInput",
+		"snippet": "native.endTextCommandThefeedPostReplayInput(${1:type_number}, ${2:button_string}, ${3:text_string});${0}",
 		"documentation": ""
 	},
 	{
@@ -7310,18 +7495,18 @@
 		"documentation": ""
 	},
 	{
-		"name": "native__0xB9C362BABECDDC7A",
-		"snippet": "native._0xB9C362BABECDDC7A(${1:p0_number}, ${2:p1_number}, ${3:p2_number}, ${4:p3_number}, ${5:p4_number});${0}",
+		"name": "native_setHelpMessageTextStyle",
+		"snippet": "native.setHelpMessageTextStyle(${1:p0_number}, ${2:p1_number}, ${3:p2_number}, ${4:p3_number}, ${5:p4_number});${0}",
 		"documentation": ""
 	},
 	{
-		"name": "native__0x4A9923385BDB9DAD",
-		"snippet": "native._0x4A9923385BDB9DAD();${0}",
+		"name": "native_getLevelBlipSprite",
+		"snippet": "native.getLevelBlipSprite();${0}",
 		"documentation": ""
 	},
 	{
-		"name": "native_getBlipInfoIdIterator",
-		"snippet": "native.getBlipInfoIdIterator();${0}",
+		"name": "native_getWaypointBlipSprite",
+		"snippet": "native.getWaypointBlipSprite();${0}",
 		"documentation": ""
 	},
 	{
@@ -7400,13 +7585,13 @@
 		"documentation": ""
 	},
 	{
-		"name": "native__0x72DD432F3CDFC0EE",
-		"snippet": "native._0x72DD432F3CDFC0EE(${1:posX_number}, ${2:posY_number}, ${3:posZ_number}, ${4:radius_number}, ${5:p4_number});${0}",
+		"name": "native_triggerSonarBlip",
+		"snippet": "native.triggerSonarBlip(${1:posX_number}, ${2:posY_number}, ${3:posZ_number}, ${4:radius_number}, ${5:p4_number});${0}",
 		"documentation": ""
 	},
 	{
-		"name": "native__0x60734CC207C9833C",
-		"snippet": "native._0x60734CC207C9833C(${1:p0_boolean});${0}",
+		"name": "native_allowSonarBlips",
+		"snippet": "native.allowSonarBlips(${1:toggle_boolean});${0}",
 		"documentation": ""
 	},
 	{
@@ -7427,6 +7612,16 @@
 	{
 		"name": "native_getBlipSprite",
 		"snippet": "native.getBlipSprite(${1:blip_number});${0}",
+		"documentation": ""
+	},
+	{
+		"name": "native__0x9FCB3CBFB3EAD69A",
+		"snippet": "native._0x9FCB3CBFB3EAD69A(${1:p0_number}, ${2:p1_number});${0}",
+		"documentation": ""
+	},
+	{
+		"name": "native__0xB7B873520C84C118",
+		"snippet": "native._0xB7B873520C84C118();${0}",
 		"documentation": ""
 	},
 	{
@@ -7465,8 +7660,8 @@
 		"documentation": ""
 	},
 	{
-		"name": "native__0xA8B6AFDAC320AC87",
-		"snippet": "native._0xA8B6AFDAC320AC87(${1:p0_number}, ${2:p1_number});${0}",
+		"name": "native_setBlipSquaredRotation",
+		"snippet": "native.setBlipSquaredRotation(${1:p0_number}, ${2:p1_number});${0}",
 		"documentation": ""
 	},
 	{
@@ -7535,13 +7730,13 @@
 		"documentation": ""
 	},
 	{
-		"name": "native__0x5C90988E7C8E1AF4",
-		"snippet": "native._0x5C90988E7C8E1AF4();${0}",
+		"name": "native_getNewSelectedMissionCreatorBlip",
+		"snippet": "native.getNewSelectedMissionCreatorBlip();${0}",
 		"documentation": ""
 	},
 	{
-		"name": "native__0x4167EFE0527D706E",
-		"snippet": "native._0x4167EFE0527D706E();${0}",
+		"name": "native_isHoveringOverMissionCreatorBlip",
+		"snippet": "native.isHoveringOverMissionCreatorBlip();${0}",
 		"documentation": ""
 	},
 	{
@@ -7582,6 +7777,11 @@
 	{
 		"name": "native_setBlipScale",
 		"snippet": "native.setBlipScale(${1:blip_number}, ${2:scale_number});${0}",
+		"documentation": ""
+	},
+	{
+		"name": "native__0xCD6524439909C979",
+		"snippet": "native._0xCD6524439909C979(${1:blip_number}, ${2:p1_number}, ${3:p2_number});${0}",
 		"documentation": ""
 	},
 	{
@@ -7655,8 +7855,8 @@
 		"documentation": ""
 	},
 	{
-		"name": "native__0xC4278F70131BAA6D",
-		"snippet": "native._0xC4278F70131BAA6D(${1:p0_number}, ${2:p1_boolean});${0}",
+		"name": "native_setBlipDisplayIndicatorOnBlip",
+		"snippet": "native.setBlipDisplayIndicatorOnBlip(${1:blip_number}, ${2:toggle_boolean});${0}",
 		"documentation": ""
 	},
 	{
@@ -7690,8 +7890,8 @@
 		"documentation": ""
 	},
 	{
-		"name": "native__0xD8E694757BCEA8E9",
-		"snippet": "native._0xD8E694757BCEA8E9();${0}",
+		"name": "native_deleteWaypoint",
+		"snippet": "native.deleteWaypoint();${0}",
 		"documentation": ""
 	},
 	{
@@ -7790,23 +7990,23 @@
 		"documentation": ""
 	},
 	{
-		"name": "native__0x9049FE339D5F6F6F",
-		"snippet": "native._0x9049FE339D5F6F6F();${0}",
+		"name": "native_isMinimapInInterior",
+		"snippet": "native.isMinimapInInterior();${0}",
 		"documentation": ""
 	},
 	{
-		"name": "native_disableRadarThisFrame",
-		"snippet": "native.disableRadarThisFrame();${0}",
+		"name": "native_hideMinimapExteriorMapThisFrame",
+		"snippet": "native.hideMinimapExteriorMapThisFrame();${0}",
 		"documentation": ""
 	},
 	{
-		"name": "native__0x20FE7FDFEEAD38C0",
-		"snippet": "native._0x20FE7FDFEEAD38C0();${0}",
+		"name": "native_hideMinimapInteriorMapThisFrame",
+		"snippet": "native.hideMinimapInteriorMapThisFrame();${0}",
 		"documentation": ""
 	},
 	{
-		"name": "native_centerPlayerOnRadarThisFrame",
-		"snippet": "native.centerPlayerOnRadarThisFrame();${0}",
+		"name": "native_dontTiltMinimapThisFrame",
+		"snippet": "native.dontTiltMinimapThisFrame();${0}",
 		"documentation": ""
 	},
 	{
@@ -7920,23 +8120,23 @@
 		"documentation": ""
 	},
 	{
-		"name": "native__0xA48931185F0536FE",
-		"snippet": "native._0xA48931185F0536FE();${0}",
+		"name": "native_hudWeaponWheelGetSelectedHash",
+		"snippet": "native.hudWeaponWheelGetSelectedHash();${0}",
 		"documentation": ""
 	},
 	{
-		"name": "native__0x72C1056D678BB7D8",
-		"snippet": "native._0x72C1056D678BB7D8(${1:weaponHash_number});${0}",
+		"name": "native_hudWeaponWheelSetSlotHash",
+		"snippet": "native.hudWeaponWheelSetSlotHash(${1:weaponHash_number});${0}",
 		"documentation": ""
 	},
 	{
-		"name": "native__0xA13E93403F26C812",
-		"snippet": "native._0xA13E93403F26C812(${1:p0_number});${0}",
+		"name": "native_hudWeaponWheelGetSlotHash",
+		"snippet": "native.hudWeaponWheelGetSlotHash(${1:p0_number});${0}",
 		"documentation": ""
 	},
 	{
-		"name": "native__0x14C9FDCC41F81F63",
-		"snippet": "native._0x14C9FDCC41F81F63(${1:p0_boolean});${0}",
+		"name": "native_hudWeaponWheelIgnoreControlInput",
+		"snippet": "native.hudWeaponWheelIgnoreControlInput(${1:p0_boolean});${0}",
 		"documentation": ""
 	},
 	{
@@ -8020,8 +8220,8 @@
 		"documentation": ""
 	},
 	{
-		"name": "native__0x6B1DE27EE78E6A19",
-		"snippet": "native._0x6B1DE27EE78E6A19(${1:p0_number});${0}",
+		"name": "native_flashMinimapDisplayWithColor",
+		"snippet": "native.flashMinimapDisplayWithColor(${1:p0_number});${0}",
 		"documentation": ""
 	},
 	{
@@ -8055,13 +8255,13 @@
 		"documentation": ""
 	},
 	{
-		"name": "native_setNorthYanktonMap",
-		"snippet": "native.setNorthYanktonMap(${1:toggle_boolean});${0}",
+		"name": "native_setMinimapInPrologue",
+		"snippet": "native.setMinimapInPrologue(${1:toggle_boolean});${0}",
 		"documentation": ""
 	},
 	{
-		"name": "native_setMinimapRevealed",
-		"snippet": "native.setMinimapRevealed(${1:toggle_boolean});${0}",
+		"name": "native_setMinimapHideFow",
+		"snippet": "native.setMinimapHideFow(${1:toggle_boolean});${0}",
 		"documentation": ""
 	},
 	{
@@ -8120,18 +8320,18 @@
 		"documentation": ""
 	},
 	{
-		"name": "native__0x3F5CC444DCAAA8F2",
-		"snippet": "native._0x3F5CC444DCAAA8F2(${1:p0_number}, ${2:p1_number}, ${3:p2_boolean});${0}",
+		"name": "native_setHealthHudDisplayValues",
+		"snippet": "native.setHealthHudDisplayValues(${1:p0_number}, ${2:p1_number}, ${3:p2_boolean});${0}",
 		"documentation": ""
 	},
 	{
-		"name": "native__0x975D66A0BC17064C",
-		"snippet": "native._0x975D66A0BC17064C(${1:p0_number});${0}",
+		"name": "native_setMaxHealthHudDisplay",
+		"snippet": "native.setMaxHealthHudDisplay(${1:p0_number});${0}",
 		"documentation": ""
 	},
 	{
-		"name": "native__0x06A320535F5F0248",
-		"snippet": "native._0x06A320535F5F0248(${1:p0_number});${0}",
+		"name": "native_setMaxArmourHudDisplay",
+		"snippet": "native.setMaxArmourHudDisplay(${1:p0_number});${0}",
 		"documentation": ""
 	},
 	{
@@ -8152,6 +8352,11 @@
 	{
 		"name": "native_hideScriptedHudComponentThisFrame",
 		"snippet": "native.hideScriptedHudComponentThisFrame(${1:id_number});${0}",
+		"documentation": ""
+	},
+	{
+		"name": "native_showScriptedHudComponentThisFrame",
+		"snippet": "native.showScriptedHudComponentThisFrame(${1:id_number});${0}",
 		"documentation": ""
 	},
 	{
@@ -8220,28 +8425,28 @@
 		"documentation": ""
 	},
 	{
-		"name": "native__0x2432784ACA090DA4",
-		"snippet": "native._0x2432784ACA090DA4(${1:p0_number});${0}",
+		"name": "native_isFloatingHelpTextOnScreen",
+		"snippet": "native.isFloatingHelpTextOnScreen(${1:p0_number});${0}",
 		"documentation": ""
 	},
 	{
-		"name": "native__0x7679CC1BCEBE3D4C",
-		"snippet": "native._0x7679CC1BCEBE3D4C(${1:p0_number}, ${2:p1_number}, ${3:p2_number});${0}",
+		"name": "native_setFloatingHelpTextScreenPosition",
+		"snippet": "native.setFloatingHelpTextScreenPosition(${1:p0_number}, ${2:x_number}, ${3:y_number});${0}",
 		"documentation": ""
 	},
 	{
-		"name": "native__0x784BA7E0ECEB4178",
-		"snippet": "native._0x784BA7E0ECEB4178(${1:p0_number}, ${2:x_number}, ${3:y_number}, ${4:z_number});${0}",
+		"name": "native_setFloatingHelpTextWorldPosition",
+		"snippet": "native.setFloatingHelpTextWorldPosition(${1:p0_number}, ${2:x_number}, ${3:y_number}, ${4:z_number});${0}",
 		"documentation": ""
 	},
 	{
-		"name": "native__0xB094BC1DB4018240",
-		"snippet": "native._0xB094BC1DB4018240(${1:p0_number}, ${2:p1_number}, ${3:p2_number}, ${4:p3_number});${0}",
+		"name": "native_setFloatingHelpTextToEntity",
+		"snippet": "native.setFloatingHelpTextToEntity(${1:p0_number}, ${2:entity_number}, ${3:p2_number}, ${4:p3_number});${0}",
 		"documentation": ""
 	},
 	{
-		"name": "native__0x788E7FD431BD67F1",
-		"snippet": "native._0x788E7FD431BD67F1(${1:p0_number}, ${2:p1_number}, ${3:p2_number}, ${4:p3_number}, ${5:p4_number}, ${6:p5_number});${0}",
+		"name": "native_setFloatingHelpTextStyle",
+		"snippet": "native.setFloatingHelpTextStyle(${1:p0_number}, ${2:p1_number}, ${3:p2_number}, ${4:p3_number}, ${5:p4_number}, ${6:p5_number});${0}",
 		"documentation": ""
 	},
 	{
@@ -8295,13 +8500,13 @@
 		"documentation": ""
 	},
 	{
-		"name": "native__0xD29EC58C2F6B5014",
-		"snippet": "native._0xD29EC58C2F6B5014(${1:p0_number}, ${2:p1_number});${0}",
+		"name": "native_setMpGamerHealthBarDisplay",
+		"snippet": "native.setMpGamerHealthBarDisplay(${1:p0_number}, ${2:p1_number});${0}",
 		"documentation": ""
 	},
 	{
-		"name": "native__0x1563FE35E9928E67",
-		"snippet": "native._0x1563FE35E9928E67(${1:p0_number}, ${2:p1_number}, ${3:p2_number});${0}",
+		"name": "native_setMpGamerHealthBarMax",
+		"snippet": "native.setMpGamerHealthBarMax(${1:p0_number}, ${2:p1_number}, ${3:p2_number});${0}",
 		"documentation": ""
 	},
 	{
@@ -8380,8 +8585,8 @@
 		"documentation": ""
 	},
 	{
-		"name": "native_setWarningMessage3",
-		"snippet": "native.setWarningMessage3(${1:entryHeader_string}, ${2:entryLine1_string}, ${3:instructionalKey_number}, ${4:entryLine2_string}, ${5:p4_boolean}, ${6:p5_number}, ${7:p6_number}, ${8:p7_number}, ${9:p8_number}, ${10:p9_boolean}, ${11:p10_number});${0}",
+		"name": "native_setWarningMessageWithHeaderAndSubstringFlags",
+		"snippet": "native.setWarningMessageWithHeaderAndSubstringFlags(${1:entryHeader_string}, ${2:entryLine1_string}, ${3:instructionalKey_number}, ${4:entryLine2_string}, ${5:p4_boolean}, ${6:p5_number}, ${7:p6_number}, ${8:p7_number}, ${9:p8_number}, ${10:p9_boolean}, ${11:p10_number});${0}",
 		"documentation": ""
 	},
 	{
@@ -8425,23 +8630,23 @@
 		"documentation": ""
 	},
 	{
-		"name": "native_setMapFullScreen",
-		"snippet": "native.setMapFullScreen(${1:toggle_boolean});${0}",
+		"name": "native_raceGalleryFullscreen",
+		"snippet": "native.raceGalleryFullscreen(${1:toggle_boolean});${0}",
 		"documentation": ""
 	},
 	{
-		"name": "native__0x1EAE6DD17B7A5EFA",
-		"snippet": "native._0x1EAE6DD17B7A5EFA(${1:p0_number});${0}",
+		"name": "native_raceGalleryNextBlipSprite",
+		"snippet": "native.raceGalleryNextBlipSprite(${1:p0_number});${0}",
 		"documentation": ""
 	},
 	{
-		"name": "native__0x551DF99658DB6EE8",
-		"snippet": "native._0x551DF99658DB6EE8(${1:p0_number}, ${2:p1_number}, ${3:p2_number});${0}",
+		"name": "native_raceGalleryAddBlip",
+		"snippet": "native.raceGalleryAddBlip(${1:p0_number}, ${2:p1_number}, ${3:p2_number});${0}",
 		"documentation": ""
 	},
 	{
-		"name": "native__0x2708FC083123F9FF",
-		"snippet": "native._0x2708FC083123F9FF();${0}",
+		"name": "native_clearRaceGalleryBlips",
+		"snippet": "native.clearRaceGalleryBlips();${0}",
 		"documentation": ""
 	},
 	{
@@ -8775,8 +8980,8 @@
 		"documentation": ""
 	},
 	{
-		"name": "native__0x6A1738B4323FE2D9",
-		"snippet": "native._0x6A1738B4323FE2D9(${1:p0_number});${0}",
+		"name": "native_overrideMultiplayerChatPrefix",
+		"snippet": "native.overrideMultiplayerChatPrefix(${1:p0_number});${0}",
 		"documentation": ""
 	},
 	{
@@ -8795,8 +9000,8 @@
 		"documentation": ""
 	},
 	{
-		"name": "native__0xF47E567B3630DD12",
-		"snippet": "native._0xF47E567B3630DD12(${1:p0_number}, ${2:p1_number});${0}",
+		"name": "native_overrideMultiplayerChatColour",
+		"snippet": "native.overrideMultiplayerChatColour(${1:p0_number}, ${2:p1_number});${0}",
 		"documentation": ""
 	},
 	{
@@ -8805,8 +9010,8 @@
 		"documentation": ""
 	},
 	{
-		"name": "native_setIsInTournament",
-		"snippet": "native.setIsInTournament(${1:toggle_boolean});${0}",
+		"name": "native_flagPlayerContextInTournament",
+		"snippet": "native.flagPlayerContextInTournament(${1:toggle_boolean});${0}",
 		"documentation": ""
 	},
 	{
@@ -8886,7 +9091,7 @@
 	},
 	{
 		"name": "native_getInteriorInfo",
-		"snippet": "native.getInteriorInfo(${1:interior_number}, ${2:position_setAsUndefined}, ${3:nameHash_number});${0}",
+		"snippet": "native.getInteriorInfo(${1:interior_number}, ${2:position_vector3Ptr}, ${3:nameHash_number});${0}",
 		"documentation": ""
 	},
 	{
@@ -9060,13 +9265,13 @@
 		"documentation": ""
 	},
 	{
-		"name": "native_hideMapObjectThisFrame",
-		"snippet": "native.hideMapObjectThisFrame(${1:mapObjectHash_number});${0}",
+		"name": "native_enableExteriorCullModelThisFrame",
+		"snippet": "native.enableExteriorCullModelThisFrame(${1:mapObjectHash_number});${0}",
 		"documentation": ""
 	},
 	{
-		"name": "native__0x50C375537449F369",
-		"snippet": "native._0x50C375537449F369(${1:p0_number});${0}",
+		"name": "native_enableScriptCullModelThisFrame",
+		"snippet": "native.enableScriptCullModelThisFrame(${1:p0_number});${0}",
 		"documentation": ""
 	},
 	{
@@ -9565,18 +9770,23 @@
 		"documentation": ""
 	},
 	{
+		"name": "native_getRandomIntInRange2",
+		"snippet": "native.getRandomIntInRange2(${1:startRange_number}, ${2:endRange_number});${0}",
+		"documentation": ""
+	},
+	{
 		"name": "native_getGroundZFor3dCoord",
 		"snippet": "native.getGroundZFor3dCoord(${1:x_number}, ${2:y_number}, ${3:z_number}, ${4:groundZ_number}, ${5:unk_boolean}, ${6:p5_boolean});${0}",
 		"documentation": ""
 	},
 	{
-		"name": "native_getGroundZCoordWithOffsets",
-		"snippet": "native.getGroundZCoordWithOffsets(${1:x_number}, ${2:y_number}, ${3:z_number}, ${4:groundZ_number}, ${5:offsets_setAsUndefined});${0}",
+		"name": "native_getGroundZAndNormalFor3dCoord",
+		"snippet": "native.getGroundZAndNormalFor3dCoord(${1:x_number}, ${2:y_number}, ${3:z_number}, ${4:groundZ_number}, ${5:normal_vector3Ptr});${0}",
 		"documentation": ""
 	},
 	{
-		"name": "native__0x9E82F0F362881B29",
-		"snippet": "native._0x9E82F0F362881B29(${1:p0_number}, ${2:p1_number}, ${3:p2_number}, ${4:p3_number}, ${5:p4_number}, ${6:p5_number});${0}",
+		"name": "native_getGroundZFor3dCoord2",
+		"snippet": "native.getGroundZFor3dCoord2(${1:p0_number}, ${2:p1_number}, ${3:p2_number}, ${4:p3_number}, ${5:p4_number}, ${6:p5_number});${0}",
 		"documentation": ""
 	},
 	{
@@ -9650,8 +9860,8 @@
 		"documentation": ""
 	},
 	{
-		"name": "native__0xF2F6A2FA49278625",
-		"snippet": "native._0xF2F6A2FA49278625(${1:p0_number}, ${2:p1_number}, ${3:p2_number}, ${4:p3_number}, ${5:p4_number}, ${6:p5_number}, ${7:p6_number}, ${8:p7_number}, ${9:p8_number}, ${10:p9_number}, ${11:p10_number}, ${12:p11_number}, ${13:p12_number});${0}",
+		"name": "native_slerpNearQuaternion",
+		"snippet": "native.slerpNearQuaternion(${1:p0_number}, ${2:p1_number}, ${3:p2_number}, ${4:p3_number}, ${5:p4_number}, ${6:p5_number}, ${7:p6_number}, ${8:p7_number}, ${9:p8_number}, ${10:p9_number}, ${11:p10_number}, ${12:p11_number}, ${13:p12_number});${0}",
 		"documentation": ""
 	},
 	{
@@ -9826,7 +10036,7 @@
 	},
 	{
 		"name": "native__0xA4A0065E39C9F25C",
-		"snippet": "native._0xA4A0065E39C9F25C(${1:p0_setAsUndefined}, ${2:p1_number}, ${3:fadeInAfterLoad_boolean}, ${4:p3_boolean});${0}",
+		"snippet": "native._0xA4A0065E39C9F25C(${1:p0_vector3Ptr}, ${2:p1_number}, ${3:fadeInAfterLoad_boolean}, ${4:p3_boolean});${0}",
 		"documentation": ""
 	},
 	{
@@ -9941,7 +10151,7 @@
 	},
 	{
 		"name": "native_getModelDimensions",
-		"snippet": "native.getModelDimensions(${1:modelHash_number}, ${2:minimum_setAsUndefined}, ${3:maximum_setAsUndefined});${0}",
+		"snippet": "native.getModelDimensions(${1:modelHash_number}, ${2:minimum_vector3Ptr}, ${3:maximum_vector3Ptr});${0}",
 		"documentation": ""
 	},
 	{
@@ -10225,13 +10435,13 @@
 		"documentation": ""
 	},
 	{
-		"name": "native_useFreemodeMapBehavior",
-		"snippet": "native.useFreemodeMapBehavior(${1:p0_number});${0}",
+		"name": "native_setInstancePriorityMode",
+		"snippet": "native.setInstancePriorityMode(${1:p0_number});${0}",
 		"documentation": ""
 	},
 	{
-		"name": "native_setUnkMapFlag",
-		"snippet": "native.setUnkMapFlag(${1:flag_number});${0}",
+		"name": "native_setInstancePriorityHint",
+		"snippet": "native.setInstancePriorityHint(${1:flag_number});${0}",
 		"documentation": ""
 	},
 	{
@@ -10391,7 +10601,7 @@
 	},
 	{
 		"name": "native_findSpawnPointInDirection",
-		"snippet": "native.findSpawnPointInDirection(${1:x1_number}, ${2:y1_number}, ${3:z1_number}, ${4:x2_number}, ${5:y2_number}, ${6:z2_number}, ${7:distance_number}, ${8:spawnPoint_setAsUndefined});${0}",
+		"snippet": "native.findSpawnPointInDirection(${1:x1_number}, ${2:y1_number}, ${3:z1_number}, ${4:x2_number}, ${5:y2_number}, ${6:z2_number}, ${7:distance_number}, ${8:spawnPoint_vector3Ptr});${0}",
 		"documentation": ""
 	},
 	{
@@ -10500,13 +10710,13 @@
 		"documentation": ""
 	},
 	{
-		"name": "native__0x918C7B2D2FF3928B",
-		"snippet": "native._0x918C7B2D2FF3928B(${1:p0_number}, ${2:p1_number}, ${3:p2_number}, ${4:p3_number}, ${5:p4_number}, ${6:p5_number}, ${7:p6_number});${0}",
+		"name": "native_addDispatchSpawnBlockingAngledArea",
+		"snippet": "native.addDispatchSpawnBlockingAngledArea(${1:p0_number}, ${2:p1_number}, ${3:p2_number}, ${4:p3_number}, ${5:p4_number}, ${6:p5_number}, ${7:p6_number});${0}",
 		"documentation": ""
 	},
 	{
-		"name": "native__0x2D4259F1FEB81DA9",
-		"snippet": "native._0x2D4259F1FEB81DA9(${1:p0_number}, ${2:p1_number}, ${3:p2_number}, ${4:p3_number});${0}",
+		"name": "native_addDispatchSpawnBlockingArea",
+		"snippet": "native.addDispatchSpawnBlockingArea(${1:p0_number}, ${2:p1_number}, ${3:p2_number}, ${4:p3_number});${0}",
 		"documentation": ""
 	},
 	{
@@ -10530,13 +10740,13 @@
 		"documentation": ""
 	},
 	{
-		"name": "native__0xB8721407EE9C3FF6",
-		"snippet": "native._0xB8721407EE9C3FF6(${1:p0_number}, ${2:p1_number}, ${3:p2_number});${0}",
+		"name": "native_addTacticalAnalysisPoint",
+		"snippet": "native.addTacticalAnalysisPoint(${1:p0_number}, ${2:p1_number}, ${3:p2_number});${0}",
 		"documentation": ""
 	},
 	{
-		"name": "native__0xB3CD58CCA6CDA852",
-		"snippet": "native._0xB3CD58CCA6CDA852();${0}",
+		"name": "native_clearTacticalAnalysisPoints",
+		"snippet": "native.clearTacticalAnalysisPoints();${0}",
 		"documentation": ""
 	},
 	{
@@ -10545,8 +10755,8 @@
 		"documentation": ""
 	},
 	{
-		"name": "native_displayOnscreenKeyboard2",
-		"snippet": "native.displayOnscreenKeyboard2(${1:p0_number}, ${2:windowTitle_string}, ${3:p2_number}, ${4:defaultText_string}, ${5:defaultConcat1_string}, ${6:defaultConcat2_string}, ${7:defaultConcat3_string}, ${8:defaultConcat4_string}, ${9:defaultConcat5_string}, ${10:defaultConcat6_string}, ${11:defaultConcat7_string}, ${12:maxInputLength_number});${0}",
+		"name": "native_displayOnscreenKeyboardWithLongerInitialString",
+		"snippet": "native.displayOnscreenKeyboardWithLongerInitialString(${1:p0_number}, ${2:windowTitle_string}, ${3:p2_number}, ${4:defaultText_string}, ${5:defaultConcat1_string}, ${6:defaultConcat2_string}, ${7:defaultConcat3_string}, ${8:defaultConcat4_string}, ${9:defaultConcat5_string}, ${10:defaultConcat6_string}, ${11:defaultConcat7_string}, ${12:maxInputLength_number});${0}",
 		"documentation": ""
 	},
 	{
@@ -10786,7 +10996,7 @@
 	},
 	{
 		"name": "native_getMobilePhoneRotation",
-		"snippet": "native.getMobilePhoneRotation(${1:rotation_setAsUndefined}, ${2:p1_number});${0}",
+		"snippet": "native.getMobilePhoneRotation(${1:rotation_vector3Ptr}, ${2:p1_number});${0}",
 		"documentation": ""
 	},
 	{
@@ -10796,7 +11006,7 @@
 	},
 	{
 		"name": "native_getMobilePhonePosition",
-		"snippet": "native.getMobilePhonePosition(${1:position_setAsUndefined});${0}",
+		"snippet": "native.getMobilePhonePosition(${1:position_vector3Ptr});${0}",
 		"documentation": ""
 	},
 	{
@@ -10955,6 +11165,36 @@
 		"documentation": ""
 	},
 	{
+		"name": "native_networkCasinoCanUseGamblingType",
+		"snippet": "native.networkCasinoCanUseGamblingType(${1:hash_number});${0}",
+		"documentation": ""
+	},
+	{
+		"name": "native_networkCasinoCanPurchaseChipsWithPvc",
+		"snippet": "native.networkCasinoCanPurchaseChipsWithPvc();${0}",
+		"documentation": ""
+	},
+	{
+		"name": "native_networkCasinoCanGamble",
+		"snippet": "native.networkCasinoCanGamble(${1:p0_number});${0}",
+		"documentation": ""
+	},
+	{
+		"name": "native_networkCasinoCanPurchaseChipsWithPvc2",
+		"snippet": "native.networkCasinoCanPurchaseChipsWithPvc2();${0}",
+		"documentation": ""
+	},
+	{
+		"name": "native_networkCasinoPurchaseChips",
+		"snippet": "native.networkCasinoPurchaseChips(${1:p0_number}, ${2:p1_number});${0}",
+		"documentation": ""
+	},
+	{
+		"name": "native_networkCasinoSellChips",
+		"snippet": "native.networkCasinoSellChips(${1:p0_number}, ${2:p1_number});${0}",
+		"documentation": ""
+	},
+	{
 		"name": "native__0xCD0F5B5D932AE473",
 		"snippet": "native._0xCD0F5B5D932AE473();${0}",
 		"documentation": ""
@@ -11002,6 +11242,11 @@
 	{
 		"name": "native_networkEarnFromJob",
 		"snippet": "native.networkEarnFromJob(${1:amount_number}, ${2:p1_string});${0}",
+		"documentation": ""
+	},
+	{
+		"name": "native_networkEarnFromJobX2",
+		"snippet": "native.networkEarnFromJobX2(${1:amount_number}, ${2:p1_string});${0}",
 		"documentation": ""
 	},
 	{
@@ -11201,7 +11446,7 @@
 	},
 	{
 		"name": "native_networkBuyItem",
-		"snippet": "native.networkBuyItem(${1:player_number}, ${2:item_number}, ${3:p2_number}, ${4:p3_number}, ${5:p4_boolean}, ${6:item_name_string}, ${7:p6_number}, ${8:p7_number}, ${9:p8_number}, ${10:p9_boolean});${0}",
+		"snippet": "native.networkBuyItem(${1:amount_number}, ${2:item_number}, ${3:p2_number}, ${4:p3_number}, ${5:p4_boolean}, ${6:item_name_string}, ${7:p6_number}, ${8:p7_number}, ${9:p8_number}, ${10:p9_boolean});${0}",
 		"documentation": ""
 	},
 	{
@@ -11901,7 +12146,7 @@
 	},
 	{
 		"name": "native_networkSpentSpinTheWheelPayment",
-		"snippet": "native.networkSpentSpinTheWheelPayment(${1:amount_number}, ${2:p1_number}, ${3:p2_boolean}, ${4:p3_boolean});${0}",
+		"snippet": "native.networkSpentSpinTheWheelPayment(${1:amount_number}, ${2:p1_number}, ${3:p2_boolean});${0}",
 		"documentation": ""
 	},
 	{
@@ -11927,6 +12172,81 @@
 	{
 		"name": "native_networkEarnFromBbEventCargo",
 		"snippet": "native.networkEarnFromBbEventCargo(${1:amount_number});${0}",
+		"documentation": ""
+	},
+	{
+		"name": "native_networkEarnFromRcTimeTrial",
+		"snippet": "native.networkEarnFromRcTimeTrial(${1:amount_number});${0}",
+		"documentation": ""
+	},
+	{
+		"name": "native_networkEarnFromDailyObjectiveEvent",
+		"snippet": "native.networkEarnFromDailyObjectiveEvent(${1:amount_number});${0}",
+		"documentation": ""
+	},
+	{
+		"name": "native_networkSpentCasinoMembership",
+		"snippet": "native.networkSpentCasinoMembership(${1:amount_number}, ${2:p1_boolean}, ${3:p2_boolean}, ${4:p3_number});${0}",
+		"documentation": ""
+	},
+	{
+		"name": "native_networkSpentBuyCasino",
+		"snippet": "native.networkSpentBuyCasino(${1:amount_number}, ${2:p1_boolean}, ${3:p2_boolean}, ${4:data_number});${0}",
+		"documentation": ""
+	},
+	{
+		"name": "native_networkSpentUpgradeCasino",
+		"snippet": "native.networkSpentUpgradeCasino(${1:amount_number}, ${2:p1_boolean}, ${3:p2_boolean}, ${4:data_number});${0}",
+		"documentation": ""
+	},
+	{
+		"name": "native_networkSpentCasinoGeneric",
+		"snippet": "native.networkSpentCasinoGeneric(${1:amount_number}, ${2:p1_number}, ${3:p2_number}, ${4:p3_number}, ${5:p4_number});${0}",
+		"documentation": ""
+	},
+	{
+		"name": "native_networkEarnFromTimeTrialWin",
+		"snippet": "native.networkEarnFromTimeTrialWin(${1:amount_number});${0}",
+		"documentation": ""
+	},
+	{
+		"name": "native_networkEarnFromCollectionItem",
+		"snippet": "native.networkEarnFromCollectionItem(${1:amount_number});${0}",
+		"documentation": ""
+	},
+	{
+		"name": "native_networkEarnFromCollectablesActionFigures",
+		"snippet": "native.networkEarnFromCollectablesActionFigures(${1:amount_number});${0}",
+		"documentation": ""
+	},
+	{
+		"name": "native_networkEarnFromCompleteCollection",
+		"snippet": "native.networkEarnFromCompleteCollection(${1:amount_number});${0}",
+		"documentation": ""
+	},
+	{
+		"name": "native_networkEarnFromSellingVehicle",
+		"snippet": "native.networkEarnFromSellingVehicle(${1:amount_number});${0}",
+		"documentation": ""
+	},
+	{
+		"name": "native_networkEarnFromCasinoMissionReward",
+		"snippet": "native.networkEarnFromCasinoMissionReward(${1:amount_number});${0}",
+		"documentation": ""
+	},
+	{
+		"name": "native_networkEarnFromCasinoStoryMissionReward",
+		"snippet": "native.networkEarnFromCasinoStoryMissionReward(${1:amount_number});${0}",
+		"documentation": ""
+	},
+	{
+		"name": "native_networkEarnFromCasinoMissionParticipation",
+		"snippet": "native.networkEarnFromCasinoMissionParticipation(${1:amount_number});${0}",
+		"documentation": ""
+	},
+	{
+		"name": "native_networkEarnFromCasinoAward",
+		"snippet": "native.networkEarnFromCasinoAward(${1:amount_number}, ${2:hash_number});${0}",
 		"documentation": ""
 	},
 	{
@@ -11985,8 +12305,8 @@
 		"documentation": ""
 	},
 	{
-		"name": "native_networkGetRemainingVcDailyTransfers",
-		"snippet": "native.networkGetRemainingVcDailyTransfers();${0}",
+		"name": "native_networkGetPvcTransferBalance",
+		"snippet": "native.networkGetPvcTransferBalance();${0}",
 		"documentation": ""
 	},
 	{
@@ -12005,13 +12325,13 @@
 		"documentation": ""
 	},
 	{
-		"name": "native_withdrawCashFromBank",
-		"snippet": "native.withdrawCashFromBank(${1:amount_number});${0}",
+		"name": "native_withdrawVc",
+		"snippet": "native.withdrawVc(${1:amount_number});${0}",
 		"documentation": ""
 	},
 	{
-		"name": "native_depositCashInBank",
-		"snippet": "native.depositCashInBank(${1:amount_number});${0}",
+		"name": "native_depositVc",
+		"snippet": "native.depositVc(${1:amount_number});${0}",
 		"documentation": ""
 	},
 	{
@@ -12275,8 +12595,8 @@
 		"documentation": ""
 	},
 	{
-		"name": "native_networkAreRosAvailable",
-		"snippet": "native.networkAreRosAvailable();${0}",
+		"name": "native_networkHaveJustUploadLater",
+		"snippet": "native.networkHaveJustUploadLater();${0}",
 		"documentation": ""
 	},
 	{
@@ -12290,8 +12610,8 @@
 		"documentation": ""
 	},
 	{
-		"name": "native__0x67A5589628E0CFF6",
-		"snippet": "native._0x67A5589628E0CFF6();${0}",
+		"name": "native_networkHasSocialClubAccount",
+		"snippet": "native.networkHasSocialClubAccount();${0}",
 		"documentation": ""
 	},
 	{
@@ -12305,11 +12625,6 @@
 		"documentation": ""
 	},
 	{
-		"name": "native__0x4237E822315D8BA9",
-		"snippet": "native._0x4237E822315D8BA9();${0}",
-		"documentation": ""
-	},
-	{
 		"name": "native_networkHaveOnlinePrivileges",
 		"snippet": "native.networkHaveOnlinePrivileges();${0}",
 		"documentation": ""
@@ -12320,8 +12635,8 @@
 		"documentation": ""
 	},
 	{
-		"name": "native__0x72D918C99BCACC54",
-		"snippet": "native._0x72D918C99BCACC54(${1:p0_number});${0}",
+		"name": "native_networkHaveUserContentPrivileges",
+		"snippet": "native.networkHaveUserContentPrivileges(${1:p0_number});${0}",
 		"documentation": ""
 	},
 	{
@@ -12372,6 +12687,11 @@
 	{
 		"name": "native__0x0CF6CC51AA18F0F8",
 		"snippet": "native._0x0CF6CC51AA18F0F8(${1:p0_number}, ${2:p1_number}, ${3:p2_number});${0}",
+		"documentation": ""
+	},
+	{
+		"name": "native__0x64E5C4CC82847B73",
+		"snippet": "native._0x64E5C4CC82847B73();${0}",
 		"documentation": ""
 	},
 	{
@@ -12510,8 +12830,8 @@
 		"documentation": ""
 	},
 	{
-		"name": "native_networkSessionGetIsPlayerVotedToKick",
-		"snippet": "native.networkSessionGetIsPlayerVotedToKick(${1:player_number});${0}",
+		"name": "native_networkSessionGetKickVote",
+		"snippet": "native.networkSessionGetKickVote(${1:player_number});${0}",
 		"documentation": ""
 	},
 	{
@@ -12535,13 +12855,13 @@
 		"documentation": ""
 	},
 	{
-		"name": "native_networkSessionSetMaxPlayers",
-		"snippet": "native.networkSessionSetMaxPlayers(${1:playerType_number}, ${2:playerCount_number});${0}",
+		"name": "native_networkSessionSetMatchmakingGroupMax",
+		"snippet": "native.networkSessionSetMatchmakingGroupMax(${1:playerType_number}, ${2:playerCount_number});${0}",
 		"documentation": ""
 	},
 	{
-		"name": "native_networkSessionGetUnk",
-		"snippet": "native.networkSessionGetUnk(${1:p0_number});${0}",
+		"name": "native_networkSessionGetMatchmakingGroupFree",
+		"snippet": "native.networkSessionGetMatchmakingGroupFree(${1:p0_number});${0}",
 		"documentation": ""
 	},
 	{
@@ -12570,13 +12890,13 @@
 		"documentation": ""
 	},
 	{
-		"name": "native__0x3F52E880AAF6C8CA",
-		"snippet": "native._0x3F52E880AAF6C8CA(${1:p0_boolean});${0}",
+		"name": "native_networkSessionSetMatchmakingPropertyId",
+		"snippet": "native.networkSessionSetMatchmakingPropertyId(${1:p0_boolean});${0}",
 		"documentation": ""
 	},
 	{
-		"name": "native__0xF1EEA2DDA9FFA69D",
-		"snippet": "native._0xF1EEA2DDA9FFA69D(${1:p0_number});${0}",
+		"name": "native_networkSessionSetMatchmakingMentalState",
+		"snippet": "native.networkSessionSetMatchmakingMentalState(${1:p0_number});${0}",
 		"documentation": ""
 	},
 	{
@@ -12610,8 +12930,8 @@
 		"documentation": ""
 	},
 	{
-		"name": "native_networkGetServerTime",
-		"snippet": "native.networkGetServerTime(${1:hours_number}, ${2:minutes_number}, ${3:seconds_number});${0}",
+		"name": "native_networkGetGlobalMultiplayerClock",
+		"snippet": "native.networkGetGlobalMultiplayerClock(${1:hours_number}, ${2:minutes_number}, ${3:seconds_number});${0}",
 		"documentation": ""
 	},
 	{
@@ -12680,8 +13000,8 @@
 		"documentation": ""
 	},
 	{
-		"name": "native__0x02A8BEC6FD9AF660",
-		"snippet": "native._0x02A8BEC6FD9AF660(${1:p0_number}, ${2:p1_number});${0}",
+		"name": "native_networkGetGamerStatusResult",
+		"snippet": "native.networkGetGamerStatusResult(${1:p0_number}, ${2:p1_number});${0}",
 		"documentation": ""
 	},
 	{
@@ -12770,8 +13090,8 @@
 		"documentation": ""
 	},
 	{
-		"name": "native__0x74698374C45701D2",
-		"snippet": "native._0x74698374C45701D2();${0}",
+		"name": "native_networkIsOfflineInvitePending",
+		"snippet": "native.networkIsOfflineInvitePending();${0}",
 		"documentation": ""
 	},
 	{
@@ -12870,8 +13190,8 @@
 		"documentation": ""
 	},
 	{
-		"name": "native__0x855BC38818F6F684",
-		"snippet": "native._0x855BC38818F6F684();${0}",
+		"name": "native_networkSessionIsInVoiceSession",
+		"snippet": "native.networkSessionIsInVoiceSession();${0}",
 		"documentation": ""
 	},
 	{
@@ -12880,8 +13200,8 @@
 		"documentation": ""
 	},
 	{
-		"name": "native__0xEF0912DDF7C4CB4B",
-		"snippet": "native._0xEF0912DDF7C4CB4B();${0}",
+		"name": "native_networkSessionIsVoiceSessionBusy",
+		"snippet": "native.networkSessionIsVoiceSessionBusy();${0}",
 		"documentation": ""
 	},
 	{
@@ -13031,7 +13351,7 @@
 	},
 	{
 		"name": "native_networkBailTransition",
-		"snippet": "native.networkBailTransition();${0}",
+		"snippet": "native.networkBailTransition(${1:p0_number}, ${2:p1_number}, ${3:p2_number});${0}",
 		"documentation": ""
 	},
 	{
@@ -13270,8 +13590,8 @@
 		"documentation": ""
 	},
 	{
-		"name": "native__0x24409FC4C55CB22D",
-		"snippet": "native._0x24409FC4C55CB22D(${1:p0_number});${0}",
+		"name": "native_networkGetPresenceInviteContentId",
+		"snippet": "native.networkGetPresenceInviteContentId(${1:p0_number});${0}",
 		"documentation": ""
 	},
 	{
@@ -13285,8 +13605,8 @@
 		"documentation": ""
 	},
 	{
-		"name": "native__0x3DBF2DF0AEB7D289",
-		"snippet": "native._0x3DBF2DF0AEB7D289(${1:p0_number});${0}",
+		"name": "native_networkGetPresenceInviteFromAdmin",
+		"snippet": "native.networkGetPresenceInviteFromAdmin(${1:p0_number});${0}",
 		"documentation": ""
 	},
 	{
@@ -13415,8 +13735,8 @@
 		"documentation": ""
 	},
 	{
-		"name": "native__0xFD8B834A8BA05048",
-		"snippet": "native._0xFD8B834A8BA05048();${0}",
+		"name": "native_networkIsInPlatformPartyChat",
+		"snippet": "native.networkIsInPlatformPartyChat();${0}",
 		"documentation": ""
 	},
 	{
@@ -13470,8 +13790,8 @@
 		"documentation": ""
 	},
 	{
-		"name": "native__0x172F75B6EE2233BA",
-		"snippet": "native._0x172F75B6EE2233BA();${0}",
+		"name": "native_networkPlayerGetCheaterReason",
+		"snippet": "native.networkPlayerGetCheaterReason();${0}",
 		"documentation": ""
 	},
 	{
@@ -13525,8 +13845,8 @@
 		"documentation": ""
 	},
 	{
-		"name": "native_networkGetNumParticipantsHost",
-		"snippet": "native.networkGetNumParticipantsHost();${0}",
+		"name": "native_networkGetMaxNumParticipants",
+		"snippet": "native.networkGetMaxNumParticipants();${0}",
 		"documentation": ""
 	},
 	{
@@ -13645,8 +13965,8 @@
 		"documentation": ""
 	},
 	{
-		"name": "native__0x1AD5B71586B94820",
-		"snippet": "native._0x1AD5B71586B94820(${1:p0_number}, ${2:p1_number}, ${3:p2_number});${0}",
+		"name": "native_networkIsPlayerAParticipantOnScript",
+		"snippet": "native.networkIsPlayerAParticipantOnScript(${1:p0_number}, ${2:p1_number}, ${3:p2_number});${0}",
 		"documentation": ""
 	},
 	{
@@ -13960,8 +14280,8 @@
 		"documentation": ""
 	},
 	{
-		"name": "native_networkPlayerSomething",
-		"snippet": "native.networkPlayerSomething(${1:player_number});${0}",
+		"name": "native_networkPlayerIndexIsCheater",
+		"snippet": "native.networkPlayerIndexIsCheater(${1:player_number});${0}",
 		"documentation": ""
 	},
 	{
@@ -14045,13 +14365,13 @@
 		"documentation": ""
 	},
 	{
-		"name": "native__0x1B857666604B1A74",
-		"snippet": "native._0x1B857666604B1A74(${1:toggle_boolean});${0}",
+		"name": "native_networkSetPlayerIsPassive",
+		"snippet": "native.networkSetPlayerIsPassive(${1:toggle_boolean});${0}",
 		"documentation": ""
 	},
 	{
-		"name": "native__0x82377B65E943F72D",
-		"snippet": "native._0x82377B65E943F72D(${1:p0_number});${0}",
+		"name": "native_networkGetPlayerOwnsWaypoint",
+		"snippet": "native.networkGetPlayerOwnsWaypoint(${1:player_number});${0}",
 		"documentation": ""
 	},
 	{
@@ -14085,8 +14405,8 @@
 		"documentation": ""
 	},
 	{
-		"name": "native__0xC0D2AF00BCC234CA",
-		"snippet": "native._0xC0D2AF00BCC234CA();${0}",
+		"name": "native_networkIsLocalTalking",
+		"snippet": "native.networkIsLocalTalking();${0}",
 		"documentation": ""
 	},
 	{
@@ -14236,22 +14556,22 @@
 	},
 	{
 		"name": "native__0x3C5C1E2C2FF814B1",
-		"snippet": "native._0x3C5C1E2C2FF814B1(${1:p0_boolean});${0}",
+		"snippet": "native._0x3C5C1E2C2FF814B1(${1:toggle_boolean});${0}",
 		"documentation": ""
 	},
 	{
 		"name": "native__0x9D7AFCBF21C51712",
-		"snippet": "native._0x9D7AFCBF21C51712(${1:p0_boolean});${0}",
+		"snippet": "native._0x9D7AFCBF21C51712(${1:toggle_boolean});${0}",
 		"documentation": ""
 	},
 	{
-		"name": "native__0xF46A1E03E8755980",
-		"snippet": "native._0xF46A1E03E8755980(${1:p0_boolean});${0}",
+		"name": "native_networkSetNoSpectatorChat",
+		"snippet": "native.networkSetNoSpectatorChat(${1:toggle_boolean});${0}",
 		"documentation": ""
 	},
 	{
 		"name": "native__0x6A5D89D7769A40D8",
-		"snippet": "native._0x6A5D89D7769A40D8(${1:p0_boolean});${0}",
+		"snippet": "native._0x6A5D89D7769A40D8(${1:toggle_boolean});${0}",
 		"documentation": ""
 	},
 	{
@@ -14265,8 +14585,8 @@
 		"documentation": ""
 	},
 	{
-		"name": "native_networkChatMute",
-		"snippet": "native.networkChatMute(${1:toggle_boolean});${0}",
+		"name": "native_networkOverrideSendRestrictionsAll",
+		"snippet": "native.networkOverrideSendRestrictionsAll(${1:toggle_boolean});${0}",
 		"documentation": ""
 	},
 	{
@@ -14275,8 +14595,8 @@
 		"documentation": ""
 	},
 	{
-		"name": "native__0x0FF2862B61A58AF9",
-		"snippet": "native._0x0FF2862B61A58AF9(${1:toggle_boolean});${0}",
+		"name": "native_networkOverrideReceiveRestrictionsAll",
+		"snippet": "native.networkOverrideReceiveRestrictionsAll(${1:toggle_boolean});${0}",
 		"documentation": ""
 	},
 	{
@@ -14312,6 +14632,11 @@
 	{
 		"name": "native__0xADB57E5B663CCA8B",
 		"snippet": "native._0xADB57E5B663CCA8B(${1:p0_number}, ${2:p1_number}, ${3:p2_number});${0}",
+		"documentation": ""
+	},
+	{
+		"name": "native__0x8EF52ACAECC51D9C",
+		"snippet": "native._0x8EF52ACAECC51D9C(${1:toggle_boolean});${0}",
 		"documentation": ""
 	},
 	{
@@ -14390,13 +14715,13 @@
 		"documentation": ""
 	},
 	{
-		"name": "native__0xF45352426FF3A4F0",
-		"snippet": "native._0xF45352426FF3A4F0(${1:clanDesc_number}, ${2:bufferSize_number}, ${3:p2_string});${0}",
+		"name": "native_networkClanGetUiFormattedTag",
+		"snippet": "native.networkClanGetUiFormattedTag(${1:clanDesc_number}, ${2:bufferSize_number}, ${3:formattedTag_string});${0}",
 		"documentation": ""
 	},
 	{
-		"name": "native_networkClanGetNumMembershipDesc",
-		"snippet": "native.networkClanGetNumMembershipDesc();${0}",
+		"name": "native_networkClanGetLocalMembershipsCount",
+		"snippet": "native.networkClanGetLocalMembershipsCount();${0}",
 		"documentation": ""
 	},
 	{
@@ -14465,18 +14790,18 @@
 		"documentation": ""
 	},
 	{
-		"name": "native__0x13518FF1C6B28938",
-		"snippet": "native._0x13518FF1C6B28938(${1:p0_number});${0}",
+		"name": "native_networkClanRequestEmblem",
+		"snippet": "native.networkClanRequestEmblem(${1:p0_number});${0}",
 		"documentation": ""
 	},
 	{
-		"name": "native__0xA134777FF7F33331",
-		"snippet": "native._0xA134777FF7F33331(${1:p0_number}, ${2:p1_number});${0}",
+		"name": "native_networkClanIsEmblemReady",
+		"snippet": "native.networkClanIsEmblemReady(${1:p0_number}, ${2:p1_number});${0}",
 		"documentation": ""
 	},
 	{
-		"name": "native__0x113E6E3E50E286B0",
-		"snippet": "native._0x113E6E3E50E286B0(${1:p0_number});${0}",
+		"name": "native_networkClanReleaseEmblem",
+		"snippet": "native.networkClanReleaseEmblem(${1:p0_number});${0}",
 		"documentation": ""
 	},
 	{
@@ -14550,6 +14875,11 @@
 		"documentation": ""
 	},
 	{
+		"name": "native__0x6540EDC4F45DA089",
+		"snippet": "native._0x6540EDC4F45DA089(${1:player_number});${0}",
+		"documentation": ""
+	},
+	{
 		"name": "native_setNetworkCutsceneEntities",
 		"snippet": "native.setNetworkCutsceneEntities(${1:toggle_boolean});${0}",
 		"documentation": ""
@@ -14560,8 +14890,8 @@
 		"documentation": ""
 	},
 	{
-		"name": "native_networkCanNetworkIdBeSeen",
-		"snippet": "native.networkCanNetworkIdBeSeen(${1:netId_number});${0}",
+		"name": "native_isNetworkIdOwnedByParticipant",
+		"snippet": "native.isNetworkIdOwnedByParticipant(${1:netId_number});${0}",
 		"documentation": ""
 	},
 	{
@@ -14680,18 +15010,18 @@
 		"documentation": ""
 	},
 	{
-		"name": "native__0x797F9C5E661D920E",
-		"snippet": "native._0x797F9C5E661D920E(${1:p0_number});${0}",
+		"name": "native_reserveNetworkLocalObjects",
+		"snippet": "native.reserveNetworkLocalObjects(${1:p0_number});${0}",
 		"documentation": ""
 	},
 	{
-		"name": "native__0x2C8DF5D129595281",
-		"snippet": "native._0x2C8DF5D129595281(${1:p0_number});${0}",
+		"name": "native_reserveNetworkLocalPeds",
+		"snippet": "native.reserveNetworkLocalPeds(${1:p0_number});${0}",
 		"documentation": ""
 	},
 	{
-		"name": "native__0x42613035157E4208",
-		"snippet": "native._0x42613035157E4208(${1:p0_number});${0}",
+		"name": "native_reserveNetworkLocalVehicles",
+		"snippet": "native.reserveNetworkLocalVehicles(${1:p0_number});${0}",
 		"documentation": ""
 	},
 	{
@@ -14740,18 +15070,18 @@
 		"documentation": ""
 	},
 	{
-		"name": "native__0x12B6281B6C6706C0",
-		"snippet": "native._0x12B6281B6C6706C0(${1:p0_boolean});${0}",
+		"name": "native_getNumCreatedMissionObjects",
+		"snippet": "native.getNumCreatedMissionObjects(${1:p0_boolean});${0}",
 		"documentation": ""
 	},
 	{
-		"name": "native__0xCB215C4B56A7FAE7",
-		"snippet": "native._0xCB215C4B56A7FAE7(${1:p0_boolean});${0}",
+		"name": "native_getNumCreatedMissionPeds",
+		"snippet": "native.getNumCreatedMissionPeds(${1:p0_boolean});${0}",
 		"documentation": ""
 	},
 	{
-		"name": "native__0x0CD9AB83489430EA",
-		"snippet": "native._0x0CD9AB83489430EA(${1:p0_boolean});${0}",
+		"name": "native_getNumCreatedMissionVehicles",
+		"snippet": "native.getNumCreatedMissionVehicles(${1:p0_boolean});${0}",
 		"documentation": ""
 	},
 	{
@@ -14760,23 +15090,23 @@
 		"documentation": ""
 	},
 	{
-		"name": "native__0xC7BE335216B5EC7C",
-		"snippet": "native._0xC7BE335216B5EC7C();${0}",
+		"name": "native_getMaxNumNetworkObjects",
+		"snippet": "native.getMaxNumNetworkObjects();${0}",
 		"documentation": ""
 	},
 	{
-		"name": "native__0x0C1F7D49C39D2289",
-		"snippet": "native._0x0C1F7D49C39D2289();${0}",
+		"name": "native_getMaxNumNetworkPeds",
+		"snippet": "native.getMaxNumNetworkPeds();${0}",
 		"documentation": ""
 	},
 	{
-		"name": "native__0x0AFCE529F69B21FF",
-		"snippet": "native._0x0AFCE529F69B21FF();${0}",
+		"name": "native_getMaxNumNetworkVehicles",
+		"snippet": "native.getMaxNumNetworkVehicles();${0}",
 		"documentation": ""
 	},
 	{
-		"name": "native__0xA72835064DD63E4C",
-		"snippet": "native._0xA72835064DD63E4C();${0}",
+		"name": "native_getMaxNumNetworkPickups",
+		"snippet": "native.getMaxNumNetworkPickups();${0}",
 		"documentation": ""
 	},
 	{
@@ -14895,8 +15225,8 @@
 		"documentation": ""
 	},
 	{
-		"name": "native_setNetworkObjectNonContact",
-		"snippet": "native.setNetworkObjectNonContact(${1:object_number}, ${2:toggle_boolean});${0}",
+		"name": "native_setNetworkVehicleAsGhost",
+		"snippet": "native.setNetworkVehicleAsGhost(${1:vehicle_number}, ${2:toggle_boolean});${0}",
 		"documentation": ""
 	},
 	{
@@ -14980,6 +15310,11 @@
 		"documentation": ""
 	},
 	{
+		"name": "native__0x45F35C0EDC33B03B",
+		"snippet": "native._0x45F35C0EDC33B03B(${1:netScene_number}, ${2:modelHash_number}, ${3:x_number}, ${4:y_number}, ${5:z_number}, ${6:p5_number}, ${7:p6_string}, ${8:p7_number}, ${9:p8_number}, ${10:flags_number});${0}",
+		"documentation": ""
+	},
+	{
 		"name": "native_networkForceLocalUseOfSyncedSceneCamera",
 		"snippet": "native.networkForceLocalUseOfSyncedSceneCamera(${1:netScene_number}, ${2:animDict_string}, ${3:animName_string});${0}",
 		"documentation": ""
@@ -15020,38 +15355,38 @@
 		"documentation": ""
 	},
 	{
-		"name": "native__0x5A6FFA2433E2F14C",
-		"snippet": "native._0x5A6FFA2433E2F14C(${1:player_number}, ${2:p1_number}, ${3:p2_number}, ${4:p3_number}, ${5:p4_number}, ${6:p5_number}, ${7:p6_number}, ${8:p7_number}, ${9:flags_number});${0}",
+		"name": "native_networkStartRespawnSearchForPlayer",
+		"snippet": "native.networkStartRespawnSearchForPlayer(${1:player_number}, ${2:p1_number}, ${3:p2_number}, ${4:p3_number}, ${5:p4_number}, ${6:p5_number}, ${7:p6_number}, ${8:p7_number}, ${9:flags_number});${0}",
 		"documentation": ""
 	},
 	{
-		"name": "native__0x4BA92A18502BCA61",
-		"snippet": "native._0x4BA92A18502BCA61(${1:player_number}, ${2:p1_number}, ${3:p2_number}, ${4:p3_number}, ${5:p4_number}, ${6:p5_number}, ${7:p6_number}, ${8:p7_number}, ${9:p8_number}, ${10:p9_number}, ${11:p10_number}, ${12:flags_number});${0}",
+		"name": "native_networkStartRespawnSearchInAngledAreaForPlayer",
+		"snippet": "native.networkStartRespawnSearchInAngledAreaForPlayer(${1:player_number}, ${2:p1_number}, ${3:p2_number}, ${4:p3_number}, ${5:p4_number}, ${6:p5_number}, ${7:p6_number}, ${8:p7_number}, ${9:p8_number}, ${10:p9_number}, ${11:p10_number}, ${12:flags_number});${0}",
 		"documentation": ""
 	},
 	{
-		"name": "native__0x3C891A251567DFCE",
-		"snippet": "native._0x3C891A251567DFCE(${1:p0_number});${0}",
+		"name": "native_networkQueryRespawnResults",
+		"snippet": "native.networkQueryRespawnResults(${1:p0_number});${0}",
 		"documentation": ""
 	},
 	{
-		"name": "native__0xFB8F2A6F3DF08CBE",
-		"snippet": "native._0xFB8F2A6F3DF08CBE();${0}",
+		"name": "native_networkCancelRespawnSearch",
+		"snippet": "native.networkCancelRespawnSearch();${0}",
 		"documentation": ""
 	},
 	{
 		"name": "native_networkGetRespawnResult",
-		"snippet": "native.networkGetRespawnResult(${1:randomInt_number}, ${2:coordinates_setAsUndefined}, ${3:heading_number});${0}",
+		"snippet": "native.networkGetRespawnResult(${1:randomInt_number}, ${2:coordinates_vector3Ptr}, ${3:heading_number});${0}",
 		"documentation": ""
 	},
 	{
-		"name": "native__0x6C34F1208B8923FD",
-		"snippet": "native._0x6C34F1208B8923FD(${1:p0_number});${0}",
+		"name": "native_networkGetRespawnResultFlags",
+		"snippet": "native.networkGetRespawnResultFlags(${1:p0_number});${0}",
 		"documentation": ""
 	},
 	{
-		"name": "native__0x17E0198B3882C2CB",
-		"snippet": "native._0x17E0198B3882C2CB();${0}",
+		"name": "native_networkStartSoloTutorialSession",
+		"snippet": "native.networkStartSoloTutorialSession();${0}",
 		"documentation": ""
 	},
 	{
@@ -15075,13 +15410,13 @@
 		"documentation": ""
 	},
 	{
-		"name": "native__0x35F0B98A8387274D",
-		"snippet": "native._0x35F0B98A8387274D();${0}",
+		"name": "native_networkIsTutorialSessionChangePending",
+		"snippet": "native.networkIsTutorialSessionChangePending();${0}",
 		"documentation": ""
 	},
 	{
-		"name": "native__0x3B39236746714134",
-		"snippet": "native._0x3B39236746714134(${1:player_number});${0}",
+		"name": "native_networkGetPlayerTutorialSessionInstance",
+		"snippet": "native.networkGetPlayerTutorialSessionInstance(${1:player_number});${0}",
 		"documentation": ""
 	},
 	{
@@ -15135,8 +15470,8 @@
 		"documentation": ""
 	},
 	{
-		"name": "native__0x25B99872D588A101",
-		"snippet": "native._0x25B99872D588A101(${1:p0_number}, ${2:p1_number}, ${3:p2_number}, ${4:p3_number}, ${5:p4_number}, ${6:p5_number});${0}",
+		"name": "native_networkAddEntityDisplayedBoundaries",
+		"snippet": "native.networkAddEntityDisplayedBoundaries(${1:p0_number}, ${2:p1_number}, ${3:p2_number}, ${4:p3_number}, ${5:p4_number}, ${6:p5_number});${0}",
 		"documentation": ""
 	},
 	{
@@ -15150,8 +15485,8 @@
 		"documentation": ""
 	},
 	{
-		"name": "native__0xE64A3CA08DFA37A9",
-		"snippet": "native._0xE64A3CA08DFA37A9(${1:p0_number});${0}",
+		"name": "native_networkEntityAreaDoesExist",
+		"snippet": "native.networkEntityAreaDoesExist(${1:p0_number});${0}",
 		"documentation": ""
 	},
 	{
@@ -15160,8 +15495,8 @@
 		"documentation": ""
 	},
 	{
-		"name": "native__0x4A2D4E8BF4265B0F",
-		"snippet": "native._0x4A2D4E8BF4265B0F(${1:p0_number});${0}",
+		"name": "native_networkEntityAreaIsOccupied",
+		"snippet": "native.networkEntityAreaIsOccupied(${1:p0_number});${0}",
 		"documentation": ""
 	},
 	{
@@ -15200,8 +15535,8 @@
 		"documentation": ""
 	},
 	{
-		"name": "native_networkGetTunablesVersion",
-		"snippet": "native.networkGetTunablesVersion();${0}",
+		"name": "native_networkGetTunableCloudCrc",
+		"snippet": "native.networkGetTunableCloudCrc();${0}",
 		"documentation": ""
 	},
 	{
@@ -15300,8 +15635,13 @@
 		"documentation": ""
 	},
 	{
-		"name": "native__0x890E2C5ABED7236D",
-		"snippet": "native._0x890E2C5ABED7236D(${1:p0_number}, ${2:p1_number});${0}",
+		"name": "native_networkSetVehicleWheelsDestructible",
+		"snippet": "native.networkSetVehicleWheelsDestructible(${1:p0_number}, ${2:p1_number});${0}",
+		"documentation": ""
+	},
+	{
+		"name": "native__0x38B7C51AB1EDC7D8",
+		"snippet": "native._0x38B7C51AB1EDC7D8(${1:entity_number}, ${2:toggle_boolean});${0}",
 		"documentation": ""
 	},
 	{
@@ -15320,8 +15660,8 @@
 		"documentation": ""
 	},
 	{
-		"name": "native__0xA7E30DE9272B6D49",
-		"snippet": "native._0xA7E30DE9272B6D49(${1:ped_number}, ${2:x_number}, ${3:y_number}, ${4:z_number}, ${5:p4_number});${0}",
+		"name": "native_networkOverrideCoordsAndHeading",
+		"snippet": "native.networkOverrideCoordsAndHeading(${1:ped_number}, ${2:x_number}, ${3:y_number}, ${4:z_number}, ${5:heading_number});${0}",
 		"documentation": ""
 	},
 	{
@@ -15330,8 +15670,8 @@
 		"documentation": ""
 	},
 	{
-		"name": "native__0x407091CF6037118E",
-		"snippet": "native._0x407091CF6037118E(${1:netID_number});${0}",
+		"name": "native_networkDisableProximityMigration",
+		"snippet": "native.networkDisableProximityMigration(${1:netID_number});${0}",
 		"documentation": ""
 	},
 	{
@@ -15400,8 +15740,8 @@
 		"documentation": ""
 	},
 	{
-		"name": "native__0xCA94551B50B4932C",
-		"snippet": "native._0xCA94551B50B4932C(${1:p0_number});${0}",
+		"name": "native_getCommerceProductPrice",
+		"snippet": "native.getCommerceProductPrice(${1:index_number});${0}",
 		"documentation": ""
 	},
 	{
@@ -15485,8 +15825,8 @@
 		"documentation": ""
 	},
 	{
-		"name": "native__0x4C61B39930D045DA",
-		"snippet": "native._0x4C61B39930D045DA(${1:p0_number});${0}",
+		"name": "native_cloudHasRequestCompleted",
+		"snippet": "native.cloudHasRequestCompleted(${1:p0_number});${0}",
 		"documentation": ""
 	},
 	{
@@ -15505,8 +15845,8 @@
 		"documentation": ""
 	},
 	{
-		"name": "native__0x0B0CC10720653F3B",
-		"snippet": "native._0x0B0CC10720653F3B();${0}",
+		"name": "native_cloudGetAvailabilityCheckResult",
+		"snippet": "native.cloudGetAvailabilityCheckResult();${0}",
 		"documentation": ""
 	},
 	{
@@ -15530,8 +15870,8 @@
 		"documentation": ""
 	},
 	{
-		"name": "native__0x152D90E4C1B4738A",
-		"snippet": "native._0x152D90E4C1B4738A(${1:p0_number}, ${2:p1_number});${0}",
+		"name": "native_ugcCopyContent",
+		"snippet": "native.ugcCopyContent(${1:p0_number}, ${2:p1_number});${0}",
 		"documentation": ""
 	},
 	{
@@ -15540,8 +15880,8 @@
 		"documentation": ""
 	},
 	{
-		"name": "native__0x5E24341A7F92A74B",
-		"snippet": "native._0x5E24341A7F92A74B();${0}",
+		"name": "native_ugcHasCreateFinished",
+		"snippet": "native.ugcHasCreateFinished();${0}",
 		"documentation": ""
 	},
 	{
@@ -15550,13 +15890,13 @@
 		"documentation": ""
 	},
 	{
-		"name": "native__0xFBC5E768C7A77A6A",
-		"snippet": "native._0xFBC5E768C7A77A6A();${0}",
+		"name": "native_ugcGetCreateResult",
+		"snippet": "native.ugcGetCreateResult();${0}",
 		"documentation": ""
 	},
 	{
-		"name": "native__0xC55A0B40FFB1ED23",
-		"snippet": "native._0xC55A0B40FFB1ED23();${0}",
+		"name": "native_ugcGetCreateContentId",
+		"snippet": "native.ugcGetCreateContentId();${0}",
 		"documentation": ""
 	},
 	{
@@ -15565,8 +15905,8 @@
 		"documentation": ""
 	},
 	{
-		"name": "native__0x9BF438815F5D96EA",
-		"snippet": "native._0x9BF438815F5D96EA(${1:p0_number}, ${2:p1_number}, ${3:p2_number}, ${4:p3_number}, ${5:p4_number}, ${6:p5_number});${0}",
+		"name": "native_ugcQueryMyContent",
+		"snippet": "native.ugcQueryMyContent(${1:p0_number}, ${2:p1_number}, ${3:p2_number}, ${4:p3_number}, ${5:p4_number}, ${6:p5_number});${0}",
 		"documentation": ""
 	},
 	{
@@ -15590,28 +15930,28 @@
 		"documentation": ""
 	},
 	{
-		"name": "native__0xD5A4B59980401588",
-		"snippet": "native._0xD5A4B59980401588(${1:p0_number}, ${2:p1_number}, ${3:p2_number}, ${4:p3_number});${0}",
+		"name": "native_ugcGetBookmarkedContent",
+		"snippet": "native.ugcGetBookmarkedContent(${1:p0_number}, ${2:p1_number}, ${3:p2_number}, ${4:p3_number});${0}",
 		"documentation": ""
 	},
 	{
-		"name": "native__0x3195F8DD0D531052",
-		"snippet": "native._0x3195F8DD0D531052(${1:p0_number}, ${2:p1_number}, ${3:p2_number}, ${4:p3_number});${0}",
+		"name": "native_ugcGetMyContent",
+		"snippet": "native.ugcGetMyContent(${1:p0_number}, ${2:p1_number}, ${3:p2_number}, ${4:p3_number});${0}",
 		"documentation": ""
 	},
 	{
-		"name": "native__0xF9E1CCAE8BA4C281",
-		"snippet": "native._0xF9E1CCAE8BA4C281(${1:p0_number}, ${2:p1_number}, ${3:p2_number}, ${4:p3_number});${0}",
+		"name": "native_ugcGetFriendContent",
+		"snippet": "native.ugcGetFriendContent(${1:p0_number}, ${2:p1_number}, ${3:p2_number}, ${4:p3_number});${0}",
 		"documentation": ""
 	},
 	{
-		"name": "native__0x9F6E2821885CAEE2",
-		"snippet": "native._0x9F6E2821885CAEE2(${1:p0_number}, ${2:p1_number}, ${3:p2_number}, ${4:p3_number}, ${5:p4_number});${0}",
+		"name": "native_ugcGetCrewContent",
+		"snippet": "native.ugcGetCrewContent(${1:p0_number}, ${2:p1_number}, ${3:p2_number}, ${4:p3_number}, ${5:p4_number});${0}",
 		"documentation": ""
 	},
 	{
-		"name": "native__0x678BB03C1A3BD51E",
-		"snippet": "native._0x678BB03C1A3BD51E(${1:p0_number}, ${2:p1_number}, ${3:p2_number}, ${4:p3_number}, ${5:p4_number});${0}",
+		"name": "native_ugcGetGetByCategory",
+		"snippet": "native.ugcGetGetByCategory(${1:p0_number}, ${2:p1_number}, ${3:p2_number}, ${4:p3_number}, ${5:p4_number});${0}",
 		"documentation": ""
 	},
 	{
@@ -15640,18 +15980,18 @@
 		"documentation": ""
 	},
 	{
-		"name": "native__0xE9B99B6853181409",
-		"snippet": "native._0xE9B99B6853181409();${0}",
+		"name": "native_ugcCancelQuery",
+		"snippet": "native.ugcCancelQuery();${0}",
 		"documentation": ""
 	},
 	{
-		"name": "native__0xD53ACDBEF24A46E8",
-		"snippet": "native._0xD53ACDBEF24A46E8();${0}",
+		"name": "native_ugcIsGetting",
+		"snippet": "native.ugcIsGetting();${0}",
 		"documentation": ""
 	},
 	{
-		"name": "native__0x02ADA21EA2F6918F",
-		"snippet": "native._0x02ADA21EA2F6918F();${0}",
+		"name": "native_ugcHasGetFinished",
+		"snippet": "native.ugcHasGetFinished();${0}",
 		"documentation": ""
 	},
 	{
@@ -15665,23 +16005,23 @@
 		"documentation": ""
 	},
 	{
-		"name": "native__0xEDF7F927136C224B",
-		"snippet": "native._0xEDF7F927136C224B();${0}",
+		"name": "native_ugcGetQueryResult",
+		"snippet": "native.ugcGetQueryResult();${0}",
 		"documentation": ""
 	},
 	{
-		"name": "native__0xE0A6138401BCB837",
-		"snippet": "native._0xE0A6138401BCB837();${0}",
+		"name": "native_ugcGetContentNum",
+		"snippet": "native.ugcGetContentNum();${0}",
 		"documentation": ""
 	},
 	{
-		"name": "native__0x769951E2455E2EB5",
-		"snippet": "native._0x769951E2455E2EB5();${0}",
+		"name": "native_ugcGetContentTotal",
+		"snippet": "native.ugcGetContentTotal();${0}",
 		"documentation": ""
 	},
 	{
-		"name": "native__0x3A17A27D75C74887",
-		"snippet": "native._0x3A17A27D75C74887();${0}",
+		"name": "native_ugcGetContentHash",
+		"snippet": "native.ugcGetContentHash();${0}",
 		"documentation": ""
 	},
 	{
@@ -15690,8 +16030,8 @@
 		"documentation": ""
 	},
 	{
-		"name": "native_getContentUserId",
-		"snippet": "native.getContentUserId(${1:p0_number});${0}",
+		"name": "native_ugcGetContentUserId",
+		"snippet": "native.ugcGetContentUserId(${1:p0_number});${0}",
 		"documentation": ""
 	},
 	{
@@ -15705,8 +16045,8 @@
 		"documentation": ""
 	},
 	{
-		"name": "native__0x703F12425ECA8BF5",
-		"snippet": "native._0x703F12425ECA8BF5(${1:p0_number});${0}",
+		"name": "native_ugcGetContentUserName",
+		"snippet": "native.ugcGetContentUserName(${1:p0_number});${0}",
 		"documentation": ""
 	},
 	{
@@ -15720,38 +16060,38 @@
 		"documentation": ""
 	},
 	{
-		"name": "native_getContentId",
-		"snippet": "native.getContentId(${1:p0_number});${0}",
+		"name": "native_ugcGetContentId",
+		"snippet": "native.ugcGetContentId(${1:p0_number});${0}",
 		"documentation": ""
 	},
 	{
-		"name": "native_getRootContentId",
-		"snippet": "native.getRootContentId(${1:p0_number});${0}",
+		"name": "native_ugcGetRootContentId",
+		"snippet": "native.ugcGetRootContentId(${1:p0_number});${0}",
 		"documentation": ""
 	},
 	{
-		"name": "native__0xBF09786A7FCAB582",
-		"snippet": "native._0xBF09786A7FCAB582(${1:p0_number});${0}",
+		"name": "native_ugcGetContentName",
+		"snippet": "native.ugcGetContentName(${1:p0_number});${0}",
 		"documentation": ""
 	},
 	{
-		"name": "native_getContentDescriptionHash",
-		"snippet": "native.getContentDescriptionHash(${1:p0_number});${0}",
+		"name": "native_ugcGetContentDescriptionHash",
+		"snippet": "native.ugcGetContentDescriptionHash(${1:p0_number});${0}",
 		"documentation": ""
 	},
 	{
-		"name": "native_ugcGetCloudPath",
-		"snippet": "native.ugcGetCloudPath(${1:p0_number}, ${2:p1_number});${0}",
+		"name": "native_ugcGetContentPath",
+		"snippet": "native.ugcGetContentPath(${1:p0_number}, ${2:p1_number});${0}",
 		"documentation": ""
 	},
 	{
-		"name": "native__0xCFD115B373C0DF63",
-		"snippet": "native._0xCFD115B373C0DF63(${1:p0_number}, ${2:p1_number});${0}",
+		"name": "native_ugcGetContentUpdatedDate",
+		"snippet": "native.ugcGetContentUpdatedDate(${1:p0_number}, ${2:p1_number});${0}",
 		"documentation": ""
 	},
 	{
-		"name": "native_getContentFileVersion",
-		"snippet": "native.getContentFileVersion(${1:p0_number}, ${2:p1_number});${0}",
+		"name": "native_ugcGetContentFileVersion",
+		"snippet": "native.ugcGetContentFileVersion(${1:p0_number}, ${2:p1_number});${0}",
 		"documentation": ""
 	},
 	{
@@ -15765,63 +16105,63 @@
 		"documentation": ""
 	},
 	{
-		"name": "native__0x32DD916F3F7C9672",
-		"snippet": "native._0x32DD916F3F7C9672(${1:p0_number});${0}",
+		"name": "native_ugcGetContentLanguage",
+		"snippet": "native.ugcGetContentLanguage(${1:p0_number});${0}",
 		"documentation": ""
 	},
 	{
-		"name": "native__0x3054F114121C21EA",
-		"snippet": "native._0x3054F114121C21EA(${1:p0_number});${0}",
+		"name": "native_ugcGetContentIsPublished",
+		"snippet": "native.ugcGetContentIsPublished(${1:p0_number});${0}",
 		"documentation": ""
 	},
 	{
-		"name": "native__0xA9240A96C74CCA13",
-		"snippet": "native._0xA9240A96C74CCA13(${1:p0_number});${0}",
+		"name": "native_ugcGetContentIsVerified",
+		"snippet": "native.ugcGetContentIsVerified(${1:p0_number});${0}",
 		"documentation": ""
 	},
 	{
-		"name": "native__0x1ACCFBA3D8DAB2EE",
-		"snippet": "native._0x1ACCFBA3D8DAB2EE(${1:p0_number}, ${2:p1_number});${0}",
+		"name": "native_ugcGetContentRating",
+		"snippet": "native.ugcGetContentRating(${1:p0_number}, ${2:p1_number});${0}",
 		"documentation": ""
 	},
 	{
-		"name": "native__0x759299C5BB31D2A9",
-		"snippet": "native._0x759299C5BB31D2A9(${1:p0_number}, ${2:p1_number});${0}",
+		"name": "native_ugcGetContentRatingCount",
+		"snippet": "native.ugcGetContentRatingCount(${1:p0_number}, ${2:p1_number});${0}",
 		"documentation": ""
 	},
 	{
-		"name": "native__0x87E5C46C187FE0AE",
-		"snippet": "native._0x87E5C46C187FE0AE(${1:p0_number}, ${2:p1_number});${0}",
+		"name": "native_ugcGetContentRatingPositiveCount",
+		"snippet": "native.ugcGetContentRatingPositiveCount(${1:p0_number}, ${2:p1_number});${0}",
 		"documentation": ""
 	},
 	{
-		"name": "native__0x4E548C0D7AE39FF9",
-		"snippet": "native._0x4E548C0D7AE39FF9(${1:p0_number}, ${2:p1_number});${0}",
+		"name": "native_ugcGetContentRatingNegativeCount",
+		"snippet": "native.ugcGetContentRatingNegativeCount(${1:p0_number}, ${2:p1_number});${0}",
 		"documentation": ""
 	},
 	{
-		"name": "native__0x70EA8DA57840F9BE",
-		"snippet": "native._0x70EA8DA57840F9BE(${1:p0_number});${0}",
+		"name": "native_ugcGetContentHasPlayerRecord",
+		"snippet": "native.ugcGetContentHasPlayerRecord(${1:p0_number});${0}",
 		"documentation": ""
 	},
 	{
-		"name": "native__0x993CBE59D350D225",
-		"snippet": "native._0x993CBE59D350D225(${1:p0_number});${0}",
+		"name": "native_ugcGetContentHasPlayerBookmarked",
+		"snippet": "native.ugcGetContentHasPlayerBookmarked(${1:p0_number});${0}",
 		"documentation": ""
 	},
 	{
-		"name": "native_ugcRequestCloudFile",
-		"snippet": "native.ugcRequestCloudFile(${1:p0_number}, ${2:p1_number});${0}",
+		"name": "native_ugcRequestContentDataFromIndex",
+		"snippet": "native.ugcRequestContentDataFromIndex(${1:p0_number}, ${2:p1_number});${0}",
 		"documentation": ""
 	},
 	{
-		"name": "native_ugcRequestCloudFileByContentId",
-		"snippet": "native.ugcRequestCloudFileByContentId(${1:contentTypeName_string}, ${2:contentId_string}, ${3:p2_number}, ${4:p3_number}, ${5:p4_number});${0}",
+		"name": "native_ugcRequestContentDataFromParams",
+		"snippet": "native.ugcRequestContentDataFromParams(${1:contentTypeName_string}, ${2:contentId_string}, ${3:p2_number}, ${4:p3_number}, ${5:p4_number});${0}",
 		"documentation": ""
 	},
 	{
-		"name": "native__0x5E0165278F6339EE",
-		"snippet": "native._0x5E0165278F6339EE(${1:p0_number});${0}",
+		"name": "native_ugcRequestCachedDescription",
+		"snippet": "native.ugcRequestCachedDescription(${1:p0_number});${0}",
 		"documentation": ""
 	},
 	{
@@ -15840,8 +16180,8 @@
 		"documentation": ""
 	},
 	{
-		"name": "native__0x40F7E66472DF3E5C",
-		"snippet": "native._0x40F7E66472DF3E5C(${1:p0_number}, ${2:p1_number});${0}",
+		"name": "native_ugcGetCachedDescription",
+		"snippet": "native.ugcGetCachedDescription(${1:p0_number}, ${2:p1_number});${0}",
 		"documentation": ""
 	},
 	{
@@ -15860,13 +16200,13 @@
 		"documentation": ""
 	},
 	{
-		"name": "native__0x274A1519DFC1094F",
-		"snippet": "native._0x274A1519DFC1094F(${1:p0_number}, ${2:p1_boolean}, ${3:p2_number});${0}",
+		"name": "native_ugcSetBookmarked",
+		"snippet": "native.ugcSetBookmarked(${1:contentId_string}, ${2:bookmarked_boolean}, ${3:contentTypeName_string});${0}",
 		"documentation": ""
 	},
 	{
-		"name": "native__0xD05D1A6C74DA3498",
-		"snippet": "native._0xD05D1A6C74DA3498(${1:p0_number}, ${2:p1_boolean}, ${3:p2_number});${0}",
+		"name": "native_ugcSetDeleted",
+		"snippet": "native.ugcSetDeleted(${1:p0_number}, ${2:p1_boolean}, ${3:p2_number});${0}",
 		"documentation": ""
 	},
 	{
@@ -15875,8 +16215,8 @@
 		"documentation": ""
 	},
 	{
-		"name": "native__0x299EF3C576773506",
-		"snippet": "native._0x299EF3C576773506();${0}",
+		"name": "native_ugcHasModifyFinished",
+		"snippet": "native.ugcHasModifyFinished();${0}",
 		"documentation": ""
 	},
 	{
@@ -15885,13 +16225,13 @@
 		"documentation": ""
 	},
 	{
-		"name": "native__0x5A0A3D1A186A5508",
-		"snippet": "native._0x5A0A3D1A186A5508();${0}",
+		"name": "native_ugcGetModifyResult",
+		"snippet": "native.ugcGetModifyResult();${0}",
 		"documentation": ""
 	},
 	{
-		"name": "native__0xA1E5E0204A6FCC70",
-		"snippet": "native._0xA1E5E0204A6FCC70();${0}",
+		"name": "native_ugcClearModifyResult",
+		"snippet": "native.ugcClearModifyResult();${0}",
 		"documentation": ""
 	},
 	{
@@ -15910,13 +16250,13 @@
 		"documentation": ""
 	},
 	{
-		"name": "native__0x597F8DBA9B206FC7",
-		"snippet": "native._0x597F8DBA9B206FC7();${0}",
+		"name": "native_ugcGetCreatorNum",
+		"snippet": "native.ugcGetCreatorNum();${0}",
 		"documentation": ""
 	},
 	{
-		"name": "native__0x5CAE833B0EE0C500",
-		"snippet": "native._0x5CAE833B0EE0C500(${1:p0_number});${0}",
+		"name": "native_ugcPoliciesMakePrivate",
+		"snippet": "native.ugcPoliciesMakePrivate(${1:p0_number});${0}",
 		"documentation": ""
 	},
 	{
@@ -15935,8 +16275,8 @@
 		"documentation": ""
 	},
 	{
-		"name": "native__0xF53E48461B71EECB",
-		"snippet": "native._0xF53E48461B71EECB(${1:p0_number});${0}",
+		"name": "native_ugcIsLanguageSupported",
+		"snippet": "native.ugcIsLanguageSupported(${1:p0_number});${0}",
 		"documentation": ""
 	},
 	{
@@ -15980,8 +16320,8 @@
 		"documentation": ""
 	},
 	{
-		"name": "native__0x308F96458B7087CC",
-		"snippet": "native._0x308F96458B7087CC(${1:p0_number}, ${2:p1_number}, ${3:p2_number}, ${4:p3_number}, ${5:p4_number}, ${6:p5_boolean});${0}",
+		"name": "native_ugcTextureDownloadRequest",
+		"snippet": "native.ugcTextureDownloadRequest(${1:p0_number}, ${2:p1_number}, ${3:p2_number}, ${4:p3_number}, ${5:p4_number}, ${6:p5_boolean});${0}",
 		"documentation": ""
 	},
 	{
@@ -16055,8 +16395,8 @@
 		"documentation": ""
 	},
 	{
-		"name": "native_networkGetBanData",
-		"snippet": "native.networkGetBanData(${1:p0_number}, ${2:banType_number}, ${3:timeData_number});${0}",
+		"name": "native_networkHasRosPrivilegeEndDate",
+		"snippet": "native.networkHasRosPrivilegeEndDate(${1:privilege_number}, ${2:type_number}, ${3:endData_number});${0}",
 		"documentation": ""
 	},
 	{
@@ -16082,6 +16422,11 @@
 	{
 		"name": "native__0x9465E683B12D3F6B",
 		"snippet": "native._0x9465E683B12D3F6B();${0}",
+		"documentation": ""
+	},
+	{
+		"name": "native__0xCA59CCAE5D01E4CE",
+		"snippet": "native._0xCA59CCAE5D01E4CE();${0}",
 		"documentation": ""
 	},
 	{
@@ -16200,6 +16545,11 @@
 		"documentation": ""
 	},
 	{
+		"name": "native__0xDB663CC9FF3407A9",
+		"snippet": "native._0xDB663CC9FF3407A9(${1:player_number});${0}",
+		"documentation": ""
+	},
+	{
 		"name": "native_createObject",
 		"snippet": "native.createObject(${1:modelHash_number}, ${2:x_number}, ${3:y_number}, ${4:z_number}, ${5:isNetwork_boolean}, ${6:thisScriptCheck_boolean}, ${7:dynamic_boolean});${0}",
 		"documentation": ""
@@ -16220,8 +16570,13 @@
 		"documentation": ""
 	},
 	{
-		"name": "native__0xD76EEEF746057FD6",
-		"snippet": "native._0xD76EEEF746057FD6(${1:object_number});${0}",
+		"name": "native_placeObjectOnGroundProperly2",
+		"snippet": "native.placeObjectOnGroundProperly2(${1:object_number});${0}",
+		"documentation": ""
+	},
+	{
+		"name": "native__0xAFE24E4D29249E4A",
+		"snippet": "native._0xAFE24E4D29249E4A(${1:object_number}, ${2:p1_number}, ${3:p2_number}, ${4:p3_boolean});${0}",
 		"documentation": ""
 	},
 	{
@@ -16255,8 +16610,8 @@
 		"documentation": ""
 	},
 	{
-		"name": "native__0x46494A2475701343",
-		"snippet": "native._0x46494A2475701343(${1:p0_number}, ${2:p1_number}, ${3:p2_number}, ${4:p3_number}, ${5:modelHash_number}, ${6:p5_boolean});${0}",
+		"name": "native_hasClosestObjectOfTypeBeenCompletelyDestroyed",
+		"snippet": "native.hasClosestObjectOfTypeBeenCompletelyDestroyed(${1:p0_number}, ${2:p1_number}, ${3:p2_number}, ${4:p3_number}, ${5:modelHash_number}, ${6:p5_boolean});${0}",
 		"documentation": ""
 	},
 	{
@@ -16270,8 +16625,8 @@
 		"documentation": ""
 	},
 	{
-		"name": "native__0x163F8B586BC95F2A",
-		"snippet": "native._0x163F8B586BC95F2A(${1:object_number}, ${2:radius_number}, ${3:modelHash_number}, ${4:x_number}, ${5:y_number}, ${6:z_number}, ${7:p6_setAsUndefined}, ${8:p7_number});${0}",
+		"name": "native_getCoordsAndRotationOfClosestObjectOfType",
+		"snippet": "native.getCoordsAndRotationOfClosestObjectOfType(${1:object_number}, ${2:radius_number}, ${3:modelHash_number}, ${4:x_number}, ${5:y_number}, ${6:z_number}, ${7:p6_vector3Ptr}, ${8:p7_number});${0}",
 		"documentation": ""
 	},
 	{
@@ -16300,48 +16655,48 @@
 		"documentation": ""
 	},
 	{
-		"name": "native_setDoorAccelerationLimit",
-		"snippet": "native.setDoorAccelerationLimit(${1:doorHash_number}, ${2:limit_number}, ${3:p2_boolean}, ${4:p3_boolean});${0}",
+		"name": "native_doorSystemSetDoorState",
+		"snippet": "native.doorSystemSetDoorState(${1:doorHash_number}, ${2:limit_number}, ${3:p2_boolean}, ${4:p3_boolean});${0}",
 		"documentation": ""
 	},
 	{
-		"name": "native__0x160AA1B32F6139B8",
-		"snippet": "native._0x160AA1B32F6139B8(${1:doorHash_number});${0}",
+		"name": "native_doorSystemGetDoorState",
+		"snippet": "native.doorSystemGetDoorState(${1:doorHash_number});${0}",
 		"documentation": ""
 	},
 	{
-		"name": "native__0x4BC2854478F3A749",
-		"snippet": "native._0x4BC2854478F3A749(${1:doorHash_number});${0}",
+		"name": "native_doorSystemGetDoorPendingState",
+		"snippet": "native.doorSystemGetDoorPendingState(${1:doorHash_number});${0}",
 		"documentation": ""
 	},
 	{
-		"name": "native__0x03C27E13B42A0E82",
-		"snippet": "native._0x03C27E13B42A0E82(${1:doorHash_number}, ${2:p1_number}, ${3:p2_boolean}, ${4:p3_boolean});${0}",
+		"name": "native_doorSystemSetAutomaticRate",
+		"snippet": "native.doorSystemSetAutomaticRate(${1:doorHash_number}, ${2:p1_number}, ${3:p2_boolean}, ${4:p3_boolean});${0}",
 		"documentation": ""
 	},
 	{
-		"name": "native__0x9BA001CB45CBF627",
-		"snippet": "native._0x9BA001CB45CBF627(${1:doorHash_number}, ${2:heading_number}, ${3:p2_boolean}, ${4:p3_boolean});${0}",
+		"name": "native_doorSystemSetAutomaticDistance",
+		"snippet": "native.doorSystemSetAutomaticDistance(${1:doorHash_number}, ${2:heading_number}, ${3:p2_boolean}, ${4:p3_boolean});${0}",
 		"documentation": ""
 	},
 	{
-		"name": "native_setDoorAjarAngle",
-		"snippet": "native.setDoorAjarAngle(${1:doorHash_number}, ${2:ajar_number}, ${3:p2_boolean}, ${4:p3_boolean});${0}",
+		"name": "native_doorSystemSetOpenRatio",
+		"snippet": "native.doorSystemSetOpenRatio(${1:doorHash_number}, ${2:ajar_number}, ${3:p2_boolean}, ${4:p3_boolean});${0}",
 		"documentation": ""
 	},
 	{
-		"name": "native__0x65499865FCA6E5EC",
-		"snippet": "native._0x65499865FCA6E5EC(${1:doorHash_number});${0}",
+		"name": "native_doorSystemGetOpenRatio",
+		"snippet": "native.doorSystemGetOpenRatio(${1:doorHash_number});${0}",
 		"documentation": ""
 	},
 	{
-		"name": "native__0xC485E07E4F0B7958",
-		"snippet": "native._0xC485E07E4F0B7958(${1:doorHash_number}, ${2:p1_boolean}, ${3:p2_boolean}, ${4:p3_boolean});${0}",
+		"name": "native_doorSystemSetSpringRemoved",
+		"snippet": "native.doorSystemSetSpringRemoved(${1:doorHash_number}, ${2:p1_boolean}, ${3:p2_boolean}, ${4:p3_boolean});${0}",
 		"documentation": ""
 	},
 	{
-		"name": "native__0xD9B71952F78A2640",
-		"snippet": "native._0xD9B71952F78A2640(${1:doorHash_number}, ${2:p1_boolean});${0}",
+		"name": "native_doorSystemSetHoldOpen",
+		"snippet": "native.doorSystemSetHoldOpen(${1:doorHash_number}, ${2:toggle_boolean});${0}",
 		"documentation": ""
 	},
 	{
@@ -16370,13 +16725,13 @@
 		"documentation": ""
 	},
 	{
-		"name": "native__0xDF97CDD4FC08FD34",
-		"snippet": "native._0xDF97CDD4FC08FD34(${1:p0_number});${0}",
+		"name": "native_doorSystemGetIsPhysicsLoaded",
+		"snippet": "native.doorSystemGetIsPhysicsLoaded(${1:p0_number});${0}",
 		"documentation": ""
 	},
 	{
-		"name": "native__0x589F80B325CC82C5",
-		"snippet": "native._0x589F80B325CC82C5(${1:p0_number}, ${2:p1_number}, ${3:p2_number}, ${4:p3_number}, ${5:p4_number});${0}",
+		"name": "native_doorSystemFindExistingDoor",
+		"snippet": "native.doorSystemFindExistingDoor(${1:p0_number}, ${2:p1_number}, ${3:p2_number}, ${4:p3_number}, ${5:height_number});${0}",
 		"documentation": ""
 	},
 	{
@@ -16395,8 +16750,8 @@
 		"documentation": ""
 	},
 	{
-		"name": "native__0x85B6C850546FDDE2",
-		"snippet": "native._0x85B6C850546FDDE2(${1:garageHash_number}, ${2:p1_boolean}, ${3:p2_boolean}, ${4:p3_boolean}, ${5:p4_number});${0}",
+		"name": "native_areEntitiesEntirelyInsideGarage",
+		"snippet": "native.areEntitiesEntirelyInsideGarage(${1:garageHash_number}, ${2:p1_boolean}, ${3:p2_boolean}, ${4:p3_boolean}, ${5:p4_number});${0}",
 		"documentation": ""
 	},
 	{
@@ -16430,8 +16785,8 @@
 		"documentation": ""
 	},
 	{
-		"name": "native__0xF2E1A7133DD356A6",
-		"snippet": "native._0xF2E1A7133DD356A6(${1:garageHash_number}, ${2:toggle_boolean});${0}",
+		"name": "native_enableSavingInGarage",
+		"snippet": "native.enableSavingInGarage(${1:garageHash_number}, ${2:toggle_boolean});${0}",
 		"documentation": ""
 	},
 	{
@@ -16450,8 +16805,8 @@
 		"documentation": ""
 	},
 	{
-		"name": "native__0x4D89D607CB3DD1D2",
-		"snippet": "native._0x4D89D607CB3DD1D2(${1:object_number}, ${2:toggle_boolean});${0}",
+		"name": "native_setObjectCanClimbOn",
+		"snippet": "native.setObjectCanClimbOn(${1:object_number}, ${2:toggle_boolean});${0}",
 		"documentation": ""
 	},
 	{
@@ -16480,8 +16835,8 @@
 		"documentation": ""
 	},
 	{
-		"name": "native__0x4A39DB43E47CF3AA",
-		"snippet": "native._0x4A39DB43E47CF3AA(${1:p0_number});${0}",
+		"name": "native_removeObjectHighDetailModel",
+		"snippet": "native.removeObjectHighDetailModel(${1:object_number});${0}",
 		"documentation": ""
 	},
 	{
@@ -16525,13 +16880,13 @@
 		"documentation": ""
 	},
 	{
-		"name": "native__0xBCE595371A5FBAAF",
-		"snippet": "native._0xBCE595371A5FBAAF(${1:p0_number}, ${2:p1_boolean});${0}",
+		"name": "native_setCreateWeaponObjectLightSource",
+		"snippet": "native.setCreateWeaponObjectLightSource(${1:p0_number}, ${2:p1_boolean});${0}",
 		"documentation": ""
 	},
 	{
 		"name": "native_getRayfireMapObject",
-		"snippet": "native.getRayfireMapObject(${1:x_number}, ${2:y_number}, ${3:z_number}, ${4:rotation_number}, ${5:name_string});${0}",
+		"snippet": "native.getRayfireMapObject(${1:x_number}, ${2:y_number}, ${3:z_number}, ${4:radius_number}, ${5:name_string});${0}",
 		"documentation": ""
 	},
 	{
@@ -16596,17 +16951,17 @@
 	},
 	{
 		"name": "native_attachPortablePickupToPed",
-		"snippet": "native.attachPortablePickupToPed(${1:ped_number}, ${2:p1_number});${0}",
+		"snippet": "native.attachPortablePickupToPed(${1:pickupObject_number}, ${2:ped_number});${0}",
 		"documentation": ""
 	},
 	{
 		"name": "native_detachPortablePickupFromPed",
-		"snippet": "native.detachPortablePickupFromPed(${1:ped_number});${0}",
+		"snippet": "native.detachPortablePickupFromPed(${1:pickupObject_number});${0}",
 		"documentation": ""
 	},
 	{
 		"name": "native_hidePickup",
-		"snippet": "native.hidePickup(${1:pickup_number}, ${2:toggle_boolean});${0}",
+		"snippet": "native.hidePickup(${1:pickupObject_number}, ${2:toggle_boolean});${0}",
 		"documentation": ""
 	},
 	{
@@ -16712,6 +17067,11 @@
 	{
 		"name": "native_setLocalPlayerCanUsePickupsWithThisModel",
 		"snippet": "native.setLocalPlayerCanUsePickupsWithThisModel(${1:modelHash_number}, ${2:toggle_boolean});${0}",
+		"documentation": ""
+	},
+	{
+		"name": "native__0xFDC07C58E8AAB715",
+		"snippet": "native._0xFDC07C58E8AAB715(${1:pickupHash_number});${0}",
 		"documentation": ""
 	},
 	{
@@ -16830,6 +17190,11 @@
 		"documentation": ""
 	},
 	{
+		"name": "native__0x7813E8B8C4AE4799",
+		"snippet": "native._0x7813E8B8C4AE4799(${1:pickup_number});${0}",
+		"documentation": ""
+	},
+	{
 		"name": "native__0xBFFE53AE7E67FCDC",
 		"snippet": "native._0xBFFE53AE7E67FCDC(${1:p0_number}, ${2:p1_number});${0}",
 		"documentation": ""
@@ -16880,23 +17245,23 @@
 		"documentation": ""
 	},
 	{
-		"name": "native__0xADF084FB8F075D06",
-		"snippet": "native._0xADF084FB8F075D06(${1:p0_number});${0}",
-		"documentation": ""
-	},
-	{
 		"name": "native_setObjectColour",
-		"snippet": "native.setObjectColour(${1:object_number}, ${2:toggle_boolean});${0}",
+		"snippet": "native.setObjectColour(${1:object_number}, ${2:toggle_boolean}, ${3:red_number}, ${4:green_number}, ${5:blue_number});${0}",
 		"documentation": ""
 	},
 	{
-		"name": "native__0x96EE0EBA0163DF80",
-		"snippet": "native._0x96EE0EBA0163DF80(${1:p0_number}, ${2:p1_number});${0}",
+		"name": "native__0x3B2FD68DB5F8331C",
+		"snippet": "native._0x3B2FD68DB5F8331C(${1:object_number}, ${2:toggle_boolean});${0}",
 		"documentation": ""
 	},
 	{
-		"name": "native__0xDF6CA0330F2E737B",
-		"snippet": "native._0xDF6CA0330F2E737B(${1:p0_number}, ${2:p1_number});${0}",
+		"name": "native_setObjectStuntPropSpeedup",
+		"snippet": "native.setObjectStuntPropSpeedup(${1:p0_number}, ${2:p1_number});${0}",
+		"documentation": ""
+	},
+	{
+		"name": "native_setObjectStuntPropDuration",
+		"snippet": "native.setObjectStuntPropDuration(${1:p0_number}, ${2:p1_number});${0}",
 		"documentation": ""
 	},
 	{
@@ -16925,13 +17290,13 @@
 		"documentation": ""
 	},
 	{
-		"name": "native__0x911024442F4898F0",
-		"snippet": "native._0x911024442F4898F0(${1:p0_number}, ${2:p1_number}, ${3:p2_number});${0}",
+		"name": "native_setEnableArenaPropPhysics",
+		"snippet": "native.setEnableArenaPropPhysics(${1:p0_number}, ${2:p1_number}, ${3:p2_number});${0}",
 		"documentation": ""
 	},
 	{
-		"name": "native__0xB20834A7DD3D8896",
-		"snippet": "native._0xB20834A7DD3D8896(${1:p0_number}, ${2:p1_number}, ${3:p2_number}, ${4:p3_number});${0}",
+		"name": "native_setEnableArenaPropPhysicsOnPed",
+		"snippet": "native.setEnableArenaPropPhysicsOnPed(${1:p0_number}, ${2:p1_number}, ${3:p2_number}, ${4:p3_number});${0}",
 		"documentation": ""
 	},
 	{
@@ -16945,8 +17310,8 @@
 		"documentation": ""
 	},
 	{
-		"name": "native__0x43C677F1E1158005",
-		"snippet": "native._0x43C677F1E1158005(${1:p0_number}, ${2:p1_number});${0}",
+		"name": "native_getIsArenaPropPhysicsDisabled",
+		"snippet": "native.getIsArenaPropPhysicsDisabled(${1:p0_number}, ${2:p1_number});${0}",
 		"documentation": ""
 	},
 	{
@@ -17080,13 +17445,13 @@
 		"documentation": ""
 	},
 	{
-		"name": "native__0x80C2FD58D720C801",
-		"snippet": "native._0x80C2FD58D720C801(${1:padIndex_number}, ${2:control_number}, ${3:p2_boolean});${0}",
+		"name": "native_getControlGroupInstructionalButton",
+		"snippet": "native.getControlGroupInstructionalButton(${1:padIndex_number}, ${2:controlGroup_number}, ${3:p2_boolean});${0}",
 		"documentation": ""
 	},
 	{
-		"name": "native__0x8290252FFF36ACB5",
-		"snippet": "native._0x8290252FFF36ACB5(${1:padIndex_number}, ${2:red_number}, ${3:green_number}, ${4:blue_number});${0}",
+		"name": "native_setControlGroupColor",
+		"snippet": "native.setControlGroupColor(${1:padIndex_number}, ${2:red_number}, ${3:green_number}, ${4:blue_number});${0}",
 		"documentation": ""
 	},
 	{
@@ -17221,27 +17586,27 @@
 	},
 	{
 		"name": "native_getSafeCoordForPed",
-		"snippet": "native.getSafeCoordForPed(${1:x_number}, ${2:y_number}, ${3:z_number}, ${4:onGround_boolean}, ${5:outPosition_setAsUndefined}, ${6:flags_number});${0}",
+		"snippet": "native.getSafeCoordForPed(${1:x_number}, ${2:y_number}, ${3:z_number}, ${4:onGround_boolean}, ${5:outPosition_vector3Ptr}, ${6:flags_number});${0}",
 		"documentation": ""
 	},
 	{
 		"name": "native_getClosestVehicleNode",
-		"snippet": "native.getClosestVehicleNode(${1:x_number}, ${2:y_number}, ${3:z_number}, ${4:outPosition_setAsUndefined}, ${5:nodeType_number}, ${6:p5_number}, ${7:p6_number});${0}",
+		"snippet": "native.getClosestVehicleNode(${1:x_number}, ${2:y_number}, ${3:z_number}, ${4:outPosition_vector3Ptr}, ${5:nodeType_number}, ${6:p5_number}, ${7:p6_number});${0}",
 		"documentation": ""
 	},
 	{
 		"name": "native_getClosestMajorVehicleNode",
-		"snippet": "native.getClosestMajorVehicleNode(${1:x_number}, ${2:y_number}, ${3:z_number}, ${4:outPosition_setAsUndefined}, ${5:unknown1_number}, ${6:unknown2_number});${0}",
+		"snippet": "native.getClosestMajorVehicleNode(${1:x_number}, ${2:y_number}, ${3:z_number}, ${4:outPosition_vector3Ptr}, ${5:unknown1_number}, ${6:unknown2_number});${0}",
 		"documentation": ""
 	},
 	{
 		"name": "native_getClosestVehicleNodeWithHeading",
-		"snippet": "native.getClosestVehicleNodeWithHeading(${1:x_number}, ${2:y_number}, ${3:z_number}, ${4:outPosition_setAsUndefined}, ${5:outHeading_number}, ${6:nodeType_number}, ${7:p6_number}, ${8:p7_number});${0}",
+		"snippet": "native.getClosestVehicleNodeWithHeading(${1:x_number}, ${2:y_number}, ${3:z_number}, ${4:outPosition_vector3Ptr}, ${5:outHeading_number}, ${6:nodeType_number}, ${7:p6_number}, ${8:p7_number});${0}",
 		"documentation": ""
 	},
 	{
 		"name": "native_getNthClosestVehicleNode",
-		"snippet": "native.getNthClosestVehicleNode(${1:x_number}, ${2:y_number}, ${3:z_number}, ${4:nthClosest_number}, ${5:outPosition_setAsUndefined}, ${6:unknown1_number}, ${7:unknown2_number}, ${8:unknown3_number});${0}",
+		"snippet": "native.getNthClosestVehicleNode(${1:x_number}, ${2:y_number}, ${3:z_number}, ${4:nthClosest_number}, ${5:outPosition_vector3Ptr}, ${6:unknown1_number}, ${7:unknown2_number}, ${8:unknown3_number});${0}",
 		"documentation": ""
 	},
 	{
@@ -17251,17 +17616,17 @@
 	},
 	{
 		"name": "native_getNthClosestVehicleNodeWithHeading",
-		"snippet": "native.getNthClosestVehicleNodeWithHeading(${1:x_number}, ${2:y_number}, ${3:z_number}, ${4:nthClosest_number}, ${5:outPosition_setAsUndefined}, ${6:heading_number}, ${7:unknown1_number}, ${8:unknown2_number}, ${9:unknown3_number}, ${10:unknown4_number});${0}",
+		"snippet": "native.getNthClosestVehicleNodeWithHeading(${1:x_number}, ${2:y_number}, ${3:z_number}, ${4:nthClosest_number}, ${5:outPosition_vector3Ptr}, ${6:heading_number}, ${7:unknown1_number}, ${8:unknown2_number}, ${9:unknown3_number}, ${10:unknown4_number});${0}",
 		"documentation": ""
 	},
 	{
 		"name": "native_getNthClosestVehicleNodeIdWithHeading",
-		"snippet": "native.getNthClosestVehicleNodeIdWithHeading(${1:x_number}, ${2:y_number}, ${3:z_number}, ${4:nthClosest_number}, ${5:outPosition_setAsUndefined}, ${6:outHeading_number}, ${7:p6_number}, ${8:p7_number}, ${9:p8_number});${0}",
+		"snippet": "native.getNthClosestVehicleNodeIdWithHeading(${1:x_number}, ${2:y_number}, ${3:z_number}, ${4:nthClosest_number}, ${5:outPosition_vector3Ptr}, ${6:outHeading_number}, ${7:p6_number}, ${8:p7_number}, ${9:p8_number});${0}",
 		"documentation": ""
 	},
 	{
 		"name": "native_getNthClosestVehicleNodeFavourDirection",
-		"snippet": "native.getNthClosestVehicleNodeFavourDirection(${1:x_number}, ${2:y_number}, ${3:z_number}, ${4:desiredX_number}, ${5:desiredY_number}, ${6:desiredZ_number}, ${7:nthClosest_number}, ${8:outPosition_setAsUndefined}, ${9:outHeading_number}, ${10:nodetype_number}, ${11:p10_number}, ${12:p11_number});${0}",
+		"snippet": "native.getNthClosestVehicleNodeFavourDirection(${1:x_number}, ${2:y_number}, ${3:z_number}, ${4:desiredX_number}, ${5:desiredY_number}, ${6:desiredZ_number}, ${7:nthClosest_number}, ${8:outPosition_vector3Ptr}, ${9:outHeading_number}, ${10:nodetype_number}, ${11:p10_number}, ${12:p11_number});${0}",
 		"documentation": ""
 	},
 	{
@@ -17276,7 +17641,7 @@
 	},
 	{
 		"name": "native_getVehicleNodePosition",
-		"snippet": "native.getVehicleNodePosition(${1:nodeId_number}, ${2:outPosition_setAsUndefined});${0}",
+		"snippet": "native.getVehicleNodePosition(${1:nodeId_number}, ${2:outPosition_vector3Ptr});${0}",
 		"documentation": ""
 	},
 	{
@@ -17291,7 +17656,7 @@
 	},
 	{
 		"name": "native_getClosestRoad",
-		"snippet": "native.getClosestRoad(${1:x_number}, ${2:y_number}, ${3:z_number}, ${4:p3_number}, ${5:p4_number}, ${6:p5_setAsUndefined}, ${7:p6_setAsUndefined}, ${8:p7_number}, ${9:p8_number}, ${10:p9_number}, ${11:p10_boolean});${0}",
+		"snippet": "native.getClosestRoad(${1:x_number}, ${2:y_number}, ${3:z_number}, ${4:p3_number}, ${5:p4_number}, ${6:p5_vector3Ptr}, ${7:p6_vector3Ptr}, ${8:p7_number}, ${9:p8_number}, ${10:p9_number}, ${11:p10_boolean});${0}",
 		"documentation": ""
 	},
 	{
@@ -17320,8 +17685,8 @@
 		"documentation": ""
 	},
 	{
-		"name": "native__0x0B919E1FB47CC4E0",
-		"snippet": "native._0x0B919E1FB47CC4E0(${1:p0_number});${0}",
+		"name": "native_setAmbientPedRangeMultiplierThisFrame",
+		"snippet": "native.setAmbientPedRangeMultiplierThisFrame(${1:multiplier_number});${0}",
 		"documentation": ""
 	},
 	{
@@ -17336,7 +17701,7 @@
 	},
 	{
 		"name": "native_getRandomVehicleNode",
-		"snippet": "native.getRandomVehicleNode(${1:x_number}, ${2:y_number}, ${3:z_number}, ${4:radius_number}, ${5:p4_boolean}, ${6:p5_boolean}, ${7:p6_boolean}, ${8:outPosition_setAsUndefined}, ${9:nodeId_number});${0}",
+		"snippet": "native.getRandomVehicleNode(${1:x_number}, ${2:y_number}, ${3:z_number}, ${4:radius_number}, ${5:p4_boolean}, ${6:p5_boolean}, ${7:p6_boolean}, ${8:outPosition_vector3Ptr}, ${9:nodeId_number});${0}",
 		"documentation": ""
 	},
 	{
@@ -17355,8 +17720,8 @@
 		"documentation": ""
 	},
 	{
-		"name": "native__0x1FC289A0C3FF470F",
-		"snippet": "native._0x1FC289A0C3FF470F(${1:toggle_boolean});${0}",
+		"name": "native_setIgnoreSecondaryRouteNodes",
+		"snippet": "native.setIgnoreSecondaryRouteNodes(${1:toggle_boolean});${0}",
 		"documentation": ""
 	},
 	{
@@ -17365,8 +17730,8 @@
 		"documentation": ""
 	},
 	{
-		"name": "native__0xBBB45C3CF5C8AA85",
-		"snippet": "native._0xBBB45C3CF5C8AA85();${0}",
+		"name": "native_getGpsBlipRouteLength",
+		"snippet": "native.getGpsBlipRouteLength();${0}",
 		"documentation": ""
 	},
 	{
@@ -17375,18 +17740,18 @@
 		"documentation": ""
 	},
 	{
-		"name": "native__0x869DAACBBE9FA006",
-		"snippet": "native._0x869DAACBBE9FA006();${0}",
+		"name": "native_getGpsBlipRouteFound",
+		"snippet": "native.getGpsBlipRouteFound();${0}",
 		"documentation": ""
 	},
 	{
-		"name": "native__0xA0F8A7517A273C05",
-		"snippet": "native._0xA0F8A7517A273C05(${1:p0_number}, ${2:p1_number}, ${3:p2_number}, ${4:p3_number}, ${5:p4_number});${0}",
+		"name": "native_getRoadSidePointWithHeading",
+		"snippet": "native.getRoadSidePointWithHeading(${1:p0_number}, ${2:p1_number}, ${3:p2_number}, ${4:p3_number}, ${5:p4_number});${0}",
 		"documentation": ""
 	},
 	{
-		"name": "native__0x16F46FB18C8009E4",
-		"snippet": "native._0x16F46FB18C8009E4(${1:p0_number}, ${2:p1_number}, ${3:p2_number}, ${4:p3_number}, ${5:p4_number});${0}",
+		"name": "native_getPointOnRoadSide",
+		"snippet": "native.getPointOnRoadSide(${1:p0_number}, ${2:p1_number}, ${3:p2_number}, ${4:p3_number}, ${5:p4_number});${0}",
 		"documentation": ""
 	},
 	{
@@ -17465,23 +17830,23 @@
 		"documentation": ""
 	},
 	{
-		"name": "native__0x29C24BFBED8AB8FB",
-		"snippet": "native._0x29C24BFBED8AB8FB(${1:p0_number}, ${2:p1_number});${0}",
+		"name": "native_getHeightmapTopZForPosition",
+		"snippet": "native.getHeightmapTopZForPosition(${1:p0_number}, ${2:p1_number});${0}",
 		"documentation": ""
 	},
 	{
-		"name": "native__0x8ABE8608576D9CE3",
-		"snippet": "native._0x8ABE8608576D9CE3(${1:p0_number}, ${2:p1_number}, ${3:p2_number}, ${4:p3_number});${0}",
+		"name": "native_getHeightmapTopZForArea",
+		"snippet": "native.getHeightmapTopZForArea(${1:p0_number}, ${2:p1_number}, ${3:p2_number}, ${4:p3_number});${0}",
 		"documentation": ""
 	},
 	{
-		"name": "native__0x336511A34F2E5185",
-		"snippet": "native._0x336511A34F2E5185(${1:left_number}, ${2:right_number});${0}",
+		"name": "native_getHeightmapBottomZForPosition",
+		"snippet": "native.getHeightmapBottomZForPosition(${1:left_number}, ${2:right_number});${0}",
 		"documentation": ""
 	},
 	{
-		"name": "native__0x3599D741C9AC6310",
-		"snippet": "native._0x3599D741C9AC6310(${1:p0_number}, ${2:p1_number}, ${3:p2_number}, ${4:p3_number});${0}",
+		"name": "native_getHeightmapBottomZForArea",
+		"snippet": "native.getHeightmapBottomZForArea(${1:p0_number}, ${2:p1_number}, ${3:p2_number}, ${4:p3_number});${0}",
 		"documentation": ""
 	},
 	{
@@ -18340,8 +18705,8 @@
 		"documentation": ""
 	},
 	{
-		"name": "native__0xCC6E3B6BB69501F1",
-		"snippet": "native._0xCC6E3B6BB69501F1(${1:p0_number});${0}",
+		"name": "native_doesRelationshipGroupExist",
+		"snippet": "native.doesRelationshipGroupExist(${1:p0_number});${0}",
 		"documentation": ""
 	},
 	{
@@ -18866,7 +19231,7 @@
 	},
 	{
 		"name": "native_getPedHeadBlendData",
-		"snippet": "native.getPedHeadBlendData(${1:ped_number}, ${2:headBlendData_number});${0}",
+		"snippet": "native.getPedHeadBlendData(${1:ped_number}, ${2:headBlendData_memoryBuffer});${0}",
 		"documentation": ""
 	},
 	{
@@ -18895,8 +19260,8 @@
 		"documentation": ""
 	},
 	{
-		"name": "native_getNumHeadOverlayValues",
-		"snippet": "native.getNumHeadOverlayValues(${1:overlayID_number});${0}",
+		"name": "native_getPedHeadOverlayNum",
+		"snippet": "native.getPedHeadOverlayNum(${1:overlayID_number});${0}",
 		"documentation": ""
 	},
 	{
@@ -18930,8 +19295,8 @@
 		"documentation": ""
 	},
 	{
-		"name": "native__0xED6D8E27A43B8CDE",
-		"snippet": "native._0xED6D8E27A43B8CDE(${1:p0_number});${0}",
+		"name": "native_isPedHairColorValid2",
+		"snippet": "native.isPedHairColorValid2(${1:p0_number});${0}",
 		"documentation": ""
 	},
 	{
@@ -18940,13 +19305,13 @@
 		"documentation": ""
 	},
 	{
-		"name": "native__0x3E802F11FBE27674",
-		"snippet": "native._0x3E802F11FBE27674(${1:p0_number});${0}",
+		"name": "native_isPedLipstickColorValid2",
+		"snippet": "native.isPedLipstickColorValid2(${1:p0_number});${0}",
 		"documentation": ""
 	},
 	{
-		"name": "native__0xF41B5D290C99A3D6",
-		"snippet": "native._0xF41B5D290C99A3D6(${1:p0_number});${0}",
+		"name": "native_isPedBlushColorValid2",
+		"snippet": "native.isPedBlushColorValid2(${1:p0_number});${0}",
 		"documentation": ""
 	},
 	{
@@ -19005,8 +19370,8 @@
 		"documentation": ""
 	},
 	{
-		"name": "native_getFirstParentIdForPedType",
-		"snippet": "native.getFirstParentIdForPedType(${1:type_number});${0}",
+		"name": "native_getPedHeadBlendFirstIndex",
+		"snippet": "native.getPedHeadBlendFirstIndex(${1:type_number});${0}",
 		"documentation": ""
 	},
 	{
@@ -19015,33 +19380,33 @@
 		"documentation": ""
 	},
 	{
-		"name": "native__0x39D55A620FCB6A3A",
-		"snippet": "native._0x39D55A620FCB6A3A(${1:ped_number}, ${2:slot_number}, ${3:drawableId_number}, ${4:textureId_number});${0}",
+		"name": "native_setPedPreloadVariationData",
+		"snippet": "native.setPedPreloadVariationData(${1:ped_number}, ${2:slot_number}, ${3:drawableId_number}, ${4:textureId_number});${0}",
 		"documentation": ""
 	},
 	{
-		"name": "native__0x66680A92700F43DF",
-		"snippet": "native._0x66680A92700F43DF(${1:p0_number});${0}",
+		"name": "native_hasPedPreloadVariationDataFinished",
+		"snippet": "native.hasPedPreloadVariationDataFinished(${1:ped_number});${0}",
 		"documentation": ""
 	},
 	{
-		"name": "native__0x5AAB586FFEC0FD96",
-		"snippet": "native._0x5AAB586FFEC0FD96(${1:p0_number});${0}",
+		"name": "native_releasePedPreloadVariationData",
+		"snippet": "native.releasePedPreloadVariationData(${1:ped_number});${0}",
 		"documentation": ""
 	},
 	{
-		"name": "native_isPedPropValid",
-		"snippet": "native.isPedPropValid(${1:ped_number}, ${2:componentId_number}, ${3:drawableId_number}, ${4:TextureId_number});${0}",
+		"name": "native_setPedPreloadPropData",
+		"snippet": "native.setPedPreloadPropData(${1:ped_number}, ${2:componentId_number}, ${3:drawableId_number}, ${4:TextureId_number});${0}",
 		"documentation": ""
 	},
 	{
-		"name": "native__0x784002A632822099",
-		"snippet": "native._0x784002A632822099(${1:ped_number});${0}",
+		"name": "native_hasPedPreloadPropDataFinished",
+		"snippet": "native.hasPedPreloadPropDataFinished(${1:ped_number});${0}",
 		"documentation": ""
 	},
 	{
-		"name": "native__0xF79F9DEF0AADE61A",
-		"snippet": "native._0xF79F9DEF0AADE61A(${1:ped_number});${0}",
+		"name": "native_releasePedPreloadPropData",
+		"snippet": "native.releasePedPreloadPropData(${1:ped_number});${0}",
 		"documentation": ""
 	},
 	{
@@ -19070,8 +19435,8 @@
 		"documentation": ""
 	},
 	{
-		"name": "native__0xAFF4710E2A0A6C12",
-		"snippet": "native._0xAFF4710E2A0A6C12(${1:ped_number});${0}",
+		"name": "native_dropAmbientProp",
+		"snippet": "native.dropAmbientProp(${1:ped_number});${0}",
 		"documentation": ""
 	},
 	{
@@ -19080,8 +19445,8 @@
 		"documentation": ""
 	},
 	{
-		"name": "native__0x1280804F7CFD2D6C",
-		"snippet": "native._0x1280804F7CFD2D6C(${1:p0_number});${0}",
+		"name": "native_clearPedParachutePackVariation",
+		"snippet": "native.clearPedParachutePackVariation(${1:p0_number});${0}",
 		"documentation": ""
 	},
 	{
@@ -19485,8 +19850,8 @@
 		"documentation": ""
 	},
 	{
-		"name": "native__0xFE07FF6495D52E2A",
-		"snippet": "native._0xFE07FF6495D52E2A(${1:p0_number}, ${2:p1_number}, ${3:p2_number}, ${4:p3_number});${0}",
+		"name": "native_setPedPanicExitScenario",
+		"snippet": "native.setPedPanicExitScenario(${1:p0_number}, ${2:p1_number}, ${3:p2_number}, ${4:p3_number});${0}",
 		"documentation": ""
 	},
 	{
@@ -19605,8 +19970,8 @@
 		"documentation": ""
 	},
 	{
-		"name": "native__0xF5846EDB26A98A24",
-		"snippet": "native._0xF5846EDB26A98A24(${1:ped_number}, ${2:p1_boolean});${0}",
+		"name": "native_setPedCanTorsoReactIk",
+		"snippet": "native.setPedCanTorsoReactIk(${1:ped_number}, ${2:p1_boolean});${0}",
 		"documentation": ""
 	},
 	{
@@ -19635,8 +20000,8 @@
 		"documentation": ""
 	},
 	{
-		"name": "native__0x78C4E9961DB3EB5B",
-		"snippet": "native._0x78C4E9961DB3EB5B(${1:p0_number}, ${2:p1_number});${0}",
+		"name": "native_setPedClothPackageIndex",
+		"snippet": "native.setPedClothPackageIndex(${1:p0_number}, ${2:p1_number});${0}",
 		"documentation": ""
 	},
 	{
@@ -19710,8 +20075,8 @@
 		"documentation": ""
 	},
 	{
-		"name": "native__0xE43A13C9E4CCCBCF",
-		"snippet": "native._0xE43A13C9E4CCCBCF(${1:ped_number}, ${2:p1_boolean});${0}",
+		"name": "native_blockPedDeadBodyShockingEvents",
+		"snippet": "native.blockPedDeadBodyShockingEvents(${1:ped_number}, ${2:p1_boolean});${0}",
 		"documentation": ""
 	},
 	{
@@ -19895,8 +20260,8 @@
 		"documentation": ""
 	},
 	{
-		"name": "native__0xEBD0EDBA5BE957CF",
-		"snippet": "native._0xEBD0EDBA5BE957CF(${1:ped_number});${0}",
+		"name": "native_isPedPerformingDependentComboLimit",
+		"snippet": "native.isPedPerformingDependentComboLimit(${1:ped_number});${0}",
 		"documentation": ""
 	},
 	{
@@ -19960,13 +20325,13 @@
 		"documentation": ""
 	},
 	{
-		"name": "native__0x570389D1C3DE3C6B",
-		"snippet": "native._0x570389D1C3DE3C6B(${1:p0_number});${0}",
+		"name": "native_setPedIncreasedAvoidanceRadius",
+		"snippet": "native.setPedIncreasedAvoidanceRadius(${1:ped_number});${0}",
 		"documentation": ""
 	},
 	{
-		"name": "native__0x576594E8D64375E2",
-		"snippet": "native._0x576594E8D64375E2(${1:p0_number}, ${2:p1_boolean});${0}",
+		"name": "native_setPedBlocksPathingWhenDead",
+		"snippet": "native.setPedBlocksPathingWhenDead(${1:ped_number}, ${2:toggle_boolean});${0}",
 		"documentation": ""
 	},
 	{
@@ -19985,8 +20350,8 @@
 		"documentation": ""
 	},
 	{
-		"name": "native__0xFCF37A457CB96DC0",
-		"snippet": "native._0xFCF37A457CB96DC0(${1:p0_number}, ${2:p1_number}, ${3:p2_number}, ${4:p3_number}, ${5:p4_number});${0}",
+		"name": "native_isPedHeadingTowardsPosition",
+		"snippet": "native.isPedHeadingTowardsPosition(${1:ped_number}, ${2:x_number}, ${3:y_number}, ${4:z_number}, ${5:p4_number});${0}",
 		"documentation": ""
 	},
 	{
@@ -20075,8 +20440,8 @@
 		"documentation": ""
 	},
 	{
-		"name": "native__0xD69411AA0CEBF9E9",
-		"snippet": "native._0xD69411AA0CEBF9E9(${1:ped_number}, ${2:p1_number}, ${3:p2_number}, ${4:p3_number});${0}",
+		"name": "native_setPedEnveffColorModulator",
+		"snippet": "native.setPedEnveffColorModulator(${1:ped_number}, ${2:p1_number}, ${3:p2_number}, ${4:p3_number});${0}",
 		"documentation": ""
 	},
 	{
@@ -20235,8 +20600,8 @@
 		"documentation": ""
 	},
 	{
-		"name": "native__0x7350823473013C02",
-		"snippet": "native._0x7350823473013C02(${1:ped_number});${0}",
+		"name": "native_hasStreamedPedAssetsLoaded",
+		"snippet": "native.hasStreamedPedAssetsLoaded(${1:ped_number});${0}",
 		"documentation": ""
 	},
 	{
@@ -20305,28 +20670,28 @@
 		"documentation": ""
 	},
 	{
-		"name": "native__0xEBB376779A760AA8",
-		"snippet": "native._0xEBB376779A760AA8();${0}",
+		"name": "native_isPedheadshotImgUploadAvailable",
+		"snippet": "native.isPedheadshotImgUploadAvailable();${0}",
 		"documentation": ""
 	},
 	{
-		"name": "native__0x876928DDDFCCC9CD",
-		"snippet": "native._0x876928DDDFCCC9CD();${0}",
+		"name": "native_hasPedheadshotImgUploadFailed",
+		"snippet": "native.hasPedheadshotImgUploadFailed();${0}",
 		"documentation": ""
 	},
 	{
-		"name": "native__0xE8A169E666CBC541",
-		"snippet": "native._0xE8A169E666CBC541();${0}",
+		"name": "native_hasPedheadshotImgUploadSucceeded",
+		"snippet": "native.hasPedheadshotImgUploadSucceeded();${0}",
 		"documentation": ""
 	},
 	{
-		"name": "native__0xC1F6EBF9A3D55538",
-		"snippet": "native._0xC1F6EBF9A3D55538(${1:p0_number}, ${2:p1_number});${0}",
+		"name": "native_setPedHeatscaleOverride",
+		"snippet": "native.setPedHeatscaleOverride(${1:ped_number}, ${2:heatScale_number});${0}",
 		"documentation": ""
 	},
 	{
-		"name": "native__0x600048C60D5C2C51",
-		"snippet": "native._0x600048C60D5C2C51(${1:p0_number});${0}",
+		"name": "native_disablePedHeatscaleOverride",
+		"snippet": "native.disablePedHeatscaleOverride(${1:p0_number});${0}",
 		"documentation": ""
 	},
 	{
@@ -20421,12 +20786,12 @@
 	},
 	{
 		"name": "native__0xE861D0B05C7662B8",
-		"snippet": "native._0xE861D0B05C7662B8(${1:p0_number}, ${2:p1_number}, ${3:p2_number});${0}",
+		"snippet": "native._0xE861D0B05C7662B8(${1:ped_number}, ${2:p1_boolean}, ${3:p2_number});${0}",
 		"documentation": ""
 	},
 	{
-		"name": "native__0x129466ED55140F8D",
-		"snippet": "native._0x129466ED55140F8D(${1:ped_number}, ${2:toggle_boolean});${0}",
+		"name": "native_setForceFootstepUpdate",
+		"snippet": "native.setForceFootstepUpdate(${1:ped_number}, ${2:toggle_boolean});${0}",
 		"documentation": ""
 	},
 	{
@@ -20450,8 +20815,8 @@
 		"documentation": ""
 	},
 	{
-		"name": "native__0xD8C3BE3EE94CAF2D",
-		"snippet": "native._0xD8C3BE3EE94CAF2D(${1:p0_number}, ${2:p1_number}, ${3:p2_number}, ${4:p3_number}, ${5:p4_number});${0}",
+		"name": "native_setPopControlSphereThisFrame",
+		"snippet": "native.setPopControlSphereThisFrame(${1:p0_number}, ${2:p1_number}, ${3:p2_number}, ${4:p3_number}, ${5:p4_number});${0}",
 		"documentation": ""
 	},
 	{
@@ -20502,6 +20867,11 @@
 	{
 		"name": "native__0x637822DC2AFEEBF8",
 		"snippet": "native._0x637822DC2AFEEBF8(${1:p0_number});${0}",
+		"documentation": ""
+	},
+	{
+		"name": "native__0xFAB944D4D481ACCB",
+		"snippet": "native._0xFAB944D4D481ACCB(${1:ped_number}, ${2:toggle_boolean});${0}",
 		"documentation": ""
 	},
 	{
@@ -20570,8 +20940,8 @@
 		"documentation": ""
 	},
 	{
-		"name": "native__0xDC57A637A20006ED",
-		"snippet": "native._0xDC57A637A20006ED(${1:ropeId_number}, ${2:p1_number});${0}",
+		"name": "native_ropeSetUpdateOrder",
+		"snippet": "native.ropeSetUpdateOrder(${1:ropeId_number}, ${2:p1_number});${0}",
 		"documentation": ""
 	},
 	{
@@ -20705,8 +21075,8 @@
 		"documentation": ""
 	},
 	{
-		"name": "native__0x0C112765300C7E1E",
-		"snippet": "native._0x0C112765300C7E1E(${1:p0_number});${0}",
+		"name": "native_getHasObjectFragInst",
+		"snippet": "native.getHasObjectFragInst(${1:object_number});${0}",
 		"documentation": ""
 	},
 	{
@@ -20801,7 +21171,7 @@
 	},
 	{
 		"name": "native_setPlayerWantedCentrePosition",
-		"snippet": "native.setPlayerWantedCentrePosition(${1:player_number}, ${2:position_setAsUndefined}, ${3:p2_boolean}, ${4:p3_boolean});${0}",
+		"snippet": "native.setPlayerWantedCentrePosition(${1:player_number}, ${2:position_vector3Ptr}, ${3:p2_boolean}, ${4:p3_boolean});${0}",
 		"documentation": ""
 	},
 	{
@@ -21420,18 +21790,18 @@
 		"documentation": ""
 	},
 	{
-		"name": "native__0x821FDC827D6F4090",
-		"snippet": "native._0x821FDC827D6F4090(${1:p0_number});${0}",
+		"name": "native_specialAbilityActivate",
+		"snippet": "native.specialAbilityActivate(${1:p0_number});${0}",
 		"documentation": ""
 	},
 	{
-		"name": "native__0xB214D570EAD7F81A",
-		"snippet": "native._0xB214D570EAD7F81A(${1:player_number}, ${2:p1_number});${0}",
+		"name": "native_setSpecialAbility",
+		"snippet": "native.setSpecialAbility(${1:player_number}, ${2:p1_number});${0}",
 		"documentation": ""
 	},
 	{
-		"name": "native__0x17F7471EACA78290",
-		"snippet": "native._0x17F7471EACA78290(${1:p0_number});${0}",
+		"name": "native_specialAbilityDeplete",
+		"snippet": "native.specialAbilityDeplete(${1:p0_number});${0}",
 		"documentation": ""
 	},
 	{
@@ -21450,8 +21820,8 @@
 		"documentation": ""
 	},
 	{
-		"name": "native__0xC9A763D8FE87436A",
-		"snippet": "native._0xC9A763D8FE87436A(${1:player_number});${0}",
+		"name": "native_specialAbilityChargeOnMissionFailed",
+		"snippet": "native.specialAbilityChargeOnMissionFailed(${1:player_number});${0}",
 		"documentation": ""
 	},
 	{
@@ -21595,8 +21965,8 @@
 		"documentation": ""
 	},
 	{
-		"name": "native__0xEFD79FA81DFBA9CB",
-		"snippet": "native._0xEFD79FA81DFBA9CB(${1:p0_number}, ${2:p1_number});${0}",
+		"name": "native_setPlayerFallDistance",
+		"snippet": "native.setPlayerFallDistance(${1:p0_number}, ${2:p1_number});${0}",
 		"documentation": ""
 	},
 	{
@@ -21910,8 +22280,8 @@
 		"documentation": ""
 	},
 	{
-		"name": "native__0xEE4EBDD2593BA844",
-		"snippet": "native._0xEE4EBDD2593BA844(${1:p0_number}, ${2:p1_number});${0}",
+		"name": "native_setPlayerHomingRocketDisabled",
+		"snippet": "native.setPlayerHomingRocketDisabled(${1:p0_number}, ${2:p1_number});${0}",
 		"documentation": ""
 	},
 	{
@@ -22190,23 +22560,23 @@
 		"documentation": ""
 	},
 	{
-		"name": "native_bgrStartContextHash",
-		"snippet": "native.bgrStartContextHash(${1:contextHash_number});${0}",
+		"name": "native_bgStartContextHash",
+		"snippet": "native.bgStartContextHash(${1:contextHash_number});${0}",
 		"documentation": ""
 	},
 	{
-		"name": "native_bgrEndContextHash",
-		"snippet": "native.bgrEndContextHash(${1:contextHash_number});${0}",
+		"name": "native_bgEndContextHash",
+		"snippet": "native.bgEndContextHash(${1:contextHash_number});${0}",
 		"documentation": ""
 	},
 	{
-		"name": "native_bgrStartContext",
-		"snippet": "native.bgrStartContext(${1:contextName_string});${0}",
+		"name": "native_bgStartContext",
+		"snippet": "native.bgStartContext(${1:contextName_string});${0}",
 		"documentation": ""
 	},
 	{
-		"name": "native_bgrEndContext",
-		"snippet": "native.bgrEndContext(${1:contextName_string});${0}",
+		"name": "native_bgEndContext",
+		"snippet": "native.bgEndContext(${1:contextName_string});${0}",
 		"documentation": ""
 	},
 	{
@@ -22261,17 +22631,17 @@
 	},
 	{
 		"name": "native_startShapeTestSurroundingCoords",
-		"snippet": "native.startShapeTestSurroundingCoords(${1:pVec1_setAsUndefined}, ${2:pVec2_setAsUndefined}, ${3:flag_number}, ${4:entity_number}, ${5:flag2_number});${0}",
+		"snippet": "native.startShapeTestSurroundingCoords(${1:pVec1_vector3Ptr}, ${2:pVec2_vector3Ptr}, ${3:flag_number}, ${4:entity_number}, ${5:flag2_number});${0}",
 		"documentation": ""
 	},
 	{
 		"name": "native_getShapeTestResult",
-		"snippet": "native.getShapeTestResult(${1:rayHandle_number}, ${2:hit_boolean}, ${3:endCoords_setAsUndefined}, ${4:surfaceNormal_setAsUndefined}, ${5:entityHit_number});${0}",
+		"snippet": "native.getShapeTestResult(${1:rayHandle_number}, ${2:hit_boolean}, ${3:endCoords_vector3Ptr}, ${4:surfaceNormal_vector3Ptr}, ${5:entityHit_number});${0}",
 		"documentation": ""
 	},
 	{
 		"name": "native_getShapeTestResultIncludingMaterial",
-		"snippet": "native.getShapeTestResultIncludingMaterial(${1:rayHandle_number}, ${2:hit_boolean}, ${3:endCoords_setAsUndefined}, ${4:surfaceNormal_setAsUndefined}, ${5:materialHash_number}, ${6:entityHit_number});${0}",
+		"snippet": "native.getShapeTestResultIncludingMaterial(${1:rayHandle_number}, ${2:hit_boolean}, ${3:endCoords_vector3Ptr}, ${4:surfaceNormal_vector3Ptr}, ${5:materialHash_number}, ${6:entityHit_number});${0}",
 		"documentation": ""
 	},
 	{
@@ -22346,7 +22716,7 @@
 	},
 	{
 		"name": "native_scInboxMessageGetBountyData",
-		"snippet": "native.scInboxMessageGetBountyData(${1:index_number}, ${2:outData_number});${0}",
+		"snippet": "native.scInboxMessageGetBountyData(${1:index_number}, ${2:outData_memoryBuffer});${0}",
 		"documentation": ""
 	},
 	{
@@ -23056,7 +23426,7 @@
 	},
 	{
 		"name": "native_playstatsMatchStarted",
-		"snippet": "native.playstatsMatchStarted(${1:p0_number}, ${2:p1_number}, ${3:p2_number}, ${4:p3_number}, ${5:p4_number}, ${6:p5_number}, ${7:p6_number});${0}",
+		"snippet": "native.playstatsMatchStarted(${1:p0_number}, ${2:p1_number}, ${3:p2_number});${0}",
 		"documentation": ""
 	},
 	{
@@ -23330,8 +23700,8 @@
 		"documentation": ""
 	},
 	{
-		"name": "native__0xC38DC1E90D22547C",
-		"snippet": "native._0xC38DC1E90D22547C(${1:p0_number}, ${2:p1_number}, ${3:p2_number});${0}",
+		"name": "native_leaderboards2ReadRankPrediction",
+		"snippet": "native.leaderboards2ReadRankPrediction(${1:p0_number}, ${2:p1_number}, ${3:p2_number});${0}",
 		"documentation": ""
 	},
 	{
@@ -23442,6 +23812,11 @@
 	{
 		"name": "native__0xB475F27C6A994D65",
 		"snippet": "native._0xB475F27C6A994D65();${0}",
+		"documentation": ""
+	},
+	{
+		"name": "native__0xC67E2DA1CBE759E2",
+		"snippet": "native._0xC67E2DA1CBE759E2();${0}",
 		"documentation": ""
 	},
 	{
@@ -24010,6 +24385,91 @@
 		"documentation": ""
 	},
 	{
+		"name": "native_playstatsPassiveMode",
+		"snippet": "native.playstatsPassiveMode(${1:p0_boolean}, ${2:p1_number}, ${3:p2_number}, ${4:p3_number});${0}",
+		"documentation": ""
+	},
+	{
+		"name": "native_playstatsCollectible",
+		"snippet": "native.playstatsCollectible(${1:p0_number}, ${2:p1_number}, ${3:p2_number}, ${4:p3_number}, ${5:p4_number}, ${6:p5_number}, ${7:p6_number}, ${8:p7_number}, ${9:p8_number}, ${10:p9_number});${0}",
+		"documentation": ""
+	},
+	{
+		"name": "native_playstatsCasinoStoryMissionEnded",
+		"snippet": "native.playstatsCasinoStoryMissionEnded(${1:p0_number}, ${2:p1_number});${0}",
+		"documentation": ""
+	},
+	{
+		"name": "native_playstatsCasinoChip",
+		"snippet": "native.playstatsCasinoChip(${1:p0_number});${0}",
+		"documentation": ""
+	},
+	{
+		"name": "native_playstatsCasinoRoulette",
+		"snippet": "native.playstatsCasinoRoulette(${1:p0_number});${0}",
+		"documentation": ""
+	},
+	{
+		"name": "native_playstatsCasinoBlackjack",
+		"snippet": "native.playstatsCasinoBlackjack(${1:p0_number});${0}",
+		"documentation": ""
+	},
+	{
+		"name": "native_playstatsCasinoThreecardpoker",
+		"snippet": "native.playstatsCasinoThreecardpoker(${1:p0_number});${0}",
+		"documentation": ""
+	},
+	{
+		"name": "native_playstatsCasinoSlotmachine",
+		"snippet": "native.playstatsCasinoSlotmachine(${1:p0_number});${0}",
+		"documentation": ""
+	},
+	{
+		"name": "native_playstatsCasinoInsidetrack",
+		"snippet": "native.playstatsCasinoInsidetrack(${1:p0_number});${0}",
+		"documentation": ""
+	},
+	{
+		"name": "native_playstatsCasinoLuckyseven",
+		"snippet": "native.playstatsCasinoLuckyseven(${1:p0_number});${0}",
+		"documentation": ""
+	},
+	{
+		"name": "native_playstatsCasinoRouletteLight",
+		"snippet": "native.playstatsCasinoRouletteLight(${1:p0_number});${0}",
+		"documentation": ""
+	},
+	{
+		"name": "native_playstatsCasinoBlackjackLight",
+		"snippet": "native.playstatsCasinoBlackjackLight(${1:p0_number});${0}",
+		"documentation": ""
+	},
+	{
+		"name": "native_playstatsCasinoThreecardpokerLight",
+		"snippet": "native.playstatsCasinoThreecardpokerLight(${1:p0_number});${0}",
+		"documentation": ""
+	},
+	{
+		"name": "native_playstatsCasinoSlotmachineLight",
+		"snippet": "native.playstatsCasinoSlotmachineLight(${1:p0_number});${0}",
+		"documentation": ""
+	},
+	{
+		"name": "native_playstatsCasinoInsidetrackLight",
+		"snippet": "native.playstatsCasinoInsidetrackLight(${1:p0_number});${0}",
+		"documentation": ""
+	},
+	{
+		"name": "native_playstatsArcadegame",
+		"snippet": "native.playstatsArcadegame(${1:p0_number}, ${2:p1_number}, ${3:p2_number}, ${4:p3_number}, ${5:p4_number}, ${6:p5_number});${0}",
+		"documentation": ""
+	},
+	{
+		"name": "native_playstatsCasinoMissionEnded",
+		"snippet": "native.playstatsCasinoMissionEnded(${1:data_number});${0}",
+		"documentation": ""
+	},
+	{
 		"name": "native_loadAllObjectsNow",
 		"snippet": "native.loadAllObjectsNow();${0}",
 		"documentation": ""
@@ -24240,8 +24700,8 @@
 		"documentation": ""
 	},
 	{
-		"name": "native_setFocusArea",
-		"snippet": "native.setFocusArea(${1:x_number}, ${2:y_number}, ${3:z_number}, ${4:offsetX_number}, ${5:offsetY_number}, ${6:offsetZ_number});${0}",
+		"name": "native_setFocusPosAndVel",
+		"snippet": "native.setFocusPosAndVel(${1:x_number}, ${2:y_number}, ${3:z_number}, ${4:offsetX_number}, ${5:offsetY_number}, ${6:offsetZ_number});${0}",
 		"documentation": ""
 	},
 	{
@@ -24375,8 +24835,8 @@
 		"documentation": ""
 	},
 	{
-		"name": "native__0x78C0D93253149435",
-		"snippet": "native._0x78C0D93253149435();${0}",
+		"name": "native_getPlayerSwitchJumpCutIndex",
+		"snippet": "native.getPlayerSwitchJumpCutIndex();${0}",
 		"documentation": ""
 	},
 	{
@@ -24440,8 +24900,8 @@
 		"documentation": ""
 	},
 	{
-		"name": "native__0x08C2D6C52A3104BB",
-		"snippet": "native._0x08C2D6C52A3104BB();${0}",
+		"name": "native_getPlayerSwitchInterpOutDuration",
+		"snippet": "native.getPlayerSwitchInterpOutDuration();${0}",
 		"documentation": ""
 	},
 	{
@@ -25716,7 +26176,7 @@
 	},
 	{
 		"name": "native_waypointRecordingGetCoord",
-		"snippet": "native.waypointRecordingGetCoord(${1:name_string}, ${2:point_number}, ${3:coord_setAsUndefined});${0}",
+		"snippet": "native.waypointRecordingGetCoord(${1:name_string}, ${2:point_number}, ${3:coord_vector3Ptr});${0}",
 		"documentation": ""
 	},
 	{
@@ -25900,8 +26360,8 @@
 		"documentation": ""
 	},
 	{
-		"name": "native_taskMoveNetworkScripted",
-		"snippet": "native.taskMoveNetworkScripted(${1:ped_number}, ${2:p1_string}, ${3:data_number}, ${4:p3_number}, ${5:p4_boolean}, ${6:animDict_string}, ${7:flags_number});${0}",
+		"name": "native_taskMoveNetworkByNameWithInitParams",
+		"snippet": "native.taskMoveNetworkByNameWithInitParams(${1:ped_number}, ${2:p1_string}, ${3:data_number}, ${4:p3_number}, ${5:p4_boolean}, ${6:animDict_string}, ${7:flags_number});${0}",
 		"documentation": ""
 	},
 	{
@@ -26165,8 +26625,8 @@
 		"documentation": ""
 	},
 	{
-		"name": "native__0xE023E8AC4EF7C117",
-		"snippet": "native._0xE023E8AC4EF7C117(${1:p0_number}, ${2:p1_boolean}, ${3:p2_boolean}, ${4:p3_boolean});${0}",
+		"name": "native_setVehicleUseCutsceneWheelCompression",
+		"snippet": "native.setVehicleUseCutsceneWheelCompression(${1:p0_number}, ${2:p1_boolean}, ${3:p2_boolean}, ${4:p3_boolean});${0}",
 		"documentation": ""
 	},
 	{
@@ -26235,8 +26695,8 @@
 		"documentation": ""
 	},
 	{
-		"name": "native_unkSetDisableRandomTrains",
-		"snippet": "native.unkSetDisableRandomTrains(${1:toggle_boolean});${0}",
+		"name": "native_setDisableRandomTrainsThisFrame",
+		"snippet": "native.setDisableRandomTrainsThisFrame(${1:toggle_boolean});${0}",
 		"documentation": ""
 	},
 	{
@@ -26265,8 +26725,8 @@
 		"documentation": ""
 	},
 	{
-		"name": "native_setDisableVehicleSirenSound",
-		"snippet": "native.setDisableVehicleSirenSound(${1:vehicle_number}, ${2:toggle_boolean});${0}",
+		"name": "native_setVehicleHasMutedSirens",
+		"snippet": "native.setVehicleHasMutedSirens(${1:vehicle_number}, ${2:toggle_boolean});${0}",
 		"documentation": ""
 	},
 	{
@@ -26435,13 +26895,13 @@
 		"documentation": ""
 	},
 	{
-		"name": "native__0x33506883545AC0DF",
-		"snippet": "native._0x33506883545AC0DF(${1:vehicle_number}, ${2:p1_boolean});${0}",
+		"name": "native_forceSubmarineSurfaceMode",
+		"snippet": "native.forceSubmarineSurfaceMode(${1:vehicle_number}, ${2:toggle_boolean});${0}",
 		"documentation": ""
 	},
 	{
-		"name": "native_jitterVehicle",
-		"snippet": "native.jitterVehicle(${1:vehicle_number}, ${2:p1_boolean}, ${3:yaw_number}, ${4:pitch_number}, ${5:roll_number});${0}",
+		"name": "native_setSubmarineCrushDepths",
+		"snippet": "native.setSubmarineCrushDepths(${1:vehicle_number}, ${2:p1_boolean}, ${3:depth1_number}, ${4:depth2_number}, ${5:depth3_number});${0}",
 		"documentation": ""
 	},
 	{
@@ -26455,18 +26915,18 @@
 		"documentation": ""
 	},
 	{
-		"name": "native_getBoatAnchor",
-		"snippet": "native.getBoatAnchor(${1:vehicle_number});${0}",
+		"name": "native_canAnchorBoatHere",
+		"snippet": "native.canAnchorBoatHere(${1:vehicle_number});${0}",
 		"documentation": ""
 	},
 	{
-		"name": "native__0x24F4121D07579880",
-		"snippet": "native._0x24F4121D07579880(${1:p0_number});${0}",
+		"name": "native_canAnchorBoatHere2",
+		"snippet": "native.canAnchorBoatHere2(${1:vehicle_number});${0}",
 		"documentation": ""
 	},
 	{
-		"name": "native__0xE3EBAAE484798530",
-		"snippet": "native._0xE3EBAAE484798530(${1:vehicle_number}, ${2:p1_boolean});${0}",
+		"name": "native_setBoatFrozenWhenAnchored",
+		"snippet": "native.setBoatFrozenWhenAnchored(${1:vehicle_number}, ${2:toggle_boolean});${0}",
 		"documentation": ""
 	},
 	{
@@ -26475,23 +26935,23 @@
 		"documentation": ""
 	},
 	{
-		"name": "native__0xE842A9398079BD82",
-		"snippet": "native._0xE842A9398079BD82(${1:vehicle_number}, ${2:p1_number});${0}",
+		"name": "native_setBoatMovementResistance",
+		"snippet": "native.setBoatMovementResistance(${1:vehicle_number}, ${2:value_number});${0}",
 		"documentation": ""
 	},
 	{
-		"name": "native__0xB0AD1238A709B1A2",
-		"snippet": "native._0xB0AD1238A709B1A2(${1:vehicle_number});${0}",
+		"name": "native_isBoatAnchoredAndFrozen",
+		"snippet": "native.isBoatAnchoredAndFrozen(${1:vehicle_number});${0}",
 		"documentation": ""
 	},
 	{
-		"name": "native__0x8F719973E1445BA2",
-		"snippet": "native._0x8F719973E1445BA2(${1:vehicle_number}, ${2:toggle_boolean});${0}",
+		"name": "native_setBoatSinksWhenWrecked",
+		"snippet": "native.setBoatSinksWhenWrecked(${1:vehicle_number}, ${2:toggle_boolean});${0}",
 		"documentation": ""
 	},
 	{
-		"name": "native__0xBD32E46AA95C1DD2",
-		"snippet": "native._0xBD32E46AA95C1DD2(${1:p0_number});${0}",
+		"name": "native_setBoatIsSinking",
+		"snippet": "native.setBoatIsSinking(${1:p0_number});${0}",
 		"documentation": ""
 	},
 	{
@@ -26590,8 +27050,8 @@
 		"documentation": ""
 	},
 	{
-		"name": "native_isVehicleNearEntity",
-		"snippet": "native.isVehicleNearEntity(${1:vehicle_number}, ${2:entity_number});${0}",
+		"name": "native_isEntityAttachedToHandlerFrame",
+		"snippet": "native.isEntityAttachedToHandlerFrame(${1:vehicle_number}, ${2:entity_number});${0}",
 		"documentation": ""
 	},
 	{
@@ -26605,8 +27065,8 @@
 		"documentation": ""
 	},
 	{
-		"name": "native__0x89D630CF5EA96D23",
-		"snippet": "native._0x89D630CF5EA96D23(${1:vehicle_number}, ${2:entity_number});${0}",
+		"name": "native_isHandlerFrameAboveContainer",
+		"snippet": "native.isHandlerFrameAboveContainer(${1:vehicle_number}, ${2:entity_number});${0}",
 		"documentation": ""
 	},
 	{
@@ -26615,8 +27075,8 @@
 		"documentation": ""
 	},
 	{
-		"name": "native__0x7C0043FDFF6436BC",
-		"snippet": "native._0x7C0043FDFF6436BC(${1:x_number});${0}",
+		"name": "native_detachContainerFromHandlerFrame",
+		"snippet": "native.detachContainerFromHandlerFrame(${1:vehicle_number});${0}",
 		"documentation": ""
 	},
 	{
@@ -26625,13 +27085,13 @@
 		"documentation": ""
 	},
 	{
-		"name": "native__0x0A6A279F3AA4FD70",
-		"snippet": "native._0x0A6A279F3AA4FD70(${1:vehicle_number}, ${2:p1_boolean});${0}",
+		"name": "native_setBoatDisableAvoidance",
+		"snippet": "native.setBoatDisableAvoidance(${1:vehicle_number}, ${2:p1_boolean});${0}",
 		"documentation": ""
 	},
 	{
-		"name": "native__0x634148744F385576",
-		"snippet": "native._0x634148744F385576(${1:vehicle_number});${0}",
+		"name": "native_isHeliLandingAreaBlocked",
+		"snippet": "native.isHeliLandingAreaBlocked(${1:vehicle_number});${0}",
 		"documentation": ""
 	},
 	{
@@ -26640,8 +27100,8 @@
 		"documentation": ""
 	},
 	{
-		"name": "native__0xE6F13851780394DA",
-		"snippet": "native._0xE6F13851780394DA(${1:vehicle_number}, ${2:p1_number});${0}",
+		"name": "native_setHeliTurbulenceScalar",
+		"snippet": "native.setHeliTurbulenceScalar(${1:vehicle_number}, ${2:p1_number});${0}",
 		"documentation": ""
 	},
 	{
@@ -26735,8 +27195,8 @@
 		"documentation": ""
 	},
 	{
-		"name": "native__0xC45C27EF50F36ADC",
-		"snippet": "native._0xC45C27EF50F36ADC(${1:vehicle_number}, ${2:p1_boolean});${0}",
+		"name": "native_setVehicleUsePlayerLightSettings",
+		"snippet": "native.setVehicleUsePlayerLightSettings(${1:vehicle_number}, ${2:p1_boolean});${0}",
 		"documentation": ""
 	},
 	{
@@ -26780,13 +27240,13 @@
 		"documentation": ""
 	},
 	{
-		"name": "native__0x16B5E274BDE402F8",
-		"snippet": "native._0x16B5E274BDE402F8(${1:vehicle_number}, ${2:trailer_number}, ${3:p2_number}, ${4:p3_number}, ${5:p4_number}, ${6:p5_number}, ${7:p6_number}, ${8:p7_number}, ${9:p8_number}, ${10:p9_number}, ${11:p10_number}, ${12:p11_number});${0}",
+		"name": "native_attachVehicleOnToTrailer",
+		"snippet": "native.attachVehicleOnToTrailer(${1:vehicle_number}, ${2:trailer_number}, ${3:p2_number}, ${4:p3_number}, ${5:p4_number}, ${6:p5_number}, ${7:p6_number}, ${8:p7_number}, ${9:p8_number}, ${10:p9_number}, ${11:p10_number}, ${12:p11_number});${0}",
 		"documentation": ""
 	},
 	{
-		"name": "native__0x374706271354CB18",
-		"snippet": "native._0x374706271354CB18(${1:vehicle_number}, ${2:p1_number}, ${3:p2_number});${0}",
+		"name": "native_stabiliseEntityAttachedToHeli",
+		"snippet": "native.stabiliseEntityAttachedToHeli(${1:vehicle_number}, ${2:entity_number}, ${3:p2_number});${0}",
 		"documentation": ""
 	},
 	{
@@ -26800,18 +27260,18 @@
 		"documentation": ""
 	},
 	{
-		"name": "native__0x2A8F319B392E7B3F",
-		"snippet": "native._0x2A8F319B392E7B3F(${1:vehicle_number}, ${2:p1_number});${0}",
+		"name": "native_setTrailerInverseMassScale",
+		"snippet": "native.setTrailerInverseMassScale(${1:vehicle_number}, ${2:p1_number});${0}",
 		"documentation": ""
 	},
 	{
-		"name": "native__0x95CF53B3D687F9FA",
-		"snippet": "native._0x95CF53B3D687F9FA(${1:vehicle_number});${0}",
+		"name": "native_setTrailerLegsRaised",
+		"snippet": "native.setTrailerLegsRaised(${1:vehicle_number});${0}",
 		"documentation": ""
 	},
 	{
-		"name": "native__0x878C75C09FBDB942",
-		"snippet": "native._0x878C75C09FBDB942(${1:p0_number});${0}",
+		"name": "native_setTrailerLegsLowered",
+		"snippet": "native.setTrailerLegsLowered(${1:p0_number});${0}",
 		"documentation": ""
 	},
 	{
@@ -27190,8 +27650,8 @@
 		"documentation": ""
 	},
 	{
-		"name": "native__0x1AA8A837D2169D94",
-		"snippet": "native._0x1AA8A837D2169D94(${1:vehicle_number}, ${2:p1_boolean});${0}",
+		"name": "native_setVehicleLightsCanBeVisiblyDamaged",
+		"snippet": "native.setVehicleLightsCanBeVisiblyDamaged(${1:vehicle_number}, ${2:p1_boolean});${0}",
 		"documentation": ""
 	},
 	{
@@ -27460,18 +27920,18 @@
 		"documentation": ""
 	},
 	{
-		"name": "native__0x206BC5DC9D1AC70A",
-		"snippet": "native._0x206BC5DC9D1AC70A(${1:vehicle_number}, ${2:toggle_boolean});${0}",
+		"name": "native_setVehicleCanEngineOperateOnFire",
+		"snippet": "native.setVehicleCanEngineOperateOnFire(${1:vehicle_number}, ${2:toggle_boolean});${0}",
 		"documentation": ""
 	},
 	{
-		"name": "native__0x51BB2D88D31A914B",
-		"snippet": "native._0x51BB2D88D31A914B(${1:vehicle_number}, ${2:p1_boolean});${0}",
+		"name": "native_setVehicleCanLeakOil",
+		"snippet": "native.setVehicleCanLeakOil(${1:vehicle_number}, ${2:toggle_boolean});${0}",
 		"documentation": ""
 	},
 	{
-		"name": "native__0x192547247864DFDD",
-		"snippet": "native._0x192547247864DFDD(${1:vehicle_number}, ${2:p1_boolean});${0}",
+		"name": "native_setVehicleCanLeakPetrol",
+		"snippet": "native.setVehicleCanLeakPetrol(${1:vehicle_number}, ${2:toggle_boolean});${0}",
 		"documentation": ""
 	},
 	{
@@ -27485,8 +27945,8 @@
 		"documentation": ""
 	},
 	{
-		"name": "native__0x91A0BD635321F145",
-		"snippet": "native._0x91A0BD635321F145(${1:vehicle_number}, ${2:p1_boolean});${0}",
+		"name": "native_setDisableVehicleEngineFires",
+		"snippet": "native.setDisableVehicleEngineFires(${1:vehicle_number}, ${2:toggle_boolean});${0}",
 		"documentation": ""
 	},
 	{
@@ -27500,8 +27960,8 @@
 		"documentation": ""
 	},
 	{
-		"name": "native__0x25367DE49D64CF16",
-		"snippet": "native._0x25367DE49D64CF16(${1:vehicle_number}, ${2:p1_boolean});${0}",
+		"name": "native_setDisablePretendOccupants",
+		"snippet": "native.setDisablePretendOccupants(${1:vehicle_number}, ${2:toggle_boolean});${0}",
 		"documentation": ""
 	},
 	{
@@ -27740,8 +28200,8 @@
 		"documentation": ""
 	},
 	{
-		"name": "native_getHeliEngineHealth",
-		"snippet": "native.getHeliEngineHealth(${1:vehicle_number});${0}",
+		"name": "native_getHeliTailBoomHealth",
+		"snippet": "native.getHeliTailBoomHealth(${1:vehicle_number});${0}",
 		"documentation": ""
 	},
 	{
@@ -27750,13 +28210,13 @@
 		"documentation": ""
 	},
 	{
-		"name": "native__0xFE205F38AAA58E5B",
-		"snippet": "native._0xFE205F38AAA58E5B(${1:p0_number}, ${2:p1_number});${0}",
+		"name": "native_setHeliTailRotorHealth",
+		"snippet": "native.setHeliTailRotorHealth(${1:p0_number}, ${2:p1_number});${0}",
 		"documentation": ""
 	},
 	{
-		"name": "native__0x3EC8BF18AA453FE9",
-		"snippet": "native._0x3EC8BF18AA453FE9(${1:vehicle_number}, ${2:p1_boolean});${0}",
+		"name": "native_setHeliTailExplodeThrowDashboard",
+		"snippet": "native.setHeliTailExplodeThrowDashboard(${1:vehicle_number}, ${2:p1_boolean});${0}",
 		"documentation": ""
 	},
 	{
@@ -27785,8 +28245,8 @@
 		"documentation": ""
 	},
 	{
-		"name": "native__0xE43701C36CAFF1A4",
-		"snippet": "native._0xE43701C36CAFF1A4(${1:p0_number});${0}",
+		"name": "native_doesVehicleHaveLandingGear",
+		"snippet": "native.doesVehicleHaveLandingGear(${1:vehicle_number});${0}",
 		"documentation": ""
 	},
 	{
@@ -27895,33 +28355,33 @@
 		"documentation": ""
 	},
 	{
-		"name": "native__0x32CAEDF24A583345",
-		"snippet": "native._0x32CAEDF24A583345(${1:p0_number});${0}",
+		"name": "native_disableVehicleTurretMovementThisFrame",
+		"snippet": "native.disableVehicleTurretMovementThisFrame(${1:p0_number});${0}",
 		"documentation": ""
 	},
 	{
-		"name": "native_setVehicleDesiredVerticalFlightPhase",
-		"snippet": "native.setVehicleDesiredVerticalFlightPhase(${1:vehicle_number}, ${2:angleRatio_number});${0}",
+		"name": "native_setVehicleFlightNozzlePosition",
+		"snippet": "native.setVehicleFlightNozzlePosition(${1:vehicle_number}, ${2:angleRatio_number});${0}",
 		"documentation": ""
 	},
 	{
-		"name": "native_setVehicleVerticalFlightPhase",
-		"snippet": "native.setVehicleVerticalFlightPhase(${1:vehicle_number}, ${2:angle_number});${0}",
+		"name": "native_setVehicleFlightNozzlePositionImmediate",
+		"snippet": "native.setVehicleFlightNozzlePositionImmediate(${1:vehicle_number}, ${2:angle_number});${0}",
 		"documentation": ""
 	},
 	{
-		"name": "native_getPlaneHoverModePercentage",
-		"snippet": "native.getPlaneHoverModePercentage(${1:plane_number});${0}",
+		"name": "native_getVehicleFlightNozzlePosition",
+		"snippet": "native.getVehicleFlightNozzlePosition(${1:plane_number});${0}",
 		"documentation": ""
 	},
 	{
-		"name": "native__0xCE2B43770B655F8F",
-		"snippet": "native._0xCE2B43770B655F8F(${1:p0_number}, ${2:p1_number});${0}",
+		"name": "native_setDisableVehicleFlightNozzlePosition",
+		"snippet": "native.setDisableVehicleFlightNozzlePosition(${1:p0_number}, ${2:p1_number});${0}",
 		"documentation": ""
 	},
 	{
 		"name": "native__0xA4822F1CF23F4810",
-		"snippet": "native._0xA4822F1CF23F4810(${1:outVec_setAsUndefined}, ${2:p1_number}, ${3:outVec1_setAsUndefined}, ${4:p3_number}, ${5:p4_number}, ${6:p5_number}, ${7:p6_number}, ${8:p7_number}, ${9:p8_number});${0}",
+		"snippet": "native._0xA4822F1CF23F4810(${1:outVec_vector3Ptr}, ${2:p1_number}, ${3:outVec1_vector3Ptr}, ${4:p3_number}, ${5:p4_number}, ${6:p5_number}, ${7:p6_number}, ${8:p7_number}, ${9:p8_number});${0}",
 		"documentation": ""
 	},
 	{
@@ -28025,8 +28485,8 @@
 		"documentation": ""
 	},
 	{
-		"name": "native_getVehicleModelMaxSpeed",
-		"snippet": "native.getVehicleModelMaxSpeed(${1:modelHash_number});${0}",
+		"name": "native_getVehicleModelEstimatedMaxSpeed",
+		"snippet": "native.getVehicleModelEstimatedMaxSpeed(${1:modelHash_number});${0}",
 		"documentation": ""
 	},
 	{
@@ -28050,8 +28510,8 @@
 		"documentation": ""
 	},
 	{
-		"name": "native_getVehicleModelDownForce",
-		"snippet": "native.getVehicleModelDownForce(${1:modelHash_number});${0}",
+		"name": "native_getVehicleModelEstimatedAgility",
+		"snippet": "native.getVehicleModelEstimatedAgility(${1:modelHash_number});${0}",
 		"documentation": ""
 	},
 	{
@@ -28065,8 +28525,8 @@
 		"documentation": ""
 	},
 	{
-		"name": "native_getVehicleClassMaxSpeed",
-		"snippet": "native.getVehicleClassMaxSpeed(${1:vehicleClass_number});${0}",
+		"name": "native_getVehicleClassEstimatedMaxSpeed",
+		"snippet": "native.getVehicleClassEstimatedMaxSpeed(${1:vehicleClass_number});${0}",
 		"documentation": ""
 	},
 	{
@@ -28345,8 +28805,8 @@
 		"documentation": ""
 	},
 	{
-		"name": "native_setVehicleEnginePowerMultiplier",
-		"snippet": "native.setVehicleEnginePowerMultiplier(${1:vehicle_number}, ${2:value_number});${0}",
+		"name": "native_modifyVehicleTopSpeed",
+		"snippet": "native.modifyVehicleTopSpeed(${1:vehicle_number}, ${2:value_number});${0}",
 		"documentation": ""
 	},
 	{
@@ -28370,8 +28830,8 @@
 		"documentation": ""
 	},
 	{
-		"name": "native_addVehicleCombatAvoidanceArea",
-		"snippet": "native.addVehicleCombatAvoidanceArea(${1:p0_number}, ${2:p1_number}, ${3:p2_number}, ${4:p3_number}, ${5:p4_number}, ${6:p5_number}, ${7:p6_number});${0}",
+		"name": "native_addVehicleCombatAngledAvoidanceArea",
+		"snippet": "native.addVehicleCombatAngledAvoidanceArea(${1:p0_number}, ${2:p1_number}, ${3:p2_number}, ${4:p3_number}, ${5:p4_number}, ${6:p5_number}, ${7:p6_number});${0}",
 		"documentation": ""
 	},
 	{
@@ -28385,8 +28845,8 @@
 		"documentation": ""
 	},
 	{
-		"name": "native_setVehicleEngineTorqueMultiplier",
-		"snippet": "native.setVehicleEngineTorqueMultiplier(${1:vehicle_number}, ${2:value_number});${0}",
+		"name": "native_setVehicleCheatPowerIncrease",
+		"snippet": "native.setVehicleCheatPowerIncrease(${1:vehicle_number}, ${2:value_number});${0}",
 		"documentation": ""
 	},
 	{
@@ -28415,8 +28875,8 @@
 		"documentation": ""
 	},
 	{
-		"name": "native__0x6636C535F6CC2725",
-		"snippet": "native._0x6636C535F6CC2725(${1:vehicle_number});${0}",
+		"name": "native_getBoatBoomPositionRatio",
+		"snippet": "native.getBoatBoomPositionRatio(${1:vehicle_number});${0}",
 		"documentation": ""
 	},
 	{
@@ -28430,13 +28890,13 @@
 		"documentation": ""
 	},
 	{
-		"name": "native__0x1D97D1E3A70A649F",
-		"snippet": "native._0x1D97D1E3A70A649F(${1:vehicle_number}, ${2:p1_boolean});${0}",
+		"name": "native_setVehicleUseAlternateHandling",
+		"snippet": "native.setVehicleUseAlternateHandling(${1:vehicle_number}, ${2:toggle_boolean});${0}",
 		"documentation": ""
 	},
 	{
-		"name": "native_setBikeLeanAngle",
-		"snippet": "native.setBikeLeanAngle(${1:vehicle_number}, ${2:x_number}, ${3:y_number});${0}",
+		"name": "native_setBikeOnStand",
+		"snippet": "native.setBikeOnStand(${1:vehicle_number}, ${2:x_number}, ${3:y_number});${0}",
 		"documentation": ""
 	},
 	{
@@ -28480,18 +28940,18 @@
 		"documentation": ""
 	},
 	{
-		"name": "native__0x428BACCDF5E26EAD",
-		"snippet": "native._0x428BACCDF5E26EAD(${1:vehicle_number}, ${2:p1_boolean});${0}",
+		"name": "native_setVehicleCanSaveInGarage",
+		"snippet": "native.setVehicleCanSaveInGarage(${1:vehicle_number}, ${2:toggle_boolean});${0}",
 		"documentation": ""
 	},
 	{
-		"name": "native__0x42A4BEB35D372407",
-		"snippet": "native._0x42A4BEB35D372407(${1:p0_number});${0}",
+		"name": "native_getVehicleNumberOfBrokenOffBones",
+		"snippet": "native.getVehicleNumberOfBrokenOffBones(${1:vehicle_number});${0}",
 		"documentation": ""
 	},
 	{
-		"name": "native__0x2C8CBFE1EA5FC631",
-		"snippet": "native._0x2C8CBFE1EA5FC631(${1:p0_number});${0}",
+		"name": "native_getVehicleNumberOfBrokenBones",
+		"snippet": "native.getVehicleNumberOfBrokenBones(${1:vehicle_number});${0}",
 		"documentation": ""
 	},
 	{
@@ -28505,8 +28965,8 @@
 		"documentation": ""
 	},
 	{
-		"name": "native__0xE44A982368A4AF23",
-		"snippet": "native._0xE44A982368A4AF23(${1:vehicle_number}, ${2:vehicle2_number});${0}",
+		"name": "native_copyVehicleDamages",
+		"snippet": "native.copyVehicleDamages(${1:sourceVehicle_number}, ${2:targetVehicle_number});${0}",
 		"documentation": ""
 	},
 	{
@@ -28515,8 +28975,8 @@
 		"documentation": ""
 	},
 	{
-		"name": "native__0xBC3CCA5844452B06",
-		"snippet": "native._0xBC3CCA5844452B06(${1:p0_number});${0}",
+		"name": "native_setLightsCutoffDistanceTweak",
+		"snippet": "native.setLightsCutoffDistanceTweak(${1:distance_number});${0}",
 		"documentation": ""
 	},
 	{
@@ -28585,8 +29045,8 @@
 		"documentation": ""
 	},
 	{
-		"name": "native__0xDFFCEF48E511DB48",
-		"snippet": "native._0xDFFCEF48E511DB48(${1:p0_number}, ${2:p1_boolean});${0}",
+		"name": "native_setVehicleActiveDuringPlayback",
+		"snippet": "native.setVehicleActiveDuringPlayback(${1:p0_number}, ${2:p1_boolean});${0}",
 		"documentation": ""
 	},
 	{
@@ -28665,8 +29125,8 @@
 		"documentation": ""
 	},
 	{
-		"name": "native__0xAF03011701811146",
-		"snippet": "native._0xAF03011701811146(${1:p0_number}, ${2:p1_number});${0}",
+		"name": "native_detachEntityFromCargobob",
+		"snippet": "native.detachEntityFromCargobob(${1:cargobob_number}, ${2:entity_number});${0}",
 		"documentation": ""
 	},
 	{
@@ -28680,8 +29140,8 @@
 		"documentation": ""
 	},
 	{
-		"name": "native__0x99093F60746708CA",
-		"snippet": "native._0x99093F60746708CA(${1:p0_number});${0}",
+		"name": "native_getEntityAttachedToCargobob",
+		"snippet": "native.getEntityAttachedToCargobob(${1:p0_number});${0}",
 		"documentation": ""
 	},
 	{
@@ -28690,8 +29150,8 @@
 		"documentation": ""
 	},
 	{
-		"name": "native__0xA1DD82F3CCF9A01E",
-		"snippet": "native._0xA1DD82F3CCF9A01E(${1:p0_number}, ${2:p1_number}, ${3:p2_number}, ${4:p3_number}, ${5:p4_number}, ${6:p5_number});${0}",
+		"name": "native_attachEntityToCargobob",
+		"snippet": "native.attachEntityToCargobob(${1:p0_number}, ${2:p1_number}, ${3:p2_number}, ${4:p3_number}, ${5:p4_number}, ${6:p5_number});${0}",
 		"documentation": ""
 	},
 	{
@@ -28740,13 +29200,13 @@
 		"documentation": ""
 	},
 	{
-		"name": "native__0xCF1182F682F65307",
-		"snippet": "native._0xCF1182F682F65307(${1:p0_number}, ${2:p1_number});${0}",
+		"name": "native_setCargobobPickupRopeDampingMultiplier",
+		"snippet": "native.setCargobobPickupRopeDampingMultiplier(${1:p0_number}, ${2:p1_number});${0}",
 		"documentation": ""
 	},
 	{
-		"name": "native__0x0D5F65A8F4EBDAB5",
-		"snippet": "native._0x0D5F65A8F4EBDAB5(${1:p0_number}, ${2:p1_number});${0}",
+		"name": "native_setCargobobPickupRopeType",
+		"snippet": "native.setCargobobPickupRopeType(${1:p0_number}, ${2:p1_number});${0}",
 		"documentation": ""
 	},
 	{
@@ -28765,33 +29225,33 @@
 		"documentation": ""
 	},
 	{
-		"name": "native__0xA17BAD153B51547E",
-		"snippet": "native._0xA17BAD153B51547E(${1:cargobob_number}, ${2:p1_number});${0}",
+		"name": "native_setCargobobPickupMagnetEffectRadius",
+		"snippet": "native.setCargobobPickupMagnetEffectRadius(${1:cargobob_number}, ${2:p1_number});${0}",
 		"documentation": ""
 	},
 	{
-		"name": "native__0x66979ACF5102FD2F",
-		"snippet": "native._0x66979ACF5102FD2F(${1:cargobob_number}, ${2:p1_number});${0}",
+		"name": "native_setCargobobPickupMagnetReducedFalloff",
+		"snippet": "native.setCargobobPickupMagnetReducedFalloff(${1:cargobob_number}, ${2:p1_number});${0}",
 		"documentation": ""
 	},
 	{
-		"name": "native__0x6D8EAC07506291FB",
-		"snippet": "native._0x6D8EAC07506291FB(${1:cargobob_number}, ${2:p1_number});${0}",
+		"name": "native_setCargobobPickupMagnetPullRopeLength",
+		"snippet": "native.setCargobobPickupMagnetPullRopeLength(${1:cargobob_number}, ${2:p1_number});${0}",
 		"documentation": ""
 	},
 	{
-		"name": "native__0xED8286F71A819BAA",
-		"snippet": "native._0xED8286F71A819BAA(${1:cargobob_number}, ${2:p1_number});${0}",
+		"name": "native_setCargobobPickupMagnetPullStrength",
+		"snippet": "native.setCargobobPickupMagnetPullStrength(${1:cargobob_number}, ${2:p1_number});${0}",
 		"documentation": ""
 	},
 	{
-		"name": "native__0x685D5561680D088B",
-		"snippet": "native._0x685D5561680D088B(${1:vehicle_number}, ${2:p1_number});${0}",
+		"name": "native_setCargobobPickupMagnetFalloff",
+		"snippet": "native.setCargobobPickupMagnetFalloff(${1:vehicle_number}, ${2:p1_number});${0}",
 		"documentation": ""
 	},
 	{
-		"name": "native__0xE301BD63E9E13CF0",
-		"snippet": "native._0xE301BD63E9E13CF0(${1:vehicle_number}, ${2:cargobob_number});${0}",
+		"name": "native_setCargobobPickupMagnetReducedStrength",
+		"snippet": "native.setCargobobPickupMagnetReducedStrength(${1:vehicle_number}, ${2:cargobob_number});${0}",
 		"documentation": ""
 	},
 	{
@@ -28820,8 +29280,8 @@
 		"documentation": ""
 	},
 	{
-		"name": "native__0x563B65A643ED072E",
-		"snippet": "native._0x563B65A643ED072E(${1:p0_number}, ${2:p1_number}, ${3:p2_number});${0}",
+		"name": "native_isVehicleWeaponDisabled",
+		"snippet": "native.isVehicleWeaponDisabled(${1:p0_number}, ${2:p1_number}, ${3:p2_number});${0}",
 		"documentation": ""
 	},
 	{
@@ -28830,8 +29290,8 @@
 		"documentation": ""
 	},
 	{
-		"name": "native__0x21115BCD6E44656A",
-		"snippet": "native._0x21115BCD6E44656A(${1:p0_number}, ${2:p1_boolean});${0}",
+		"name": "native_setVehicleCloseDoorDeferedAction",
+		"snippet": "native.setVehicleCloseDoorDeferedAction(${1:p0_number}, ${2:p1_boolean});${0}",
 		"documentation": ""
 	},
 	{
@@ -28885,8 +29345,8 @@
 		"documentation": ""
 	},
 	{
-		"name": "native__0x9007A2F21DC108D4",
-		"snippet": "native._0x9007A2F21DC108D4(${1:p0_number}, ${2:p1_number});${0}",
+		"name": "native_setVehicleSteeringBiasScalar",
+		"snippet": "native.setVehicleSteeringBiasScalar(${1:p0_number}, ${2:p1_number});${0}",
 		"documentation": ""
 	},
 	{
@@ -28920,8 +29380,8 @@
 		"documentation": ""
 	},
 	{
-		"name": "native__0x6D6AF961B72728AE",
-		"snippet": "native._0x6D6AF961B72728AE(${1:vehicle_number});${0}",
+		"name": "native_clearVehicleRouteHistory",
+		"snippet": "native.clearVehicleRouteHistory(${1:vehicle_number});${0}",
 		"documentation": ""
 	},
 	{
@@ -28945,18 +29405,18 @@
 		"documentation": ""
 	},
 	{
-		"name": "native__0x500873A45724C863",
-		"snippet": "native._0x500873A45724C863(${1:vehicle_number}, ${2:p1_number});${0}",
+		"name": "native_disablePlanePropeller",
+		"snippet": "native.disablePlanePropeller(${1:vehicle_number}, ${2:p1_number});${0}",
 		"documentation": ""
 	},
 	{
-		"name": "native__0xB055A34527CB8FD7",
-		"snippet": "native._0xB055A34527CB8FD7(${1:vehicle_number}, ${2:p1_boolean});${0}",
+		"name": "native_setVehicleForceAfterburner",
+		"snippet": "native.setVehicleForceAfterburner(${1:vehicle_number}, ${2:toggle_boolean});${0}",
 		"documentation": ""
 	},
 	{
-		"name": "native__0x1087BC8EC540DAEB",
-		"snippet": "native._0x1087BC8EC540DAEB(${1:p0_number}, ${2:p1_number});${0}",
+		"name": "native_setDisableVehicleWindowCollisions",
+		"snippet": "native.setDisableVehicleWindowCollisions(${1:p0_number}, ${2:p1_number});${0}",
 		"documentation": ""
 	},
 	{
@@ -29035,8 +29495,8 @@
 		"documentation": ""
 	},
 	{
-		"name": "native__0xDF7E3EEB29642C38",
-		"snippet": "native._0xDF7E3EEB29642C38(${1:vehicle_number}, ${2:out1_setAsUndefined}, ${3:out2_setAsUndefined});${0}",
+		"name": "native_getVehicleSuspensionBounds",
+		"snippet": "native.getVehicleSuspensionBounds(${1:vehicle_number}, ${2:out1_vector3Ptr}, ${3:out2_vector3Ptr});${0}",
 		"documentation": ""
 	},
 	{
@@ -29055,8 +29515,8 @@
 		"documentation": ""
 	},
 	{
-		"name": "native__0x28B18377EB6E25F6",
-		"snippet": "native._0x28B18377EB6E25F6(${1:p0_number}, ${2:p1_number});${0}",
+		"name": "native_setHydraulicRaised",
+		"snippet": "native.setHydraulicRaised(${1:p0_number}, ${2:p1_number});${0}",
 		"documentation": ""
 	},
 	{
@@ -29100,23 +29560,23 @@
 		"documentation": ""
 	},
 	{
-		"name": "native__0x84EA99C62CB3EF0C",
-		"snippet": "native._0x84EA99C62CB3EF0C(${1:p0_number}, ${2:p1_number}, ${3:p2_number});${0}",
+		"name": "native_setHydraulicState",
+		"snippet": "native.setHydraulicState(${1:p0_number}, ${2:p1_number}, ${3:p2_number});${0}",
 		"documentation": ""
 	},
 	{
-		"name": "native__0x1201E8A3290A3B98",
-		"snippet": "native._0x1201E8A3290A3B98(${1:p0_number}, ${2:p1_number});${0}",
+		"name": "native_setCamberedWheelsDisabled",
+		"snippet": "native.setCamberedWheelsDisabled(${1:p0_number}, ${2:p1_number});${0}",
 		"documentation": ""
 	},
 	{
-		"name": "native__0x8EA86DF356801C7D",
-		"snippet": "native._0x8EA86DF356801C7D(${1:p0_number}, ${2:p1_number});${0}",
+		"name": "native_setHydraulicWheelState",
+		"snippet": "native.setHydraulicWheelState(${1:p0_number}, ${2:p1_number});${0}",
 		"documentation": ""
 	},
 	{
-		"name": "native__0xC24075310A8B9CD1",
-		"snippet": "native._0xC24075310A8B9CD1(${1:p0_number}, ${2:p1_number}, ${3:p2_number}, ${4:p3_number}, ${5:p4_number});${0}",
+		"name": "native_setHydraulicWheelStateTransition",
+		"snippet": "native.setHydraulicWheelStateTransition(${1:p0_number}, ${2:p1_number}, ${3:p2_number}, ${4:p3_number}, ${5:p4_number});${0}",
 		"documentation": ""
 	},
 	{
@@ -29140,8 +29600,8 @@
 		"documentation": ""
 	},
 	{
-		"name": "native__0x4E20D2A627011E8E",
-		"snippet": "native._0x4E20D2A627011E8E(${1:vehicle_number}, ${2:p1_number});${0}",
+		"name": "native_setVehicleDamageModifier",
+		"snippet": "native.setVehicleDamageModifier(${1:vehicle_number}, ${2:p1_number});${0}",
 		"documentation": ""
 	},
 	{
@@ -29200,8 +29660,8 @@
 		"documentation": ""
 	},
 	{
-		"name": "native__0xEFC13B1CE30D755D",
-		"snippet": "native._0xEFC13B1CE30D755D(${1:p0_number}, ${2:p1_number});${0}",
+		"name": "native_setVehicleRampLaunchModifier",
+		"snippet": "native.setVehicleRampLaunchModifier(${1:p0_number}, ${2:p1_number});${0}",
 		"documentation": ""
 	},
 	{
@@ -29300,13 +29760,13 @@
 		"documentation": ""
 	},
 	{
-		"name": "native__0x1BBAC99C0BC53656",
-		"snippet": "native._0x1BBAC99C0BC53656(${1:p0_number}, ${2:p1_number});${0}",
+		"name": "native_setVehicleRampSidewaysLaunchMotion",
+		"snippet": "native.setVehicleRampSidewaysLaunchMotion(${1:p0_number}, ${2:p1_number});${0}",
 		"documentation": ""
 	},
 	{
-		"name": "native__0x756AE6E962168A04",
-		"snippet": "native._0x756AE6E962168A04(${1:p0_number}, ${2:p1_number});${0}",
+		"name": "native_setVehicleRampUpwardsLaunchMotion",
+		"snippet": "native.setVehicleRampUpwardsLaunchMotion(${1:p0_number}, ${2:p1_number});${0}",
 		"documentation": ""
 	},
 	{
@@ -29315,8 +29775,8 @@
 		"documentation": ""
 	},
 	{
-		"name": "native__0x86B4B6212CB8B627",
-		"snippet": "native._0x86B4B6212CB8B627(${1:p0_number}, ${2:p1_number});${0}",
+		"name": "native_setVehicleWeaponsDisabled",
+		"snippet": "native.setVehicleWeaponsDisabled(${1:p0_number}, ${2:p1_number});${0}",
 		"documentation": ""
 	},
 	{
@@ -29480,8 +29940,8 @@
 		"documentation": ""
 	},
 	{
-		"name": "native__0xF1211889DF15A763",
-		"snippet": "native._0xF1211889DF15A763(${1:p0_number}, ${2:p1_number});${0}",
+		"name": "native_setVehicleHoverTransformEnabled",
+		"snippet": "native.setVehicleHoverTransformEnabled(${1:p0_number}, ${2:p1_number});${0}",
 		"documentation": ""
 	},
 	{
@@ -29585,8 +30045,8 @@
 		"documentation": ""
 	},
 	{
-		"name": "native__0x2970EAA18FD5E42F",
-		"snippet": "native._0x2970EAA18FD5E42F(${1:vehicle_number}, ${2:toggle_boolean});${0}",
+		"name": "native_setVehicleWheelsDealDamage",
+		"snippet": "native.setVehicleWheelsDealDamage(${1:vehicle_number}, ${2:toggle_boolean});${0}",
 		"documentation": ""
 	},
 	{
@@ -29631,7 +30091,7 @@
 	},
 	{
 		"name": "native_testProbeAgainstWater",
-		"snippet": "native.testProbeAgainstWater(${1:x1_number}, ${2:y1_number}, ${3:z1_number}, ${4:x2_number}, ${5:y2_number}, ${6:z2_number}, ${7:result_setAsUndefined});${0}",
+		"snippet": "native.testProbeAgainstWater(${1:x1_number}, ${2:y1_number}, ${3:z1_number}, ${4:x2_number}, ${5:y2_number}, ${6:z2_number}, ${7:result_vector3Ptr});${0}",
 		"documentation": ""
 	},
 	{
@@ -29742,6 +30202,11 @@
 	{
 		"name": "native_getCurrentPedVehicleWeapon",
 		"snippet": "native.getCurrentPedVehicleWeapon(${1:ped_number}, ${2:weaponHash_number});${0}",
+		"documentation": ""
+	},
+	{
+		"name": "native__0x50276EF8172F5F12",
+		"snippet": "native._0x50276EF8172F5F12(${1:ped_number});${0}",
 		"documentation": ""
 	},
 	{
@@ -29921,7 +30386,7 @@
 	},
 	{
 		"name": "native_getPedLastWeaponImpactCoord",
-		"snippet": "native.getPedLastWeaponImpactCoord(${1:ped_number}, ${2:coords_setAsUndefined});${0}",
+		"snippet": "native.getPedLastWeaponImpactCoord(${1:ped_number}, ${2:coords_vector3Ptr});${0}",
 		"documentation": ""
 	},
 	{
@@ -30106,12 +30571,12 @@
 	},
 	{
 		"name": "native_getWeaponHudStats",
-		"snippet": "native.getWeaponHudStats(${1:weaponHash_number}, ${2:outData_number});${0}",
+		"snippet": "native.getWeaponHudStats(${1:weaponHash_number}, ${2:outData_memoryBuffer});${0}",
 		"documentation": ""
 	},
 	{
 		"name": "native_getWeaponComponentHudStats",
-		"snippet": "native.getWeaponComponentHudStats(${1:componentHash_number}, ${2:outData_number});${0}",
+		"snippet": "native.getWeaponComponentHudStats(${1:componentHash_number}, ${2:outData_memoryBuffer});${0}",
 		"documentation": ""
 	},
 	{
@@ -30125,8 +30590,8 @@
 		"documentation": ""
 	},
 	{
-		"name": "native__0x065D2AACAD8CF7A4",
-		"snippet": "native._0x065D2AACAD8CF7A4(${1:p0_number});${0}",
+		"name": "native_getWeaponTimeBetweenShots",
+		"snippet": "native.getWeaponTimeBetweenShots(${1:weaponHash_number});${0}",
 		"documentation": ""
 	},
 	{
