@@ -1,173 +1,198 @@
 [
 	{
-		"name": "alts.on",
+		"name": "a_",
+		"snippet": "alt",
+		"documentation": "Default alt import"
+	},
+	{
+		"name": "server_on",
 		"snippet": "alt.on('${1:eventName}', (${2:params,}) => {$0});",
 		"documentation": "Event for when a player connects to the server."
 	},
 	{
-		"name": "alts.onPlayerConnect",
+		"name": "server_onPlayerConnect",
 		"snippet": "alt.on('playerConnect', (player) => {$0});",
 		"documentation": "Event for when a player connects to the server."
 	},
 	{
-		"name": "alts.onPlayerDisconnect",
+		"name": "server_onPlayerDisconnect",
 		"snippet": "alt.on('playerDisconnect', (player, reason) => {$0});",
 		"documentation": "Event for when a player disconnects from the server."
 	},
 	{
-		"name": "alts.onConsoleCommand",
+		"name": "server_onConsoleCommand",
 		"snippet": "alt.on('consoleCommand', (msg) => { {$0} });",
 		"documentation": "Event for when a console command is issued."
 	},
 	{
-		"name": "alts.onEntityEnterCheckpoint",
+		"name": "server_onEntityEnterCheckpoint",
 		"snippet": "alt.on('entityEnterCheckpoint', (checkPoint, entity) => {$0});",
 		"documentation": "Event for when an entity enters a checkpoint."
 	},
 	{
-		"name": "alts.onEntityLeaveCheckpoint",
+		"name": "server_onEntityLeaveCheckpoint",
 		"snippet": "alt.on('entityLeaveCheckpoint', (checkPoint, entity) => {$0});",
 		"documentation": "Event for when an entity leaves a checkpoint."
 	},
 	{
-		"name": "alts.onEntityEnterColshape",
+		"name": "server_onEntityEnterColshape",
 		"snippet": "alt.on('entityEnterColshape', (colshape, entity) => {$0});",
 		"documentation": "Event for when an entity enters a colshape."
 	},
 	{
-		"name": "alts.onEntityLeaveColshape",
+		"name": "server_onEntityLeaveColshape",
 		"snippet": "alt.on('entityLeaveColshape', (colshape, entity) => {$0});",
 		"documentation": "Event for when an entity leaves a colshape."
 	},
 	{
-		"name": "alts.onMetaChange",
+		"name": "server_onMetaChange",
 		"snippet": "alt.on('metaChange', (entity, key, value) => {$0});",
 		"documentation": "Called when an entities meta value changes."
 	},
 	{
-		"name": "alts.onPlayerChangedVehicleSeat",
+		"name": "server_onPlayerChangedVehicleSeat",
 		"snippet": "alt.on('playerChangedVehicleSeat', (player, vehicle, oldseat, newseat) => {$0});",
 		"documentation": "Called when a player switches seats."
 	},
 	{
-		"name": "alts.onPlayerDamage",
+		"name": "server_onPlayerDamage",
 		"snippet": "alt.on('playerDamage', (victim, attacker, weapon) => {$0});",
 		"documentation": "Called when a player is damaged."
 	},
 	{
-		"name": "alts.onPlayerDeath",
+		"name": "server_onPlayerDeath",
 		"snippet": "alt.on('playerDeath', (victim, attacker, weapon) => {$0});",
 		"documentation": "Called when a player dies."
 	},
 	{
-		"name": "alts.onPlayerEnteredVehicle",
+		"name": "server_onPlayerEnteredVehicle",
 		"snippet": "alt.on('playerEnteredVehicle', (player, vehicle, seat) => {$0});",
 		"documentation": "Called when a player enters a vehicle."
 	},
 	{
-		"name": "alts.onPlayerLeftVehicle",
+		"name": "server_onPlayerLeftVehicle",
 		"snippet": "alt.on('playerLeftVehicle', (player, vehicle, seat) => {$0});",
 		"documentation": "Called when a player leaves a vehicle."
 	},
 	{
-		"name": "alts.onRemoveEntity",
+		"name": "server_onRemoveEntity",
 		"snippet": "alt.on('removeEntity', (target) => {$0});",
 		"documentation": "Called when an entity is removed / deleted."
 	},
 	{
-		"name": "alts.onSyncedMetaChange",
+		"name": "server_onSyncedMetaChange",
 		"snippet": "alt.on('syncedMetaChange', (entity, key, value) => {$0});",
 		"documentation": "Called when an entities synced meta value changes."
 	},
 	{
-		"name": "alts.onClient",
+		"name": "server_onClient",
 		"snippet": "alt.onClient('${1:eventName}', (player, ${2:params,}) => {$3});${0}",
 		"documentation": "Events triggered from a player's client."
 	},
 	{
-		"name": "alts.emitClient",
+		"name": "server_emitClient",
 		"snippet": "alt.emitClient(player, '${1:eventName}', ${2:params,});",
 		"documentation": "Emit an event to a player."
 	},
 	{
-		"name": "alts.emitClientAll",
+		"name": "server_emitClientAll",
 		"snippet": "alt.emitClient(null, '${1:eventName}', ${2:params,});",
 		"documentation": "Emit an event to all players."
 	},
 	{
-		"name": "alts.import",
+		"name": "server_import",
 		"snippet": "import * as alt from 'alt';",
 		"documentation": "Import alt for usage."
 	},
 	{
-		"name": "alts.newVehicle",
+		"name": "server_newVehicle",
 		"snippet": "new alt.Vehicle(${1:modelAsString}, ${2:posX}, ${3:posY}, ${4:posZ}, ${5:rotX}, ${6:rotY}, ${7:rotZ});${0}",
 		"documentation": "Create a vehicle. params: modelAsString, posX, posY, posZ, rotX, rotY, rotZ"
 	},
 	{
-		"name": "alts.getPlayersByName",
+		"name": "server_getPlayersByName",
 		"snippet": "alt.getPlayersByName(${1:name});${0}",
 		"documentation": "Returns an array of players by name."
 	},
 	{
-		"name": "alts.log",
+		"name": "server_log",
 		"snippet": "alt.log(${1:message});${0}",
 		"documentation": "Log a message to the alt:V console."
 	},
 	{
-		"name": "alts.logError",
+		"name": "server_logError",
 		"snippet": "alt.logError(${1:message});${0}",
 		"documentation": "Log an error to the console."
 	},
 	{
-		"name": "alts.newVector3",
+		"name": "server_newVector3",
 		"snippet": "new alt.Vector3(${1:x}, ${2:y}, ${3:z});$0",
 		"documentation": "Create a new Vector3"
 
 	},
 	{
-		"name": "alts.newPointBlip",
+		"name": "server_newPointBlip",
 		"snippet": "new alt.PointBlip(${1:type}, ${2:x}, ${3:y}, ${4:z});${0}",
 		"documentation": "Create a new PointBlip"
 	},
 	{
-		"name": "alts.newCheckpoint",
+		"name": "server_newCheckpoint",
 		"snippet": "new alt.Checkpoint(${1:type}, ${2:x}, ${3:y}, ${4:z}, ${5:radius}, ${6:height}, ${7:r}, ${8:g}, ${9:b}, ${10:alpha});${0}",
 		"documentation": "Create a new Checkpoint"
 	},
 	{
-		"name": "alts.newVoiceChannel",
+		"name": "server_newVoiceChannel",
 		"snippet": "new alt.VoiceChannel(${1:isSpatial}, ${2:maxDistance});${0}",
 		"documentation": "Create a new Voice Channel"
 	},
 	{
-		"name": "alts.newColshapeCylinder",
+		"name": "server_newColshapeCylinder",
 		"snippet": "new alt.ColshapeCylinder(${1:x}, ${2:y}, ${3:z}, ${4:radius}, ${5:height});${0}",
 		"documentation": "Create a new ColshapeCylinder"
 	},
 	{
-		"name": "alts.newColshapeSphere",
+		"name": "server_newColshapeSphere",
 		"snippet": "new alt.ColshapeSphere(${1:x}, ${2:y}, ${3:z}, ${4:radius});${0}",
 		"documentation": "Create a new ColshapeSphere"
 	},
 	{
-		"name": "alts.newColshapeCircle",
+		"name": "server_newColshapeCircle",
 		"snippet": "new alt.ColshapeCircle(${1:x}, ${2:y}, ${3:radius});${0}",
 		"documentation": "Create a new ColshapeCircle"
 	},
 	{
-		"name": "alts.newColshapeCuboid",
+		"name": "server_newColshapeCuboid",
 		"snippet": "new alt.ColshapeCuboid(${1:x1}, ${2:y1}, ${3:z1}, ${4:x2}, ${5:y2}, ${6:z2});${0}",
 		"documentation": "Create a new ColshapeCuboid"
 	},
 	{
-		"name": "alts.newColshapeRectangle",
+		"name": "server_newColshapeRectangle",
 		"snippet": "new alt.ColshapeRectangle(${1:x1}, ${2:y2}, ${3:x2}, ${4:y2});${0}",
 		"documentation": "Create a new ColshapeRectangle"
 	},
 	{
-		"name": "alts.Player.all",
+		"name": "server_Player.all",
 		"snippet": "alt.Player.all;",
 		"documentation": "Return all players. @returns array"
+	},
+	{
+		"name": "server_hash",
+		"snippet": "alt.hash(${1:string}){$0}",
+		"documentation": "hashes a string"
+	},
+	{
+		"name": "server_off",
+		"snippet": "alt.off(${1:eventName}){$0}",
+		"documentation": "Turns listening to an event off."
+	},
+	{
+		"name": "server_off",
+		"snippet": "alt.offClient(${1:eventName}){$0}",
+		"documentation": "Turns listening to an event off for clientEvent"
+	},
+	{
+		"name": "server_rootDir",
+		"snippet": "alt.offClient(${1:eventName}){$0}",
+		"documentation": "Turns listening to an event off for clientEvent"
 	}
 ]

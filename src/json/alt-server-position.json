@@ -1,31 +1,31 @@
 [
 	{
-		"name": "position.x",
+		"name": "position_x",
 		"snippet": "position.x",
 		"documentation": "x coordinate"
 	},
 	{
-		"name": "position.y",
+		"name": "position_y",
 		"snippet": "position.y",
 		"documentation": "y coordinate"
 	},
 	{
-		"name": "position.z",
+		"name": "position_z",
 		"snippet": "position.z",
 		"documentation": "z coordinate"
 	},
 	{
-		"name": "pos.x",
+		"name": "pos_x",
 		"snippet": "pos.x",
 		"documentation": "x coordinate"
 	},
 	{
-		"name": "pos.y",
+		"name": "pos_y",
 		"snippet": "pos.y",
 		"documentation": "y coordinate"
 	},
 	{
-		"name": "pos.z",
+		"name": "pos_z",
 		"snippet": "pos.z",
 		"documentation": "z coordinate"
 	}

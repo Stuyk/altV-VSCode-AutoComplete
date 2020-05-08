@@ -1,131 +1,166 @@
 [
 	{
-		"name": "player.pos",
+		"name": "player_pos",
 		"snippet": "player.pos",
 		"documentation": "get players position"
 	},
 	{
-		"name": "player.setPosition",
+		"name": "player_setPosition",
 		"snippet": "player.pos = new alt.Vector3(${1:x}, ${2:y}, ${3:z});",
 		"documentation": "set players position"
 	},
 	{
-		"name": "player.health",
+		"name": "player_health",
 		"snippet": "player.health",
 		"documentation": "get player's health"
 	},
 	{
-		"name": "player.setHealth",
+		"name": "player_setHealth",
 		"snippet": "player.health = ${1:numberUpTo200};${0}",
 		"documentation": "get or set players health"
 	},
 	{
-		"name": "player.ping",
+		"name": "player_armour",
+		"snippet": "player.armour",
+		"documentation": "get player's armour"
+	},
+	{
+		"name": "player_setArmour",
+		"snippet": "player.armour = ${1:numberUpTo100};${0}",
+		"documentation": "set player's armour"
+	},
+	{
+		"name": "player_name",
+		"snippet": "player.name",
+		"documentation": "get the player's name"
+	},
+	{
+		"name": "player_ping",
 		"snippet": "player.ping",
 		"documentation": "get the player's ping"
 	},
 	{
-		"name": "player.seat",
+		"name": "player_seat",
 		"snippet": "player.seat",
 		"documentation": "get the current seat the player is in; -1 is Drive, 0 Front Right, 1 Back Left, etc."
 	},
 	{
-		"name": "player.vehicle",
+		"name": "player_vehicle",
 		"snippet": "player.vehicle",
 		"documentation": "get the vehicle the player is currently in"
 	},
 	{
-		"name": "player.id",
+		"name": "player_id",
 		"snippet": "player.id",
 		"documentation": "get the player's server id"
 	},
 	{
-		"name": "player.scriptID",
+		"name": "player_ip",
+		"snippet": "player.ip",
+		"documentation": "get the player's ip"
+	},
+	{
+		"name": "player_hwidExHash",
+		"snippet": "player.hwidExHash",
+		"documentation": "get the player's hwid ex hash"
+	},
+	{
+		"name": "player_hwidHash",
+		"snippet": "player.hwidHash",
+		"documentation": "get the player's hwid hash"
+	},
+	{
+		"name": "player_scriptID",
 		"snippet": "player.scriptID",
 		"documentation": "get the player's scriptID; used for client-side natives"
 	},
 	{
-		"name": "player.model",
+		"name": "player_socialId",
+		"snippet": "player.socialId",
+		"documentation": "get the player's social id"
+	},
+	{
+		"name": "player_model",
 		"snippet": "player.model",
 		"documentation": "get the player's model"
 	},
 	{
-		"name": "player.setModel",
+		"name": "player_setModel",
 		"snippet": "player.model = ${1:modelAsString};${0}",
 		"documentation": "set the player's model"
 	},
 	{
-		"name": "player.rot",
-		"snippet": "player.model = ${1:modelAsString};${0}",
+		"name": "player_rot",
+		"snippet": "player.rot = { x: ${1:x}, y: ${2:y}, z: ${3:z} };${0}",
 		"documentation": "set the player's model"
 	},
 	{
-		"name": "player.revive",
+		"name": "player_revive",
 		"snippet": "player.spawn(${1:x}, ${2:y}, ${3:z}, 0);${0}",
 		"documentation": "respawn the player; use players current coordinates"
 	},
 	{
-		"name": "player.spawn",
+		"name": "player_spawn",
 		"snippet": "player.spawn(${1:x}, ${2:y}, ${3:z}, ${4:delayInMilliseconds});${0}",
 		"documentation": "respawn the player"
 	},
 	{
-		"name": "player.setDimension",
+		"name": "player_setDimension",
 		"snippet": "player.dimension = ${1:dimensionNumber};${0}",
 		"documentation": "set the player's dimension"
 	},
 	{
-		"name": "player.dimension",
+		"name": "player_dimension",
 		"snippet": "player.dimension",
 		"documentation": "get the player's dimension"
 	},
 	{
-		"name": "player.giveWeapon",
-		"snippet": "player.giveWeapon(${1:weaponHashNumber}, ${2:ammo}, ${equipNow?});${0}",
+		"name": "player_giveWeapon",
+		"snippet": "player.giveWeapon(${1:weaponHashNumber}, ${2:ammo}, ${3:equipNow});${0}",
 		"documentation": "give the player a weapon"
 	},
 	{
-		"name": "player.kick",
+		"name": "player_kick",
 		"snippet": "player.kick();${0}",
 		"documentation": "kick the player from the server"
 	},
 	{
-		"name": "player.removeAllWeapons",
+		"name": "player_removeAllWeapons",
 		"snippet": "player.removeAllWeapons();${0}",
 		"documentation": "remove all player weapons"
 	},
 	{
-		"name": "player.setDateTime",
+		"name": "player_setDateTime",
 		"snippet": "player.setDateTime(${1:dayNumber}, ${2:monthNumber}, ${3:yearNumber}, ${4:hour}, ${5:minute}, ${6:second});${0}",
 		"documentation": "set the date and time for the player"
 	},
 	{
-		"name": "player.setWeather",
+		"name": "player_setWeather",
 		"snippet": "player.setWeather(${0});",
 		"documentation": "Set the weather. Type 'weather' in the parenthesis to list weather types."
 	},
 	{
-		"name": "player.removeWeapon",
+		"name": "player_removeWeapon",
 		"snippet": "player.removeWeapon(${1:weaponHash});${0}",
 		"documentation": "Remove a weapon by hash from the player."
 	},
 	{
-		"name": "player.getSyncedMeta",
+		"name": "player_getSyncedMeta",
 		"snippet": "player.getSyncedMeta('${1:keyString}');${0}",
 		"documentation": "Get the data that is synced to a keyword."
 	},
 	{
-		"name": "player.setSyncedMeta",
+		"name": "player_setSyncedMeta",
 		"snippet": "player.setSyncedMeta('${1:keyString}', ${2:dataOfAny});${0}",
 		"documentation": "Set the data that will be synced to this player."
 	},
 	{
-		"name": "player.getMeta",
+		"name": "player_getMeta",
 		"snippet": "player.getMeta('${1:keyString}');${0}",
 		"documentation": "Get the data that will be on this player."
 	},
 	{
-		"name": "player.setMeta",
+		"name": "player_setMeta",
 		"snippet": "player.setMeta('${1:keyString}', ${2:dataOfAny});${0}",
 		"documentation": "Get the data that will be on this player."
 	}
