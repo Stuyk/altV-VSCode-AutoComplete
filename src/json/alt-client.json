@@ -175,6 +175,11 @@
     "documentation": "No documentation. please fill in."
   },
   {
+    "name": "client_everyTick",
+    "snippet": "alt.everyTick(() => {${0}});",
+    "documentation": "Schedules execution of handler on every frame."
+  },
+  {
     "name": "client_enableVoiceActivation",
     "snippet": "alt.enableVoiceActivation();",
     "documentation": "No documentation. please fill in."
