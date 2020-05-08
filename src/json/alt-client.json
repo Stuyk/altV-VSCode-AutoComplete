@@ -1,312 +1,362 @@
 [
-	{
-		"name": "client_onServer",
-		"snippet": "alt.onServer('$1', ($2) => {$0});",
-		"documentation": "Event for when a player connects to the server."
-	},
-	{
-		"name": "client_AreaBlip",
-		"snippet": "alt.AreaBlip();",
-		"documentation": "No documentation. please fill in."
-	},
-	{
-		"name": "client_BaseObject",
-		"snippet": "alt.BaseObject();",
-		"documentation": "No documentation. please fill in."
-	},
-	{
-		"name": "client_Blip",
-		"snippet": "alt.Blip();",
-		"documentation": "No documentation. please fill in."
-	},
-	{
-		"name": "client_Entity",
-		"snippet": "alt.Entity();",
-		"documentation": "No documentation. please fill in."
-	},
-	{
-		"name": "client_HandlingData",
-		"snippet": "alt.HandlingData();",
-		"documentation": "No documentation. please fill in."
-	},
-	{
-		"name": "client_LocalStorage",
-		"snippet": "alt.LocalStorage();",
-		"documentation": "No documentation. please fill in."
-	},
-	{
-		"name": "client_Player",
-		"snippet": "alt.Player();",
-		"documentation": "No documentation. please fill in."
-	},
-	{
-		"name": "client_PointBlip",
-		"snippet": "alt.PointBlip();",
-		"documentation": "No documentation. please fill in."
-	},
-	{
-		"name": "client_RadiusBlip",
-		"snippet": "alt.RadiusBlip();",
-		"documentation": "No documentation. please fill in."
-	},
-	{
-		"name": "client_Vector3",
-		"snippet": "new alt.Vector3(${1:x}, ${2:y}, ${3:z})${0}",
-		"documentation": "No documentation. please fill in."
-	},
-	{
-		"name": "client_Vehicle",
-		"snippet": "new alt.Vehicle();",
-		"documentation": "No documentation. please fill in."
-	},
-	{
-		"name": "client_WebView",
-		"snippet": "new alt.WebView(${1:http://resources/myResource/client/whatever.html});",
-		"documentation": "Load a CEF page."
-	},
-	{
-		"name": "client_WorldObject",
-		"snippet": "alt.WorldObject();",
-		"documentation": "No documentation. please fill in."
-	},
-	{
-		"name": "client_addGxtText",
-		"snippet": "alt.addGxtText();",
-		"documentation": "No documentation. please fill in."
-	},
-	{
-		"name": "client_beginScaleformMovieMethodMinimap",
-		"snippet": "alt.beginScaleformMovieMethodMinimap();",
-		"documentation": "No documentation. please fill in."
-	},
-	{
-		"name": "client_clearInterval",
-		"snippet": "alt.clearInterval();",
-		"documentation": "No documentation. please fill in."
-	},
-	{
-		"name": "client_clearTimeout",
-		"snippet": "alt.clearTimeout();",
-		"documentation": "No documentation. please fill in."
-	},
-	{
-		"name": "client_default",
-		"snippet": "alt.default();",
-		"documentation": "No documentation. please fill in."
-	},
-	{
-		"name": "client_disableVoiceActivation",
-		"snippet": "alt.disableVoiceActivation();",
-		"documentation": "No documentation. please fill in."
-	},
-	{
-		"name": "client_disableVoiceInput",
-		"snippet": "alt.disableVoiceInput();",
-		"documentation": "No documentation. please fill in."
-	},
-	{
-		"name": "client_disableVoiceTest",
-		"snippet": "alt.disableVoiceTest();",
-		"documentation": "No documentation. please fill in."
-	},
-	{
-		"name": "client_discordInfo",
-		"snippet": "alt.discordInfo();",
-		"documentation": "No documentation. please fill in."
-	},
-	{
-		"name": "client_emit",
-		"snippet": "alt.emit(${1:eventName}, ${2:params});${0}",
-		"documentation": "No documentation. please fill in."
-	},
-	{
-		"name": "client_emitServer",
-		"snippet": "alt.emitServer(${1:eventName}, ${2:params});${0}",
-		"documentation": "No documentation. please fill in."
-	},
-	{
-		"name": "client_enableVoiceActivation",
-		"snippet": "alt.enableVoiceActivation();",
-		"documentation": "No documentation. please fill in."
-	},
-	{
-		"name": "client_enableVoiceInput",
-		"snippet": "alt.enableVoiceInput();",
-		"documentation": "No documentation. please fill in."
-	},
-	{
-		"name": "client_enableVoiceTest",
-		"snippet": "alt.enableVoiceTest();",
-		"documentation": "No documentation. please fill in."
-	},
-	{
-		"name": "client_gameControlsEnabled",
-		"snippet": "alt.gameControlsEnabled();",
-		"documentation": "No documentation. please fill in."
-	},
-	{
-		"name": "client_getCursorPos",
-		"snippet": "alt.getCursorPos();",
-		"documentation": "No documentation. please fill in."
-	},
-	{
-		"name": "client_getGxtText",
-		"snippet": "alt.getGxtText();",
-		"documentation": "No documentation. please fill in."
-	},
-	{
-		"name": "client_getLicenseHash",
-		"snippet": "alt.getLicenseHash();",
-		"documentation": "No documentation. please fill in."
-	},
-	{
-		"name": "client_getLocalPlayer",
-		"snippet": "alt.getLocalPlayer();",
-		"documentation": "No documentation. please fill in."
-	},
-	{
-		"name": "client_getMicLevel",
-		"snippet": "alt.getMicLevel();",
-		"documentation": "No documentation. please fill in."
-	},
-	{
-		"name": "client_getMsPerGameMinute",
-		"snippet": "alt.getMsPerGameMinute();",
-		"documentation": "No documentation. please fill in."
-	},
-	{
-		"name": "client_initVoice",
-		"snippet": "alt.initVoice();",
-		"documentation": "No documentation. please fill in."
-	},
-	{
-		"name": "client_isInSandbox",
-		"snippet": "alt.isInSandbox();",
-		"documentation": "No documentation. please fill in."
-	},
-	{
-		"name": "client_isTextureExistInArchetype",
-		"snippet": "alt.isTextureExistInArchetype();",
-		"documentation": "No documentation. please fill in."
-	},
-	{
-		"name": "client_loadModel",
-		"snippet": "alt.loadModel();",
-		"documentation": "No documentation. please fill in."
-	},
-	{
-		"name": "client_loadModelAsync",
-		"snippet": "alt.loadModelAsync();",
-		"documentation": "No documentation. please fill in."
-	},
-	{
-		"name": "client_log",
-		"snippet": "alt.log();",
-		"documentation": "No documentation. please fill in."
-	},
-	{
-		"name": "client_logError",
-		"snippet": "alt.logError();",
-		"documentation": "No documentation. please fill in."
-	},
-	{
-		"name": "client_logWarning",
-		"snippet": "alt.logWarning();",
-		"documentation": "No documentation. please fill in."
-	},
-	{
-		"name": "client_nextTick",
-		"snippet": "alt.nextTick();",
-		"documentation": "No documentation. please fill in."
-	},
-	{
-		"name": "client_off",
-		"snippet": "alt.off();",
-		"documentation": "Unsubcribe from an event by name."
-	},
-	{
-		"name": "client_offServer",
-		"snippet": "alt.offServer();",
-		"documentation": "Unsubscribe from an event by name."
-	},
-	{
-		"name": "client_on",
-		"snippet": "alt.on(${1:eventName}, ${2:params});${0}",
-		"documentation": "Subscribe to a clientside event."
-	},
-	{
-		"name": "client_onServer",
-		"snippet": "alt.onServer(${1:eventName}, ${2:params});${0}",
-		"documentation": "subscribe to an event passed from the server"
-	},
-	{
-		"name": "client_removeGxtText",
-		"snippet": "alt.removeGxtText();",
-		"documentation": "No documentation. please fill in."
-	},
-	{
-		"name": "client_removeIpl",
-		"snippet": "alt.removeIpl();",
-		"documentation": "Remove an interior for the client."
-	},
-	{
-		"name": "client_requestIpl",
-		"snippet": "alt.requestIpl();",
-		"documentation": "Load an interior for the client."
-	},
-	{
-		"name": "client_setCamFrozen",
-		"snippet": "alt.setCamFrozen();",
-		"documentation": "No documentation. please fill in."
-	},
-	{
-		"name": "client_setCursorPos",
-		"snippet": "alt.setCursorPos();",
-		"documentation": "No documentation. please fill in."
-	},
-	{
-		"name": "client_setInterval",
-		"snippet": "alt.setInterval(${1:function}, ${1:timeInMS});",
-		"documentation": "The replacement for setInterval."
-	},
-	{
-		"name": "client_setMicGain",
-		"snippet": "alt.setMicGain();",
-		"documentation": "No documentation. please fill in."
-	},
-	{
-		"name": "client_setModel",
-		"snippet": "alt.setModel();",
-		"documentation": "No documentation. please fill in."
-	},
-	{
-		"name": "client_setMsPerGameMinute",
-		"snippet": "alt.setMsPerGameMinute();",
-		"documentation": "No documentation. please fill in."
-	},
-	{
-		"name": "client_setTimeout",
-		"snippet": "alt.setTimeout(() => { ${0} }, ${1:timeInMS});",
-		"documentation": "The replacement for setTimeout"
-	},
-	{
-		"name": "client_showCursor",
-		"snippet": "alt.showCursor(${1:boolean});${0}",
-		"documentation": "Show the cursor or not."
-	},
-	{
-		"name": "client_toggleGameControls",
-		"snippet": "alt.toggleGameControls(${1:trueOrFalse});",
-		"documentation": "False turns off control of player."
-	},
-	{
-		"name": "client_setWeatherCycle",
-		"snippet": "alt.setWeatherCycle(${1:weathersArray}, ${2:multipliersArray});${0}",
-		"documentation": "Weathers must be equal to multipliers Array. Multiplier is time multiplayer on 2 minutes Example: [1,3,4] = 2 minutes, 6 minutes, 8 minutes"
-	},
-	{
-		"name": "client_setWeatherSyncActive",
-		"snippet": "alt.setWeatherSyncActive(${1:trueOrFalse});",
-		"documentation": "Turns on the setWeatherCycle functionality"
-	}
+  {
+    "name": "client_onServer",
+    "snippet": "alt.onServer('$1', ($2) => {$0});",
+    "documentation": "Event for when a player connects to the server."
+  },
+  {
+    "name": "client_AreaBlip",
+    "snippet": "alt.AreaBlip();",
+    "documentation": "No documentation. please fill in."
+  },
+  {
+    "name": "client_BaseObject",
+    "snippet": "alt.BaseObject();",
+    "documentation": "No documentation. please fill in."
+  },
+  {
+    "name": "client_Blip",
+    "snippet": "alt.Blip();",
+    "documentation": "No documentation. please fill in."
+  },
+  {
+    "name": "client_Discord",
+    "snipper": "alt.Discord();",
+    "documentation": "No documentation. please fill in."
+  },
+  {
+    "name": "client_Entity",
+    "snippet": "alt.Entity();",
+    "documentation": "No documentation. please fill in."
+  },
+  {
+    "name": "client_HandlingData",
+    "snippet": "alt.HandlingData();",
+    "documentation": "No documentation. please fill in."
+  },
+  {
+    "name": "client_LocalStorage",
+    "snippet": "alt.LocalStorage();",
+    "documentation": "No documentation. please fill in."
+  },
+  {
+    "name": "client_Player",
+    "snippet": "alt.Player();",
+    "documentation": "No documentation. please fill in."
+  },
+  {
+    "name": "client_PointBlip",
+    "snippet": "alt.PointBlip();",
+    "documentation": "No documentation. please fill in."
+  },
+  {
+    "name": "client_RadiusBlip",
+    "snippet": "alt.RadiusBlip();",
+    "documentation": "No documentation. please fill in."
+  },
+  {
+    "name": "client_Vector3",
+    "snippet": "new alt.Vector3(${1:x}, ${2:y}, ${3:z})${0}",
+    "documentation": "No documentation. please fill in."
+  },
+  {
+    "name": "client_Vehicle",
+    "snippet": "new alt.Vehicle();",
+    "documentation": "No documentation. please fill in."
+  },
+  {
+    "name": "client_WebView",
+    "snippet": "new alt.WebView('${1:http://resources/myResource/client/whatever.html}');",
+    "documentation": "Load a CEF page."
+  },
+  {
+    "name": "client_WebViewDeleteMeta",
+    "snippet": "${1:webviewName}.deleteMeta('${2:key}');${0}",
+    "documentation": "Removes the specified key."
+  },
+  {
+    "name": "client_WebViewDestroy",
+    "snippet": "${1:webviewName}.destroy();${0}",
+    "documentation": "Removes the object from the world."
+  },
+  {
+    "name": "client_WebViewEmit",
+    "snippet": "${1:webviewName}.emit('${2:eventName}', ${3:params});${0}",
+    "documentation": "Emits specified event across particular WebView."
+  },
+  {
+    "name": "client_WebViewFocus",
+    "snippet": "${1:webviewName}.focus();${0}",
+    "documentation": "No documentation. please fill in."
+  },
+  {
+    "name": "client_WebViewGetMeta",
+    "snippet": "${1:webviewName}.getMeta('${2:key}');${0}",
+    "documentation": "Gets a value using the specified key."
+  },
+  {
+    "name": "client_WebViewHasMeta",
+    "snippet": "${1:webviewName}.hasMeta('${2:key}');${0}",
+    "documentation": "Determines whether contains the specified key."
+  },
+  {
+    "name": "client_WebViewOff",
+    "snippet": "${1:webviewName}.off('${2:eventName}',(${3:args}) => {${0}});",
+    "documentation": "Unsubscribes from WebView event handler with specified listener."
+  },
+  {
+    "name": "client_WebViewOn",
+    "snippet": "${1:webviewName}.on('${2:eventName}',(${3:args}) => {${0}});",
+    "documentation": "Subscribes to WebView event handler with specified listener."
+  },
+  {
+    "name": "client_WebViewSetMeta",
+    "snippet": "${1:webViewname}.setMeta('${2:key}');${0}",
+    "documentation": "Stores the given value with the specified key."
+  },
+  {
+    "name": "client_WebViewUnfocus",
+    "snippet": "${1:webviewName}.unfocus();${0}",
+    "documentation": "No documentation. please fill in."
+  },
+  {
+    "name": "client_WorldObject",
+    "snippet": "alt.WorldObject();",
+    "documentation": "No documentation. please fill in."
+  },
+  {
+    "name": "client_addGxtText",
+    "snippet": "alt.addGxtText();",
+    "documentation": "No documentation. please fill in."
+  },
+  {
+    "name": "client_beginScaleformMovieMethodMinimap",
+    "snippet": "alt.beginScaleformMovieMethodMinimap();",
+    "documentation": "No documentation. please fill in."
+  },
+  {
+    "name": "client_clearInterval",
+    "snippet": "alt.clearInterval();",
+    "documentation": "No documentation. please fill in."
+  },
+  {
+    "name": "client_clearTimeout",
+    "snippet": "alt.clearTimeout();",
+    "documentation": "No documentation. please fill in."
+  },
+  {
+    "name": "client_default",
+    "snippet": "alt.default();",
+    "documentation": "No documentation. please fill in."
+  },
+  {
+    "name": "client_disableVoiceActivation",
+    "snippet": "alt.disableVoiceActivation();",
+    "documentation": "No documentation. please fill in."
+  },
+  {
+    "name": "client_disableVoiceInput",
+    "snippet": "alt.disableVoiceInput();",
+    "documentation": "No documentation. please fill in."
+  },
+  {
+    "name": "client_disableVoiceTest",
+    "snippet": "alt.disableVoiceTest();",
+    "documentation": "No documentation. please fill in."
+  },
+  {
+    "name": "client_emit",
+    "snippet": "alt.emit(${1:eventName}, ${2:params});${0}",
+    "documentation": "No documentation. please fill in."
+  },
+  {
+    "name": "client_emitServer",
+    "snippet": "alt.emitServer(${1:eventName}, ${2:params});${0}",
+    "documentation": "No documentation. please fill in."
+  },
+  {
+    "name": "client_enableVoiceActivation",
+    "snippet": "alt.enableVoiceActivation();",
+    "documentation": "No documentation. please fill in."
+  },
+  {
+    "name": "client_enableVoiceInput",
+    "snippet": "alt.enableVoiceInput();",
+    "documentation": "No documentation. please fill in."
+  },
+  {
+    "name": "client_enableVoiceTest",
+    "snippet": "alt.enableVoiceTest();",
+    "documentation": "No documentation. please fill in."
+  },
+  {
+    "name": "client_gameControlsEnabled",
+    "snippet": "alt.gameControlsEnabled();",
+    "documentation": "No documentation. please fill in."
+  },
+  {
+    "name": "client_getCursorPos",
+    "snippet": "alt.getCursorPos();",
+    "documentation": "No documentation. please fill in."
+  },
+  {
+    "name": "client_getGxtText",
+    "snippet": "alt.getGxtText();",
+    "documentation": "No documentation. please fill in."
+  },
+  {
+    "name": "client_getLicenseHash",
+    "snippet": "alt.getLicenseHash();",
+    "documentation": "No documentation. please fill in."
+  },
+  {
+    "name": "client_getLocalPlayer",
+    "snippet": "alt.getLocalPlayer();",
+    "documentation": "No documentation. please fill in."
+  },
+  {
+    "name": "client_getMicLevel",
+    "snippet": "alt.getMicLevel();",
+    "documentation": "No documentation. please fill in."
+  },
+  {
+    "name": "client_getMsPerGameMinute",
+    "snippet": "alt.getMsPerGameMinute();",
+    "documentation": "No documentation. please fill in."
+  },
+  {
+    "name": "client_initVoice",
+    "snippet": "alt.initVoice();",
+    "documentation": "No documentation. please fill in."
+  },
+  {
+    "name": "client_isInSandbox",
+    "snippet": "alt.isInSandbox();",
+    "documentation": "No documentation. please fill in."
+  },
+  {
+    "name": "client_isTextureExistInArchetype",
+    "snippet": "alt.isTextureExistInArchetype();",
+    "documentation": "No documentation. please fill in."
+  },
+  {
+    "name": "client_loadModel",
+    "snippet": "alt.loadModel();",
+    "documentation": "No documentation. please fill in."
+  },
+  {
+    "name": "client_loadModelAsync",
+    "snippet": "alt.loadModelAsync();",
+    "documentation": "No documentation. please fill in."
+  },
+  {
+    "name": "client_log",
+    "snippet": "alt.log();",
+    "documentation": "No documentation. please fill in."
+  },
+  {
+    "name": "client_logError",
+    "snippet": "alt.logError();",
+    "documentation": "No documentation. please fill in."
+  },
+  {
+    "name": "client_logWarning",
+    "snippet": "alt.logWarning();",
+    "documentation": "No documentation. please fill in."
+  },
+  {
+    "name": "client_nextTick",
+    "snippet": "alt.nextTick();",
+    "documentation": "No documentation. please fill in."
+  },
+  {
+    "name": "client_off",
+    "snippet": "alt.off();",
+    "documentation": "Unsubcribe from an event by name."
+  },
+  {
+    "name": "client_offServer",
+    "snippet": "alt.offServer();",
+    "documentation": "Unsubscribe from an event by name."
+  },
+  {
+    "name": "client_on",
+    "snippet": "alt.on(${1:eventName}, ${2:params});${0}",
+    "documentation": "Subscribe to a clientside event."
+  },
+  {
+    "name": "client_onServer",
+    "snippet": "alt.onServer(${1:eventName}, ${2:params});${0}",
+    "documentation": "subscribe to an event passed from the server"
+  },
+  {
+    "name": "client_removeGxtText",
+    "snippet": "alt.removeGxtText();",
+    "documentation": "No documentation. please fill in."
+  },
+  {
+    "name": "client_removeIpl",
+    "snippet": "alt.removeIpl();",
+    "documentation": "Remove an interior for the client."
+  },
+  {
+    "name": "client_requestIpl",
+    "snippet": "alt.requestIpl();",
+    "documentation": "Load an interior for the client."
+  },
+  {
+    "name": "client_setCamFrozen",
+    "snippet": "alt.setCamFrozen();",
+    "documentation": "No documentation. please fill in."
+  },
+  {
+    "name": "client_setCursorPos",
+    "snippet": "alt.setCursorPos();",
+    "documentation": "No documentation. please fill in."
+  },
+  {
+    "name": "client_setInterval",
+    "snippet": "alt.setInterval(${1:function}, ${1:timeInMS});",
+    "documentation": "The replacement for setInterval."
+  },
+  {
+    "name": "client_setMicGain",
+    "snippet": "alt.setMicGain();",
+    "documentation": "No documentation. please fill in."
+  },
+  {
+    "name": "client_setModel",
+    "snippet": "alt.setModel();",
+    "documentation": "No documentation. please fill in."
+  },
+  {
+    "name": "client_setMsPerGameMinute",
+    "snippet": "alt.setMsPerGameMinute();",
+    "documentation": "No documentation. please fill in."
+  },
+  {
+    "name": "client_setTimeout",
+    "snippet": "alt.setTimeout(() => { ${0} }, ${1:timeInMS});",
+    "documentation": "The replacement for setTimeout"
+  },
+  {
+    "name": "client_showCursor",
+    "snippet": "alt.showCursor(${1:boolean});${0}",
+    "documentation": "Show the cursor or not."
+  },
+  {
+    "name": "client_toggleGameControls",
+    "snippet": "alt.toggleGameControls(${1:trueOrFalse});",
+    "documentation": "False turns off control of player."
+  },
+  {
+    "name": "client_setWeatherCycle",
+    "snippet": "alt.setWeatherCycle(${1:weathersArray}, ${2:multipliersArray});${0}",
+    "documentation": "Weathers must be equal to multipliers Array. Multiplier is time multiplayer on 2 minutes Example: [1,3,4] = 2 minutes, 6 minutes, 8 minutes"
+  },
+  {
+    "name": "client_setWeatherSyncActive",
+    "snippet": "alt.setWeatherSyncActive(${1:trueOrFalse});",
+    "documentation": "Turns on the setWeatherCycle functionality"
+  }
 ]
